@@ -49,16 +49,6 @@ export default function Home() {
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-10">
               Conectamos pymes con personas con ganas de crecer. Sin procesos interminables, sin consultoras caras, sin perder el tiempo.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/empresas" className="inline-flex items-center justify-center gap-2 bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
-                Soy empresa y busco talento
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-              </a>
-              <a href="/sesion-gratuita" className="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-white/20 transition">
-                Busco empleo o prácticas
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-              </a>
-            </div>
           </div>
 
           {/* 2 Tarjetas grandes */}
