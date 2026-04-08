@@ -2,19 +2,19 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen font-sans bg-black">
 
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
-          <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
+          <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
             <a href="/empresas" className="hover:text-[#3BB54A] transition">Soy empresa</a>
           </div>
           <div className="flex items-center gap-3">
-            <a href="/empresas" className="hidden md:inline-block border border-[#0F2B4A] text-[#0F2B4A] px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#0F2B4A] hover:text-white transition">
+            <a href="/empresas" className="hidden md:inline-block border border-[#000000] text-[#000000] px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#000000] hover:text-white transition">
               Incorporar talento
             </a>
             <a href="/sesion-gratuita" className="bg-[#3BB54A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
@@ -34,7 +34,7 @@ export default function Home() {
         }}
       >
         {/* Overlay oscuro */}
-        <div className="absolute inset-0 bg-[#0F2B4A]/80"></div>
+        <div className="absolute inset-0 bg-[#000000]/80"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-8 md:py-32 w-full">
           {/* Titular */}
@@ -78,13 +78,13 @@ export default function Home() {
                 <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
               <p className="text-white/50 group-hover:text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para jóvenes y profesionales</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#0F2B4A] mb-2 md:mb-4 leading-tight transition-colors">
+              <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#000000] mb-2 md:mb-4 leading-tight transition-colors">
                 Busco empleo<br />o prácticas
               </h2>
               <p className="text-white/60 group-hover:text-gray-500 text-sm leading-relaxed mb-4 md:mb-8 flex-1 transition-colors">
                 Te preparamos para destacar y buscamos activamente las oportunidades que encajan con tu perfil.
               </p>
-              <span className="inline-flex items-center gap-2 text-white group-hover:text-[#0F2B4A] font-semibold text-sm md:text-base transition-colors">
+              <span className="inline-flex items-center gap-2 text-white group-hover:text-[#000000] font-semibold text-sm md:text-base transition-colors">
                 Ver mis opciones
                 <svg className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </span>
@@ -95,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* FRANJA DE DATOS — impacto inmediato para empresas */}
-      <section className="py-10 bg-[#0F2B4A] border-t border-white/10">
+      <section className="py-10 bg-[#000000] border-t border-white/10">
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -126,17 +126,17 @@ export default function Home() {
                 { titulo: "Con garantía de resultado", desc: "Si la incorporación no funciona, buscamos un sustituto sin coste adicional. Sin excusas." },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100">
-                  <div className="w-8 h-8 bg-[#0F2B4A]/5 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-4 h-4 text-[#0F2B4A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
+                  <div className="w-8 h-8 bg-[#000000]/5 rounded-lg flex items-center justify-center mb-3">
+                    <svg className="w-4 h-4 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
                   </div>
-                  <h3 className="text-sm font-bold text-[#0F2B4A] mb-1">{item.titulo}</h3>
+                  <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
                   <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
             <div className="order-1 md:order-2">
               <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes</span>
-              <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3 mb-6 leading-tight">
+              <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
                 Tu empresa crece<br />con las personas correctas.
               </h2>
               <p className="text-gray-500 mb-8 leading-relaxed">
@@ -145,7 +145,7 @@ export default function Home() {
               <p className="text-gray-500 mb-10 leading-relaxed">
                 Nosotros lo hacemos por ti. Tú te dedicas a tu negocio.
               </p>
-              <a href="/empresas" className="inline-flex items-center gap-2 bg-[#0F2B4A] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#1a3d6b] transition">
+              <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
                 Quiero incorporar talento
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </a>
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para jóvenes</span>
-              <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3 mb-6 leading-tight">
+              <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
                 No es lo que sabes.<br />Es cómo lo presentas.
               </h2>
               <p className="text-gray-500 mb-8 leading-relaxed">
@@ -185,7 +185,7 @@ export default function Home() {
                   <div className="w-8 h-8 bg-[#3BB54A]/10 rounded-lg flex items-center justify-center mb-3">
                     <svg className="w-4 h-4 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
                   </div>
-                  <h3 className="text-sm font-bold text-[#0F2B4A] mb-1">{item.titulo}</h3>
+                  <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
                   <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -199,7 +199,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">El proceso</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">Así de sencillo</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Así de sencillo</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 relative">
             {[
@@ -209,7 +209,7 @@ export default function Home() {
             ].map((step, i) => (
               <div key={i} className="flex flex-col items-center text-center bg-[#F0F4F8] rounded-2xl p-10">
                 <span className="text-6xl font-bold text-[#3BB54A]/20 mb-4 leading-none">{step.num}</span>
-                <h3 className="text-lg font-bold text-[#0F2B4A] mb-3">{step.title}</h3>
+                <h3 className="text-lg font-bold text-[#000000] mb-3">{step.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -218,14 +218,14 @@ export default function Home() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-24 bg-[#0F2B4A] text-center relative overflow-hidden">
+      <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Cuál es tu próximo paso?</h2>
-          <p className="text-blue-200 text-lg mb-10">Primera sesión gratuita de 15 min. Sin compromiso. Solo tú y nosotros.</p>
+          <p className="text-gray-300 text-lg mb-10">Primera sesión gratuita de 15 min. Sin compromiso. Solo tú y nosotros.</p>
           <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg shadow-green-900/30">
             Cuéntanos tu situación
           </a>
@@ -233,11 +233,11 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#091e33] text-white py-12">
+      <footer className="bg-[#0a0a0a] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-blue-400">
+          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-sm text-gray-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
             <a href="https://instagram.com/job2jump" className="hover:text-white transition">Instagram</a>
           </div>

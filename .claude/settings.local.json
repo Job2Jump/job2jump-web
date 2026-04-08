@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull:*)",
+      "WebSearch",
+      "WebFetch(domain:www.coches.net)",
+      "WebFetch(domain:motorgiga.com)",
+      "WebFetch(domain:www.ciudaddelautomovil.es)",
+      "WebFetch(domain:www.ciudaddelautomovilnorte.com)",
+      "WebFetch(domain:gbartolome.es)"
+    ]
+  }
+}
