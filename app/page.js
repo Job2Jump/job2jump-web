@@ -36,57 +36,57 @@ export default function Home() {
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-[#0F2B4A]/80"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-8 py-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-8 md:py-32 w-full">
           {/* Titular */}
-          <div className="text-center mb-16">
-            <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+          <div className="text-center mb-6 md:mb-16">
+            <span className="hidden md:inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
               Selección de talento para pymes · Orientación profesional para jóvenes
             </span>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight">
               El talento que necesita<br />
               <span className="text-[#3BB54A]">tu empresa, existe.</span>
             </h1>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-10">
+            <p className="text-sm md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-0 md:mb-10 hidden md:block">
               Conectamos pymes con personas con ganas de crecer. Sin procesos interminables, sin consultoras caras, sin perder el tiempo.
             </p>
           </div>
 
           {/* 2 Tarjetas grandes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
 
             {/* Card empresa */}
-            <a href="/empresas" className="group bg-[#3BB54A]/10 backdrop-blur-sm border-2 border-[#3BB54A]/50 rounded-3xl p-10 hover:bg-[#3BB54A] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
-              <div className="w-14 h-14 bg-[#3BB54A] group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-6 transition-colors">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <a href="/empresas" className="group bg-[#3BB54A]/10 backdrop-blur-sm border-2 border-[#3BB54A]/50 rounded-3xl p-6 md:p-10 hover:bg-[#3BB54A] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-[#3BB54A] group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
+                <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
               </div>
-              <p className="text-[#3BB54A] group-hover:text-white/70 text-xs font-semibold uppercase tracking-widest mb-3 transition-colors">Para pymes y empresas</p>
-              <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
+              <p className="text-[#3BB54A] group-hover:text-white/70 text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para pymes y empresas</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 md:mb-4 leading-tight">
                 Quiero contratar<br />a alguien
               </h2>
-              <p className="text-white/60 group-hover:text-white/80 text-sm leading-relaxed mb-8 flex-1 transition-colors">
+              <p className="text-white/60 group-hover:text-white/80 text-sm leading-relaxed mb-4 md:mb-8 flex-1 transition-colors">
                 Buscamos, filtramos y te presentamos a las personas adecuadas. Tú solo decides a quién contratas.
               </p>
-              <span className="inline-flex items-center gap-2 text-white font-semibold text-base">
+              <span className="inline-flex items-center gap-2 text-white font-semibold text-sm md:text-base">
                 Ver cómo funciona
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                <svg className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </span>
             </a>
 
             {/* Card joven */}
-            <a href="/jovenes" className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-10 hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
-              <div className="w-14 h-14 bg-white/10 group-hover:bg-[#3BB54A] rounded-2xl flex items-center justify-center mb-6 transition-colors">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <a href="/jovenes" className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-6 md:p-10 hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-white/10 group-hover:bg-[#3BB54A] rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
+                <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
-              <p className="text-white/50 group-hover:text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3 transition-colors">Para jóvenes y profesionales</p>
-              <h2 className="text-3xl font-bold text-white group-hover:text-[#0F2B4A] mb-4 leading-tight transition-colors">
+              <p className="text-white/50 group-hover:text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para jóvenes y profesionales</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#0F2B4A] mb-2 md:mb-4 leading-tight transition-colors">
                 Busco empleo<br />o prácticas
               </h2>
-              <p className="text-white/60 group-hover:text-gray-500 text-sm leading-relaxed mb-8 flex-1 transition-colors">
+              <p className="text-white/60 group-hover:text-gray-500 text-sm leading-relaxed mb-4 md:mb-8 flex-1 transition-colors">
                 Te preparamos para destacar y buscamos activamente las oportunidades que encajan con tu perfil.
               </p>
-              <span className="inline-flex items-center gap-2 text-white group-hover:text-[#0F2B4A] font-semibold text-base transition-colors">
+              <span className="inline-flex items-center gap-2 text-white group-hover:text-[#0F2B4A] font-semibold text-sm md:text-base transition-colors">
                 Ver mis opciones
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                <svg className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </span>
             </a>
 
