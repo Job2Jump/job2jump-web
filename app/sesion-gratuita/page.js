@@ -72,7 +72,7 @@ export default function SesionGratuita() {
           <a href="/">
             <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
-          <a href="/practicas" className="text-[#0F2B4A] text-sm font-medium hover:text-[#3BB54A] transition">
+          <a href="/practicas" className="text-[#000000] text-sm font-medium hover:text-[#3BB54A] transition">
             ← Volver
           </a>
         </div>
@@ -87,7 +87,7 @@ export default function SesionGratuita() {
               <span className="inline-block bg-[#3BB54A]/10 text-[#3BB54A] border border-[#3BB54A]/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
                 Sesión gratuita · 15 minutos
               </span>
-              <h1 className="text-3xl font-bold text-[#0F2B4A] mb-4 leading-tight">
+              <h1 className="text-3xl font-bold text-[#000000] mb-4 leading-tight">
                 Tu sesión de orientación gratuita
               </h1>
               <p className="text-gray-500 mb-8 leading-relaxed">
@@ -109,7 +109,7 @@ export default function SesionGratuita() {
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <p className="text-[#0F2B4A] font-semibold text-sm">{item.titulo}</p>
+                      <p className="text-[#000000] font-semibold text-sm">{item.titulo}</p>
                     </div>
                     <p className="text-gray-500 text-xs leading-relaxed pl-6">{item.desc}</p>
                   </div>
@@ -156,7 +156,7 @@ export default function SesionGratuita() {
               </div>
 
               <p className="text-xs text-gray-400 font-medium uppercase tracking-widest mb-3">Pregunta {paso} de {preguntas.length}</p>
-              <h2 className="text-2xl font-bold text-[#0F2B4A] mb-8">{preguntaActual.pregunta}</h2>
+              <h2 className="text-2xl font-bold text-[#000000] mb-8">{preguntaActual.pregunta}</h2>
 
               {preguntaActual.tipo === "texto" && (
                 <div>
@@ -172,7 +172,7 @@ export default function SesionGratuita() {
                       const val = document.getElementById("respuesta-texto").value;
                       if (val) responder(val);
                     }}
-                    className="w-full bg-[#0F2B4A] text-white py-3.5 rounded-full font-semibold text-sm hover:bg-[#1a3d6b] transition"
+                    className="w-full bg-[#000000] text-white py-3.5 rounded-full font-semibold text-sm hover:bg-[#222222] transition"
                   >
                     Siguiente →
                   </button>
@@ -185,7 +185,7 @@ export default function SesionGratuita() {
                     <button
                       key={i}
                       onClick={() => responder(opcion)}
-                      className="text-left border border-gray-200 rounded-xl px-5 py-4 text-sm text-gray-700 hover:border-[#3BB54A] hover:bg-[#3BB54A]/5 hover:text-[#0F2B4A] transition font-medium"
+                      className="text-left border border-gray-200 rounded-xl px-5 py-4 text-sm text-gray-700 hover:border-[#3BB54A] hover:bg-[#3BB54A]/5 hover:text-[#000000] transition font-medium"
                     >
                       {opcion}
                     </button>
@@ -211,13 +211,13 @@ export default function SesionGratuita() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h2 className="text-2xl font-bold text-[#0F2B4A] mb-3">¡Perfecto, {nombre}!</h2>
+                  <h2 className="text-2xl font-bold text-[#000000] mb-3">¡Perfecto, {nombre}!</h2>
                   <p className="text-gray-500 mb-8 leading-relaxed">
                     Todo listo para reservar tu sesión gratuita de 15 minutos con Celia. Elige el día y la hora que mejor te vengan.
                   </p>
                   <div className="bg-[#F0F4F8] rounded-2xl p-6 mb-6">
                     <p className="text-sm text-gray-500 mb-1">Lo que veremos en tu sesión:</p>
-                    <ul className="text-sm text-[#0F2B4A] font-medium space-y-1 text-left">
+                    <ul className="text-sm text-[#000000] font-medium space-y-1 text-left">
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Diagnóstico de tu situación actual</li>
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Plan de acción concreto</li>
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Análisis de oportunidades que encajan contigo</li>
@@ -237,17 +237,17 @@ export default function SesionGratuita() {
                 </>
               ) : (
                 <>
-                  <div className="w-16 h-16 bg-[#0F2B4A]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg className="w-8 h-8 text-[#0F2B4A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-[#000000]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-8 h-8 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h2 className="text-2xl font-bold text-[#0F2B4A] mb-3">Hola, {nombre}</h2>
+                  <h2 className="text-2xl font-bold text-[#000000] mb-3">Hola, {nombre}</h2>
                   <p className="text-gray-500 mb-8 leading-relaxed">
                     Parece que todavía no es el momento exacto, pero nos encantaría ayudarte cuando llegue. Te avisamos con tiempo para que puedas prepararte bien y dar el salto en el momento adecuado.
                   </p>
                   <div className="bg-[#F0F4F8] rounded-2xl p-6 mb-6 text-left">
-                    <p className="text-sm font-semibold text-[#0F2B4A] mb-2">Mientras tanto, te enviaremos:</p>
+                    <p className="text-sm font-semibold text-[#000000] mb-2">Mientras tanto, te enviaremos:</p>
                     <ul className="text-sm text-gray-500 space-y-1">
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Consejos para preparar tu búsqueda</li>
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Recursos gratuitos para mejorar tu CV y LinkedIn</li>
@@ -256,7 +256,7 @@ export default function SesionGratuita() {
                   </div>
                   <button
                     disabled
-                    className="w-full bg-[#0F2B4A] text-white py-4 rounded-full font-semibold text-base opacity-50 cursor-not-allowed"
+                    className="w-full bg-[#000000] text-white py-4 rounded-full font-semibold text-base opacity-50 cursor-not-allowed"
                   >
                     Avísame cuando sea el momento
                   </button>
@@ -270,11 +270,11 @@ export default function SesionGratuita() {
       </div>
 
       {/* FOOTER */}
-      <footer className="bg-[#091e33] text-white py-10">
+      <footer className="bg-[#0a0a0a] text-white py-10">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-blue-400">
+          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-sm text-gray-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
           </div>
         </div>

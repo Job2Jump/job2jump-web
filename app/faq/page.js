@@ -72,9 +72,9 @@ function Accordion({ items }) {
             onClick={() => setAbierto(abierto === i ? null : i)}
             className="w-full flex items-center justify-between px-6 py-5 text-left"
           >
-            <span className="text-sm font-semibold text-[#0F2B4A] pr-4">{item.pregunta}</span>
+            <span className="text-sm font-semibold text-[#000000] pr-4">{item.pregunta}</span>
             <div className={`w-6 h-6 rounded-full bg-[#F0F4F8] flex items-center justify-center flex-shrink-0 transition-transform ${abierto === i ? "rotate-45" : ""}`}>
-              <svg className="w-3 h-3 text-[#0F2B4A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
               </svg>
             </div>
@@ -100,7 +100,7 @@ export default function FAQ() {
           <a href="/">
             <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
-          <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
+          <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
             <a href="/#contacto" className="hover:text-[#3BB54A] transition">Contacto</a>
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
@@ -112,7 +112,7 @@ export default function FAQ() {
       </nav>
 
       {/* HERO */}
-      <section className="pt-40 pb-16 bg-[#0F2B4A]">
+      <section className="pt-40 pb-16 bg-[#000000]">
         <div className="max-w-3xl mx-auto px-8 text-center">
           <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
             Preguntas frecuentes
@@ -138,7 +138,7 @@ export default function FAQ() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold text-[#0F2B4A]">Para jóvenes y candidatos</h2>
+              <h2 className="text-xl font-bold text-[#000000]">Para jóvenes y candidatos</h2>
             </div>
             <Accordion items={faqJovenes} />
           </div>
@@ -146,12 +146,12 @@ export default function FAQ() {
           {/* Empresas */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 rounded-full bg-[#0F2B4A] flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#000000] flex items-center justify-center flex-shrink-0">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h2 className="text-xl font-bold text-[#0F2B4A]">Para empresas</h2>
+              <h2 className="text-xl font-bold text-[#000000]">Para empresas</h2>
             </div>
             <Accordion items={faqEmpresas} />
           </div>
@@ -160,10 +160,10 @@ export default function FAQ() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#0F2B4A] text-center">
+      <section className="py-20 bg-[#000000] text-center">
         <div className="max-w-xl mx-auto px-8">
           <h2 className="text-3xl font-bold text-white mb-4">¿Tienes más preguntas?</h2>
-          <p className="text-blue-200 mb-8">Escríbenos y te respondemos en menos de 24 horas.</p>
+          <p className="text-gray-300 mb-8">Escríbenos y te respondemos en menos de 24 horas.</p>
           <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             hola@job2jump.es
           </a>
@@ -171,11 +171,11 @@ export default function FAQ() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#091e33] text-white py-12">
+      <footer className="bg-[#0a0a0a] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-blue-400">
+          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-sm text-gray-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
             <a href="https://instagram.com/job2jump" className="hover:text-white transition">Instagram</a>
           </div>

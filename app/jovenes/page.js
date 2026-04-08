@@ -10,7 +10,7 @@ export default function Jovenes() {
           <a href="/">
             <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
-          <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
+          <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
             <a href="/empresas" className="hover:text-[#3BB54A] transition">Soy empresa</a>
@@ -24,7 +24,7 @@ export default function Jovenes() {
       {/* HERO */}
       <section className="min-h-screen flex items-center relative"
         style={{ backgroundImage: "url('/hero.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="absolute inset-0 bg-[#0F2B4A]/80"></div>
+        <div className="absolute inset-0 bg-[#000000]/80"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-8 py-32 w-full">
 
           <div className="text-center mb-16">
@@ -52,7 +52,7 @@ export default function Jovenes() {
                 </svg>
               </div>
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Estudiantes y recién graduados</p>
-              <h2 className="text-2xl font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
+              <h2 className="text-2xl font-bold text-white group-hover:text-[#000000] transition-colors mb-3 leading-snug">
                 Busco prácticas
               </h2>
               <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-6 flex-1">
@@ -72,7 +72,7 @@ export default function Jovenes() {
                 </svg>
               </div>
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Con formación, sin experiencia</p>
-              <h2 className="text-2xl font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
+              <h2 className="text-2xl font-bold text-white group-hover:text-[#000000] transition-colors mb-3 leading-snug">
                 Busco mi primer empleo
               </h2>
               <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-6 flex-1">
@@ -92,7 +92,7 @@ export default function Jovenes() {
                 </svg>
               </div>
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Confidencial y con estrategia</p>
-              <h2 className="text-2xl font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
+              <h2 className="text-2xl font-bold text-white group-hover:text-[#000000] transition-colors mb-3 leading-snug">
                 Quiero cambiar de trabajo
               </h2>
               <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-6 flex-1">
@@ -109,11 +109,11 @@ export default function Jovenes() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#091e33] text-white py-12">
+      <footer className="bg-[#0a0a0a] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-blue-400">
+          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-sm text-gray-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
             <a href="https://instagram.com/job2jump" className="hover:text-white transition">Instagram</a>
           </div>

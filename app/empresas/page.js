@@ -10,13 +10,13 @@ export default function Empresas() {
           <a href="/">
             <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
-          <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
+          <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
             <a href="mailto:hola@job2jump.es" className="hover:text-[#3BB54A] transition">Contacto</a>
             <a href="#como-funciona" className="hover:text-[#3BB54A] transition">Cómo funciona</a>
             <a href="#precios" className="hover:text-[#3BB54A] transition">Precios</a>
           </div>
-          <a href="mailto:hola@job2jump.es" className="bg-[#0F2B4A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#1a3d6b] transition">
+          <a href="mailto:hola@job2jump.es" className="bg-[#000000] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#222222] transition">
             Contactar
           </a>
         </div>
@@ -31,7 +31,7 @@ export default function Empresas() {
           className="object-cover blur-[2px]"
           priority
         />
-        <div className="absolute inset-0 bg-[#0F2B4A]/80"></div>
+        <div className="absolute inset-0 bg-[#000000]/80"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-8 pt-40 pb-20 w-full">
 
           {/* Título */}
@@ -129,7 +129,7 @@ export default function Empresas() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">La solución</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">Lo que hacemos por ti</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Lo que hacemos por ti</h2>
             <p className="text-gray-500 mt-4 max-w-xl mx-auto">Somos tu departamento de selección de talento joven externo. Tú te dedicas a tu negocio.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -158,7 +158,7 @@ export default function Empresas() {
               <div key={i} className="flex gap-6 p-8 bg-white rounded-2xl shadow-sm">
                 <span className="text-5xl font-bold text-[#3BB54A]/20 leading-none flex-shrink-0">{item.num}</span>
                 <div>
-                  <h3 className="text-lg font-bold text-[#0F2B4A] mb-2">{item.titulo}</h3>
+                  <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -172,14 +172,14 @@ export default function Empresas() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Ayudas a la contratación</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">Contratar bien puede costarte<br />casi nada</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Contratar bien puede costarte<br />casi nada</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
               Existen bonificaciones estatales y subvenciones de la Comunidad de Madrid que reducen drásticamente el coste de contratar jóvenes. La mayoría de pymes no sabe que existen — nosotros sí, y te acompañamos.
             </p>
           </div>
 
           {/* Combinación estrella */}
-          <div className="bg-[#0F2B4A] rounded-3xl p-8 md:p-12 mb-10 text-center relative overflow-hidden">
+          <div className="bg-[#000000] rounded-3xl p-8 md:p-12 mb-10 text-center relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 right-1/4 w-80 h-80 bg-[#3BB54A] rounded-full blur-3xl"></div>
             </div>
@@ -225,7 +225,7 @@ export default function Empresas() {
               <div key={i} className={`rounded-2xl p-6 border-2 ${item.destacado ? "border-[#3BB54A] bg-[#3BB54A]/5" : "border-gray-100 bg-[#F0F4F8]"}`}>
                 <p className={`text-xs font-semibold uppercase tracking-widest mb-1 ${item.destacado ? "text-[#3BB54A]" : "text-gray-400"}`}>{item.tipo}</p>
                 <p className="text-sm text-gray-600 mb-4">{item.label}</p>
-                <p className="text-4xl font-bold text-[#0F2B4A] mb-3">{item.ahorro}</p>
+                <p className="text-4xl font-bold text-[#000000] mb-3">{item.ahorro}</p>
                 <p className="text-gray-500 text-xs leading-relaxed mb-4">{item.detalle}</p>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-[#3BB54A]"></div>
@@ -257,7 +257,7 @@ export default function Empresas() {
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Precios</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">Claro, sencillo y sin sorpresas</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Claro, sencillo y sin sorpresas</h2>
             <p className="text-gray-500 mt-4">3 a 5 veces más barato que una consultora tradicional.</p>
           </div>
           <div className="bg-[#F0F4F8] rounded-2xl p-10 border border-gray-100">
@@ -265,7 +265,7 @@ export default function Empresas() {
             <div className="flex justify-center mb-4">
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center w-full max-w-xs">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-3">Retainer inicial</p>
-                <p className="text-4xl font-bold text-[#0F2B4A] mb-3">100€</p>
+                <p className="text-4xl font-bold text-[#000000] mb-3">100€</p>
                 <p className="text-gray-400 text-xs leading-relaxed">Al arrancar el proceso. Se descuenta del success fee si hay contratación.</p>
               </div>
             </div>
@@ -296,14 +296,14 @@ export default function Empresas() {
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all">
                   <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-3">{item.concepto}</p>
-                  <p className="text-4xl font-bold text-[#0F2B4A] mb-3">{item.precio}</p>
+                  <p className="text-4xl font-bold text-[#000000] mb-3">{item.precio}</p>
                   <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
             <p className="text-center text-xs text-gray-400 mb-8">IVA no incluido</p>
             <div className="border-t border-gray-200 pt-8">
-              <p className="text-center text-sm font-bold text-[#0F2B4A] mb-4">Incluido en todos los procesos:</p>
+              <p className="text-center text-sm font-bold text-[#000000] mb-4">Incluido en todos los procesos:</p>
               <div className="grid md:grid-cols-2 gap-3 max-w-xl mx-auto">
                 {[
                   "Garantía de sustitución gratuita",
@@ -327,7 +327,7 @@ export default function Empresas() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-24 bg-[#0F2B4A] text-center relative overflow-hidden">
+      <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
@@ -336,7 +336,7 @@ export default function Empresas() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             ¿Listo para incorporar talento?
           </h2>
-          <p className="text-blue-200 text-lg mb-10">
+          <p className="text-gray-300 text-lg mb-10">
             Cuéntanos qué perfil necesitas. Te respondemos en menos de 24 horas.
           </p>
           <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
@@ -346,11 +346,11 @@ export default function Empresas() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#091e33] text-white py-12">
+      <footer className="bg-[#0a0a0a] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-blue-400">
+          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-sm text-gray-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
             <a href="https://instagram.com/job2jump" className="hover:text-white transition">Instagram</a>
           </div>

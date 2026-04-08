@@ -10,7 +10,7 @@ export default function CambioEmpleo() {
           <a href="/">
             <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
-          <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
+          <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/#quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
             <a href="/#contacto" className="hover:text-[#3BB54A] transition">Contacto</a>
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
@@ -31,7 +31,7 @@ export default function CambioEmpleo() {
           className="object-cover blur-[2px]"
           priority
         />
-        <div className="absolute inset-0 bg-[#0F2B4A]/75"></div>
+        <div className="absolute inset-0 bg-[#000000]/75"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-8 py-32 w-full">
           <div className="max-w-5xl">
             <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
@@ -63,7 +63,7 @@ export default function CambioEmpleo() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-14">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Sabemos cómo te sientes</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">¿Te suena esto?</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">¿Te suena esto?</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -75,7 +75,7 @@ export default function CambioEmpleo() {
               "No quieres mandar CVs a ciegas. Quieres hacerlo bien, con estrategia.",
             ].map((text, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 flex items-start gap-4 shadow-sm">
-                <div className="w-8 h-8 rounded-full bg-[#0F2B4A] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 rounded-full bg-[#000000] flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -84,14 +84,14 @@ export default function CambioEmpleo() {
               </div>
             ))}
           </div>
-          <p className="text-center text-[#0F2B4A] font-semibold text-lg mt-10">
+          <p className="text-center text-[#000000] font-semibold text-lg mt-10">
             Si te identificas con alguno de estos, estás en el sitio correcto.
           </p>
         </div>
       </section>
 
       {/* CONFIDENCIALIDAD */}
-      <section className="py-20 bg-[#0F2B4A]">
+      <section className="py-20 bg-[#000000]">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Garantía de confidencialidad</span>
           <h2 className="text-3xl font-bold text-white mt-3 mb-6">Tu empresa actual nunca se va a enterar</h2>
@@ -106,7 +106,7 @@ export default function CambioEmpleo() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Lo que hacemos por ti</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">Tu cambio, con estrategia</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Tu cambio, con estrategia</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -134,7 +134,7 @@ export default function CambioEmpleo() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#0F2B4A] mb-2">{item.titulo}</h3>
+                  <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function CambioEmpleo() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
-            <h2 className="text-4xl font-bold text-[#0F2B4A] mt-3">Elige tu modalidad</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige tu modalidad</h2>
             <p className="text-gray-500 mt-4">Sesión inicial gratuita de 15 min para analizar tu caso y ofrecerte un plan personalizado.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -158,9 +158,9 @@ export default function CambioEmpleo() {
                 precio: "Desde 80€/sesión",
                 desc: "Tú aplicas, nosotros te preparamos",
                 bg: "bg-white",
-                textP: "text-[#0F2B4A]",
+                textP: "text-[#000000]",
                 textS: "text-gray-500",
-                btn: "bg-[#0F2B4A] text-white hover:bg-[#1a3d6b]",
+                btn: "bg-[#000000] text-white hover:bg-[#222222]",
                 checkBg: "bg-[#3BB54A]",
                 items: [
                   "Sesiones individuales de 60 min con orientadora",
@@ -174,9 +174,9 @@ export default function CambioEmpleo() {
                 nombre: "Preparación + Búsqueda activa",
                 precio: "Plan personalizado",
                 desc: "Nosotros buscamos en tu nombre",
-                bg: "bg-[#0F2B4A]",
+                bg: "bg-[#000000]",
                 textP: "text-white",
-                textS: "text-blue-200",
+                textS: "text-gray-300",
                 btn: "bg-[#3BB54A] text-white hover:bg-[#2ea03c]",
                 checkBg: "bg-[#3BB54A]",
                 items: [
@@ -214,7 +214,7 @@ export default function CambioEmpleo() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-24 bg-[#0F2B4A] text-center relative overflow-hidden">
+      <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
@@ -223,7 +223,7 @@ export default function CambioEmpleo() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             El cambio que llevas tiempo pensando
           </h2>
-          <p className="text-blue-200 text-lg mb-10">
+          <p className="text-gray-300 text-lg mb-10">
             Empieza con una sesión gratuita de 15 minutos. Analizamos tu caso y te decimos qué podemos hacer por ti.
           </p>
           <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
@@ -233,11 +233,11 @@ export default function CambioEmpleo() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#091e33] text-white py-12">
+      <footer className="bg-[#0a0a0a] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-blue-400">
+          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-sm text-gray-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
             <a href="https://instagram.com/job2jump" className="hover:text-white transition">Instagram</a>
           </div>
