@@ -40,7 +40,7 @@ export default function Home() {
           {/* Titular */}
           <div className="text-center mb-6 md:mb-16">
             <span className="hidden md:inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
-              Para jóvenes que buscan empleo · Para pymes que buscan talento
+              Para jóvenes que buscan empleo · Para empresas que buscan talento
             </span>
             <h1 className="text-3xl md:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight">
               Tu primer empleo no debería<br />
