@@ -7,7 +7,7 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-          <Image src="/logo.jpeg" alt="Job2Jump" width={150} height={38} priority />
+          <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
@@ -61,100 +61,42 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 4 Tarjetas: 3 personas izquierda + empresa derecha */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          {/* 2 Tarjetas grandes */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto w-full">
 
-            {/* Columna izquierda: 3 tarjetas personas */}
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-5">
-
-              {/* Card 1 — Busco prácticas */}
-              <a href="/practicas" className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-7 hover:bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                <div className="w-11 h-11 bg-[#3BB54A] rounded-xl flex items-center justify-center mb-5 flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422A12.083 12.083 0 0121 21H3a12.083 12.083 0 012.84-10.422L12 14z"/></svg>
-                </div>
-                <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Estudiantes y recién graduados</p>
-                <h2 className="text-lg font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
-                  Busco prácticas
-                </h2>
-                <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-5 flex-1">
-                  Te preparamos para destacar frente a otros candidatos y buscamos activamente las prácticas que encajan con tu perfil.
-                </p>
-                <div className="flex items-center gap-2 text-[#3BB54A] text-sm font-semibold">
-                  <span>Ver más</span>
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                </div>
-              </a>
-
-              {/* Card 2 — Busco empleo */}
-              <a href="/empleo" className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-7 hover:bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                <div className="w-11 h-11 bg-[#3BB54A] rounded-xl flex items-center justify-center mb-5 flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                </div>
-                <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Con formación, sin experiencia</p>
-                <h2 className="text-lg font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
-                  Busco mi primer empleo
-                </h2>
-                <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-5 flex-1">
-                  Te ayudamos a diferenciarte del resto, prepararte para entrevistas y conseguir el primer contrato que mereces.
-                </p>
-                <div className="flex items-center gap-2 text-[#3BB54A] text-sm font-semibold">
-                  <span>Ver más</span>
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                </div>
-              </a>
-
-              {/* Card 3 — Quiero cambiar de trabajo */}
-              <a href="/cambio" className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-7 hover:bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                <div className="w-11 h-11 bg-[#3BB54A] rounded-xl flex items-center justify-center mb-5 flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                </div>
-                <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Confidencial y con estrategia</p>
-                <h2 className="text-lg font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
-                  Quiero cambiar de trabajo
-                </h2>
-                <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-5 flex-1">
-                  Llevamos años en tu empresa y quieres dar el salto. Te acompañamos con total confidencialidad y buscamos en tu nombre.
-                </p>
-                <div className="flex items-center gap-2 text-[#3BB54A] text-sm font-semibold">
-                  <span>Ver más</span>
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                </div>
-              </a>
-
-            </div>
-
-            {/* Columna derecha: Soy empresa (alto completo) */}
-            <a href="/empresas" className="group bg-white/10 backdrop-blur-sm border-2 border-[#3BB54A]/40 rounded-2xl p-8 hover:bg-white hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div className="w-11 h-11 bg-[#3BB54A]/20 border border-[#3BB54A]/40 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#3BB54A] transition-colors">
-                  <svg className="w-5 h-5 text-[#3BB54A] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                </div>
-                <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2">Para pymes y empresas</p>
-                <h2 className="text-2xl font-bold text-white group-hover:text-[#0F2B4A] transition-colors mb-3 leading-snug">
-                  Soy empresa y busco talento
-                </h2>
-                <p className="text-white/60 group-hover:text-gray-500 transition-colors text-sm leading-relaxed mb-6">
-                  Tu empresa crece con las personas correctas. Nosotros las encontramos, filtramos y te las presentamos. Tú solo decides.
-                </p>
-                <ul className="space-y-3 mb-6">
-                  {[
-                    "Solo pagas si contratas",
-                    "Mínimo 3 candidatos filtrados",
-                    "Proceso en 2-4 semanas",
-                    "Garantía de sustitución incluida",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-white/70 group-hover:text-gray-600 text-sm">
-                      <span className="w-4 h-4 bg-[#3BB54A] rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+            {/* Card empresa */}
+            <a href="/empresas" className="group bg-[#3BB54A]/10 backdrop-blur-sm border-2 border-[#3BB54A]/50 rounded-3xl p-10 hover:bg-[#3BB54A] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+              <div className="w-14 h-14 bg-[#3BB54A] group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-6 transition-colors">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
               </div>
-              <span className="inline-flex items-center justify-center gap-2 bg-[#3BB54A] text-white text-sm font-semibold px-6 py-3.5 rounded-full text-center group-hover:bg-[#0F2B4A] transition-colors">
-                Quiero incorporar talento
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+              <p className="text-[#3BB54A] group-hover:text-white/70 text-xs font-semibold uppercase tracking-widest mb-3 transition-colors">Para pymes y empresas</p>
+              <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
+                Quiero contratar<br />a alguien
+              </h2>
+              <p className="text-white/60 group-hover:text-white/80 text-sm leading-relaxed mb-8 flex-1 transition-colors">
+                Buscamos, filtramos y te presentamos a las personas adecuadas. Tú solo decides a quién contratas.
+              </p>
+              <span className="inline-flex items-center gap-2 text-white font-semibold text-base">
+                Ver cómo funciona
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+              </span>
+            </a>
+
+            {/* Card joven */}
+            <a href="/jovenes" className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-10 hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+              <div className="w-14 h-14 bg-white/10 group-hover:bg-[#3BB54A] rounded-2xl flex items-center justify-center mb-6 transition-colors">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              </div>
+              <p className="text-white/50 group-hover:text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3 transition-colors">Para jóvenes y profesionales</p>
+              <h2 className="text-3xl font-bold text-white group-hover:text-[#0F2B4A] mb-4 leading-tight transition-colors">
+                Busco empleo<br />o prácticas
+              </h2>
+              <p className="text-white/60 group-hover:text-gray-500 text-sm leading-relaxed mb-8 flex-1 transition-colors">
+                Te preparamos para destacar y buscamos activamente las oportunidades que encajan con tu perfil.
+              </p>
+              <span className="inline-flex items-center gap-2 text-white group-hover:text-[#0F2B4A] font-semibold text-base transition-colors">
+                Ver mis opciones
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </span>
             </a>
 
@@ -303,7 +245,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-[#091e33] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <Image src="/logo.jpeg" alt="Job2Jump" width={130} height={33} />
+          <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
           <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
           <div className="flex gap-8 text-sm text-blue-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>

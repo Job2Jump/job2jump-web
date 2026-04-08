@@ -8,7 +8,7 @@ export default function Empleo() {
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           <a href="/">
-            <Image src="/logo.jpeg" alt="Job2Jump" width={150} height={38} priority />
+            <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
           <div className="hidden md:flex items-center gap-8 text-[#0F2B4A] font-medium text-sm">
             <a href="/#quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
@@ -250,7 +250,7 @@ export default function Empleo() {
       {/* FOOTER */}
       <footer className="bg-[#091e33] text-white py-12">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <Image src="/logo.jpeg" alt="Job2Jump" width={130} height={33} />
+          <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
           <p className="text-blue-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
           <div className="flex gap-8 text-sm text-blue-400">
             <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
