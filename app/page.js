@@ -10,7 +10,7 @@ export default function Home() {
           <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
-            <a href="/practicas" className="hover:text-[#3BB54A] transition">Busco prácticas</a>
+            <a href="/practicas" className="hover:text-[#3BB54A] transition">Busco mis primeras prácticas / empleo</a>
             <a href="/empresas" className="hover:text-[#3BB54A] transition">Soy empresa</a>
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
           </div>
