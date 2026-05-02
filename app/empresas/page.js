@@ -354,35 +354,21 @@ export default function Empresas() {
               <div className="bg-white rounded-2xl p-6 border-2 border-[#3BB54A]">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino A</p>
                 <p className="text-sm font-bold text-[#000000] mb-4">Primero prácticas, luego decides</p>
-                <div className="space-y-3">
-                  <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
-                    <p className="text-xs text-gray-400 mb-1">Al incorporar al alumno en prácticas</p>
-                    <p className="text-2xl font-bold text-[#000000]">250€</p>
-                    <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado · Sin coste salarial</p>
-                  </div>
-                  <div className="flex justify-center">
-                    <svg className="w-4 h-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                  <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
-                    <p className="text-xs text-gray-400 mb-1">Si tras las prácticas le contratas</p>
-                    <p className="text-2xl font-bold text-[#000000]">400€</p>
-                    <p className="text-xs text-gray-400 mt-1">Solo si decides dar el paso</p>
-                  </div>
+                <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
+                  <p className="text-xs text-gray-400 mb-1">Al incorporar al alumno en prácticas</p>
+                  <p className="text-2xl font-bold text-[#000000]">250€</p>
+                  <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado · Sin coste salarial</p>
                 </div>
               </div>
 
               {/* Camino B */}
-              <div className="bg-[#000000] rounded-2xl p-6 border-2 border-gray-700">
+              <div className="bg-[#F0F4F8] rounded-2xl p-6 border-2 border-gray-200">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino B</p>
-                <p className="text-sm font-bold text-white mb-4">Contrato junior directo</p>
-                <div className="space-y-3">
-                  <div className="bg-white/10 rounded-xl p-4 text-center">
-                    <p className="text-xs text-gray-400 mb-1">Al incorporar al perfil junior</p>
-                    <p className="text-2xl font-bold text-white">400€</p>
-                    <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado</p>
-                  </div>
+                <p className="text-sm font-bold text-[#000000] mb-4">Contrato junior directo</p>
+                <div className="bg-white rounded-xl p-4 text-center">
+                  <p className="text-xs text-gray-400 mb-1">Al incorporar al perfil junior</p>
+                  <p className="text-2xl font-bold text-[#000000]">400€</p>
+                  <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado</p>
                 </div>
               </div>
             </div>
