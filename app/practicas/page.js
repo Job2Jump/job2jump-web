@@ -176,7 +176,7 @@ export default function Practicas() {
                   </li>
                 ))}
               </ul>
-              <p className="text-center text-gray-400 text-xs mb-3">99,90€ · sesión gratuita incluida</p>
+              <p className="text-center text-white font-bold text-xl underline mb-3">99,90€ <span className="text-gray-400 text-xs font-normal no-underline">· sesión gratuita incluida</span></p>
               <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-[#3BB54A] text-white hover:bg-[#2ea03c]">
                 Quiero este plan
               </a>
@@ -207,7 +207,7 @@ export default function Practicas() {
                   </li>
                 ))}
               </ul>
-              <p className="text-center text-white/60 text-xs mb-3">199€ · sesión gratuita incluida</p>
+              <p className="text-center text-white font-bold text-xl underline mb-3">199€ <span className="text-white/60 text-xs font-normal no-underline">· sesión gratuita incluida</span></p>
               <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-white text-[#000000] hover:bg-gray-100">
                 Quiero este plan
               </a>
