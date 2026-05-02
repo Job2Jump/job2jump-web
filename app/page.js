@@ -175,8 +175,8 @@ export default function Home() {
                 precio: "199€",
                 desc: "Buscamos el trabajo por ti. Despreocúpate.",
                 items: [
-                  "Búsqueda activa en nuestra BBDD de +10.000 empresas",
-                  "Aplicamos a ofertas en tu nombre",
+                  "Presentamos tu perfil a nuestra base de datos de +10.000 empresas",
+                  "Movemos tu candidatura sin que tengas que hacer nada",
                   "CV actualizado y personalizado",
                   "LinkedIn optimizado y posicionado",
                   "Role plays de entrevistas reales",
