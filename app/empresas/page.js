@@ -37,28 +37,33 @@ export default function Empresas() {
           {/* Título */}
           <div className="text-center mb-16">
             <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
-              Para empresas
+              Para pymes · Perfiles FP y junior sin coste salarial
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Tu empresa crece<br />
-              <span className="text-[#3BB54A]">con las personas correctas.</span>
+              Talento joven en tu empresa.<br />
+              <span className="text-[#3BB54A]">Sin salario. Sin papeleo. Sin complicaciones.</span>
             </h1>
             <p className="text-lg text-white/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Encontrar personas con ganas de crecer, ambición e ilusión no es cuestión de publicar una oferta. Es un proceso especializado que consume tiempo, conocimiento y recursos que la mayoría de pymes no tiene.
+              Conectamos tu pyme con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
             </p>
-            <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
-              Quiero incorporar talento
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
+                Quiero un alumno de FP
+              </a>
+              <a href="#como-funciona" className="inline-block border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white transition text-center">
+                Cómo funciona
+              </a>
+            </div>
           </div>
 
           {/* Beneficios clave */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
             {[
-              { valor: "Solo éxito", label: "pagas si contratas" },
-              { valor: "26-30h", label: "ahorradas por proceso" },
-              { valor: "2-4", label: "duración media del proceso" },
+              { valor: "0 €", label: "coste salarial en FCT" },
+              { valor: "26-30h", label: "de gestión que te ahorramos" },
+              { valor: "1 de 3", label: "alumnos acaba contratado" },
               { valor: "100%", label: "garantía de sustitución" },
-              { valor: "Mínimo 3", label: "candidatos filtrados" },
+              { valor: "FCT · Dual", label: "gestionamos ambas modalidades" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
                 <p className="text-xl font-bold text-[#3BB54A]">{item.valor}</p>
@@ -231,7 +236,7 @@ export default function Empresas() {
       </section>
 
       {/* LO QUE NOSOTROS HACEMOS */}
-      <section className="py-24 bg-[#F0F4F8]">
+      <section id="como-funciona" className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">La solución</span>
@@ -385,9 +390,9 @@ export default function Empresas() {
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               {[
                 {
-                  concepto: "Becario / prácticas",
+                  concepto: "Alumno FP · FCT o Dual",
                   precio: "250€",
-                  desc: "Success fee al confirmar la incorporación. Retainer ya descontado.",
+                  desc: "Sin coste salarial para la empresa. Nosotros buscamos al alumno y gestionamos todo el convenio. Retainer ya descontado.",
                 },
                 {
                   concepto: "Contrato junior",
