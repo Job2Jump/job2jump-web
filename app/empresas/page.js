@@ -59,11 +59,11 @@ export default function Empresas() {
           {/* Beneficios clave */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
             {[
-              { valor: "0 €", label: "coste salarial en FCT" },
+              { valor: "0 €", label: "coste salarial en prácticas" },
               { valor: "26-30h", label: "de gestión que te ahorramos" },
               { valor: "1 de 3", label: "alumnos acaba contratado" },
               { valor: "100%", label: "garantía de sustitución" },
-              { valor: "FCT · Dual", label: "gestionamos ambas modalidades" },
+              { valor: "Prácticas · Dual", label: "gestionamos ambas modalidades" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
                 <p className="text-xl font-bold text-[#3BB54A]">{item.valor}</p>
@@ -150,7 +150,7 @@ export default function Empresas() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A]">FCT — Prácticas curriculares</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A]">Prácticas en empresa — Obligatorias para titular</p>
                   <p className="text-xs text-gray-400">El modelo más sencillo</p>
                 </div>
               </div>
@@ -229,7 +229,7 @@ export default function Empresas() {
             <p className="text-5xl font-bold mb-3">1 de cada 3</p>
             <p className="text-lg font-semibold mb-2">alumnos en prácticas acaba contratado por la misma empresa</p>
             <p className="text-white/70 text-sm max-w-xl mx-auto">
-              La FCT es la mejor prueba de trabajo que existe: 3-4 meses viendo cómo trabaja alguien de verdad, antes de comprometerte. Job2Jump te lleva hasta ahí sin que muevas un dedo.
+              Las prácticas en empresa son la mejor prueba de trabajo que existe: 3-4 meses viendo cómo trabaja alguien de verdad, antes de comprometerte. Job2Jump te lleva hasta ahí sin que muevas un dedo.
             </p>
           </div>
         </div>
@@ -390,7 +390,7 @@ export default function Empresas() {
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               {[
                 {
-                  concepto: "Alumno FP · FCT o Dual",
+                  concepto: "Alumno FP · Prácticas o Dual",
                   precio: "250€",
                   desc: "Sin coste salarial para la empresa. Nosotros buscamos al alumno y gestionamos todo el convenio. Retainer ya descontado.",
                 },
