@@ -288,62 +288,67 @@ export default function Empresas() {
           </div>
           <div className="bg-[#F0F4F8] rounded-2xl p-10 border border-gray-100">
 
-            {/* PASO 1 */}
+            {/* Retainer — siempre primero */}
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
                 <span className="text-white text-sm font-bold">1</span>
               </div>
-              <p className="text-sm font-bold text-[#000000]">Para arrancar el proceso</p>
+              <p className="text-sm font-bold text-[#000000]">Siempre se empieza aquí</p>
             </div>
-            <div className="flex justify-center mb-2">
+            <div className="flex justify-center mb-6">
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center w-full max-w-sm">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Retainer inicial</p>
                 <p className="text-4xl font-bold text-[#000000] mb-2">100€</p>
-                <p className="text-gray-400 text-xs leading-relaxed">Se abona al inicio. Se descuenta del siguiente paso si incorporas al alumno.</p>
+                <p className="text-gray-400 text-xs leading-relaxed">Se abona al arrancar el proceso. Se descuenta del siguiente paso en ambas opciones.</p>
               </div>
             </div>
 
-            {/* Flecha */}
-            <div className="flex items-center justify-center my-4">
+            {/* Flecha que se divide */}
+            <div className="flex items-center justify-center mb-4">
               <svg className="w-6 h-6 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </div>
 
-            {/* PASO 2 */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                <span className="text-white text-sm font-bold">2</span>
-              </div>
-              <p className="text-sm font-bold text-[#000000]">Si incorporas al alumno en prácticas</p>
-            </div>
-            <div className="flex justify-center mb-2">
-              <div className="bg-white rounded-2xl p-6 shadow-sm border-2 border-[#3BB54A] text-center w-full max-w-sm">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Alumno FP · Prácticas o Dual</p>
-                <p className="text-4xl font-bold text-[#000000] mb-2">250€</p>
-                <p className="text-gray-400 text-xs leading-relaxed">Se abona al confirmar la incorporación. El retainer de 100€ ya está descontado. Sin coste salarial para la empresa.</p>
-              </div>
-            </div>
+            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Elige tu camino</p>
 
-            {/* Flecha */}
-            <div className="flex items-center justify-center my-4">
-              <svg className="w-6 h-6 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
+            {/* Dos caminos */}
+            <div className="grid md:grid-cols-2 gap-6 mb-4">
 
-            {/* PASO 3 */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-[#000000] flex items-center justify-center flex-shrink-0">
-                <span className="text-white text-sm font-bold">3</span>
+              {/* Camino A */}
+              <div className="bg-white rounded-2xl p-6 border-2 border-[#3BB54A]">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino A</p>
+                <p className="text-sm font-bold text-[#000000] mb-4">Primero prácticas, luego decides</p>
+                <div className="space-y-3">
+                  <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
+                    <p className="text-xs text-gray-400 mb-1">Al incorporar al alumno en prácticas</p>
+                    <p className="text-2xl font-bold text-[#000000]">250€</p>
+                    <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado · Sin coste salarial</p>
+                  </div>
+                  <div className="flex justify-center">
+                    <svg className="w-4 h-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                  <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
+                    <p className="text-xs text-gray-400 mb-1">Si tras las prácticas le contratas</p>
+                    <p className="text-2xl font-bold text-[#000000]">400€</p>
+                    <p className="text-xs text-gray-400 mt-1">Solo si decides dar el paso</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-sm font-bold text-[#000000]">Si tras las prácticas decides contratarle</p>
-            </div>
-            <div className="flex justify-center mb-6">
-              <div className="bg-[#000000] rounded-2xl p-6 shadow-sm text-center w-full max-w-sm">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Contrato junior</p>
-                <p className="text-4xl font-bold text-white mb-2">400€</p>
-                <p className="text-gray-400 text-xs leading-relaxed">Se abona al formalizar el contrato. Ya conoces a la persona — llevas meses trabajando con ella.</p>
+
+              {/* Camino B */}
+              <div className="bg-[#000000] rounded-2xl p-6 border-2 border-gray-700">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino B</p>
+                <p className="text-sm font-bold text-white mb-4">Contrato junior directo</p>
+                <div className="space-y-3">
+                  <div className="bg-white/10 rounded-xl p-4 text-center">
+                    <p className="text-xs text-gray-400 mb-1">Al incorporar al perfil junior</p>
+                    <p className="text-2xl font-bold text-white">400€</p>
+                    <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado</p>
+                  </div>
+                </div>
               </div>
             </div>
 
