@@ -44,7 +44,7 @@ export default function Empresas() {
               <span className="text-[#3BB54A]">Sin salario. Sin papeleo. Sin complicaciones.</span>
             </h1>
             <p className="text-lg text-white/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Conectamos tu pyme con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
+              Conectamos tu pyme o startup con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
@@ -92,7 +92,7 @@ export default function Empresas() {
                 {
                   dato: "22-26h",
                   titulo: "consume un proceso de selección interno",
-                  desc: "Redactar la oferta, publicar, cribar CVs, llamadas, entrevistas... Horas que el gerente de una pyme no tiene.",
+                  desc: "Redactar la oferta, publicar, cribar CVs, llamadas, entrevistas... Horas que el gerente de una pyme o startup no tiene.",
                   fuente: "InfoJobs RRHH",
                 },
                 {
@@ -136,7 +136,7 @@ export default function Empresas() {
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nueva línea de servicio</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Talento FP en tu empresa.<br />Sin coste salarial.</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-              Conectamos tu pyme con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
+              Conectamos tu pyme o startup con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
             </p>
           </div>
 
