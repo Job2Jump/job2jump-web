@@ -162,6 +162,7 @@ export default function Practicas() {
               </p>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
+                  "1 sesión de 60 min con orientadora laboral",
                   "Asesoramiento laboral y plan de carrera personalizado para tu profesión",
                   "CV atractivo y perfil de LinkedIn optimizado para que te encuentren",
                   "Técnicas y trucos reales para superar cualquier entrevista con seguridad",
@@ -192,6 +193,7 @@ export default function Practicas() {
               </p>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
+                  "3 sesiones de 60 min con orientadora laboral",
                   "CV actualizado y LinkedIn optimizado para atraer a los reclutadores correctos",
                   "Asesoramiento laboral y plan de carrera adaptado a tu perfil y sector",
                   "Role plays de entrevistas reales para que llegues sin nervios",
