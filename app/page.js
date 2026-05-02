@@ -160,16 +160,8 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige tu punto de partida</h2>
             <p className="text-gray-500 mt-4 max-w-xl mx-auto">Sin letra pequeña. Sin compromisos. Si en la sesión gratuita vemos que no podemos ayudarte, te lo decimos.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
-              {
-                nombre: "Pack Básico",
-                precio: "29,90€",
-                desc: "Para empezar con buen pie",
-                items: ["Vídeo CV profesional genérico", "Optimización de LinkedIn", "Plantilla de CV descargable"],
-                href: "/practicas",
-                destacado: false,
-              },
               {
                 nombre: "Pack Medio",
                 precio: "99,90€",
