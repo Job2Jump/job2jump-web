@@ -217,10 +217,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4 order-2 md:order-1">
               {[
-                { titulo: "Sin tiempo para seleccionar", desc: "Un proceso de selección interno consume entre 20 y 30 horas. Horas que tu empresa no tiene." },
-                { titulo: "Sin candidatos de calidad", desc: "Los portales de empleo generan volumen. Nosotros generamos calidad. Hay diferencia." },
-                { titulo: "Sin papeleos ni trámites", desc: "Convenios de prácticas, contratos, documentación con centros formativos. Nosotros lo gestionamos todo. Tú solo firmas." },
-                { titulo: "Con garantía de resultado", desc: "Si la incorporación no funciona, buscamos un sustituto sin coste adicional. Sin excusas." },
+                { titulo: "Sin coste salarial", desc: "Alumnos de FP en prácticas sin salario ni contrato. Tú solo firmas el convenio — nosotros lo tramitamos todo." },
+                { titulo: "Sin papeleos ni trámites", desc: "Convenios, alta en la Seguridad Social, documentación con el instituto. Lo gestionamos nosotros de principio a fin." },
+                { titulo: "Perfiles listos para trabajar", desc: "Informática, marketing, administración, comercial... Formados en lo que tu empresa necesita." },
+                { titulo: "Con garantía de sustitución", desc: "Si el alumno no encaja, buscamos otro sin coste adicional. Sin excusas." },
               ].map((item, i) => (
                 <div key={i} className="bg-[#F0F4F8] rounded-2xl p-5 border border-gray-100">
                   <div className="w-8 h-8 bg-[#000000]/5 rounded-lg flex items-center justify-center mb-3">
@@ -232,15 +232,15 @@ export default function Home() {
               ))}
             </div>
             <div className="order-1 md:order-2">
-              <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes</span>
+              <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
               <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
-                ¿Eres una empresa?<br />También estamos para ti.
+                Talento joven en tu empresa.<br />Sin salario. Sin papeleo.
               </h2>
               <p className="text-gray-500 mb-8 leading-relaxed">
-                Somos el departamento de talento joven que las pymes no pueden permitirse tener. Buscamos, filtramos y te presentamos a las personas adecuadas — tú solo decides a quién contratas.
+                Conectamos tu empresa con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti — nosotros gestionamos todo el proceso. Tú solo recibes el perfil y decides.
               </p>
               <p className="text-gray-500 mb-10 leading-relaxed">
-                350€ por becario. 500€ por junior. Solo si contratas. Con garantía de sustitución.
+                100€ para arrancar + 250€ al incorporar al alumno. Solo pagas si hay resultado.
               </p>
               <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
                 Ver cómo funciona para empresas
