@@ -287,42 +287,67 @@ export default function Empresas() {
             <p className="text-gray-500 mt-4">3 a 5 veces más barato que una consultora tradicional.</p>
           </div>
           <div className="bg-[#F0F4F8] rounded-2xl p-10 border border-gray-100">
-            {/* Retainer — fila superior */}
-            <div className="flex justify-center mb-4">
-              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center w-full max-w-xs">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-3">Retainer inicial</p>
-                <p className="text-4xl font-bold text-[#000000] mb-3">100€</p>
-                <p className="text-gray-400 text-xs leading-relaxed">Al arrancar el proceso. Se descuenta del success fee si hay contratación.</p>
+
+            {/* PASO 1 */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-sm font-bold">1</span>
+              </div>
+              <p className="text-sm font-bold text-[#000000]">Para arrancar el proceso</p>
+            </div>
+            <div className="flex justify-center mb-2">
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center w-full max-w-sm">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Retainer inicial</p>
+                <p className="text-4xl font-bold text-[#000000] mb-2">100€</p>
+                <p className="text-gray-400 text-xs leading-relaxed">Se abona al inicio. Se descuenta del siguiente paso si incorporas al alumno.</p>
               </div>
             </div>
 
-            {/* Separador */}
-            <div className="flex items-center justify-center mb-4">
-              <p className="text-3xl font-bold text-[#3BB54A]">+</p>
+            {/* Flecha */}
+            <div className="flex items-center justify-center my-4">
+              <svg className="w-6 h-6 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </div>
 
-            {/* Success fees — fila inferior */}
-            <div className="grid md:grid-cols-2 gap-6 text-center mb-6 max-w-2xl mx-auto">
-              {[
-                {
-                  concepto: "Alumno FP · Prácticas o Dual",
-                  precio: "250€",
-                  desc: "Sin coste salarial para la empresa. Nosotros buscamos al alumno y gestionamos todo el convenio. Retainer ya descontado.",
-                },
-                {
-                  concepto: "Contrato junior",
-                  precio: "400€",
-                  desc: "Success fee al confirmar la incorporación. Retainer ya descontado.",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-3">{item.concepto}</p>
-                  <p className="text-4xl font-bold text-[#000000] mb-3">{item.precio}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+            {/* PASO 2 */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-sm font-bold">2</span>
+              </div>
+              <p className="text-sm font-bold text-[#000000]">Si incorporas al alumno en prácticas</p>
             </div>
-            <p className="text-center text-xs text-gray-400 mb-8">IVA no incluido</p>
+            <div className="flex justify-center mb-2">
+              <div className="bg-white rounded-2xl p-6 shadow-sm border-2 border-[#3BB54A] text-center w-full max-w-sm">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Alumno FP · Prácticas o Dual</p>
+                <p className="text-4xl font-bold text-[#000000] mb-2">250€</p>
+                <p className="text-gray-400 text-xs leading-relaxed">Se abona al confirmar la incorporación. El retainer de 100€ ya está descontado. Sin coste salarial para la empresa.</p>
+              </div>
+            </div>
+
+            {/* Flecha */}
+            <div className="flex items-center justify-center my-4">
+              <svg className="w-6 h-6 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+
+            {/* PASO 3 */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-full bg-[#000000] flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-sm font-bold">3</span>
+              </div>
+              <p className="text-sm font-bold text-[#000000]">Si tras las prácticas decides contratarle</p>
+            </div>
+            <div className="flex justify-center mb-6">
+              <div className="bg-[#000000] rounded-2xl p-6 shadow-sm text-center w-full max-w-sm">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Contrato junior</p>
+                <p className="text-4xl font-bold text-white mb-2">400€</p>
+                <p className="text-gray-400 text-xs leading-relaxed">Se abona al formalizar el contrato. Ya conoces a la persona — llevas meses trabajando con ella.</p>
+              </div>
+            </div>
+
+            <p className="text-center text-xs text-gray-400 mb-8">Todos los precios sin IVA · Solo pagas si hay resultado</p>
             <div className="border-t border-gray-200 pt-8">
               <p className="text-center text-sm font-bold text-[#000000] mb-4">Incluido en todos los procesos:</p>
               <div className="grid md:grid-cols-2 gap-3 max-w-xl mx-auto">
