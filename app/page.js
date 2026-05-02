@@ -189,29 +189,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CÓMO FUNCIONA */}
-      <section id="como-funciona" className="py-24 bg-[#F0F4F8]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">El proceso</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Tres pasos y estás dentro</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 relative">
-            {[
-              { num: "01", title: "Sesión gratuita de 15 min", desc: "Nos cuentas tu situación, qué buscas y hacia dónde quieres ir. Sin compromiso." },
-              { num: "02", title: "Trabajamos tu candidatura", desc: "CV, LinkedIn, estrategia de búsqueda y preparación para entrevistas. Todo personalizado." },
-              { num: "03", title: "Das el salto", desc: "Buscamos activamente por ti y te acompañamos hasta que tengas el sí." },
-            ].map((step, i) => (
-              <div key={i} className="flex flex-col items-center text-center bg-white rounded-2xl p-10">
-                <span className="text-6xl font-bold text-[#3BB54A]/20 mb-4 leading-none">{step.num}</span>
-                <h3 className="text-lg font-bold text-[#000000] mb-3">{step.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA FINAL */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
