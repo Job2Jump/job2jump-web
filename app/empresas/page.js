@@ -37,7 +37,7 @@ export default function Empresas() {
           {/* Título */}
           <div className="text-center mb-16">
             <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
-              Para pymes · Perfiles FP y junior sin coste salarial
+              Para pymes y startups · Perfiles FP y junior sin coste salarial
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Talento joven en tu empresa.<br />
@@ -302,7 +302,7 @@ export default function Empresas() {
             </div>
 
             {/* Success fees — fila inferior */}
-            <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
+            <div className="grid md:grid-cols-2 gap-6 text-center mb-6 max-w-2xl mx-auto">
               {[
                 {
                   concepto: "Alumno FP · Prácticas o Dual",
@@ -313,11 +313,6 @@ export default function Empresas() {
                   concepto: "Contrato junior",
                   precio: "400€",
                   desc: "Success fee al confirmar la incorporación. Retainer ya descontado.",
-                },
-                {
-                  concepto: "Perfil senior",
-                  precio: "850€",
-                  desc: "Success fee para perfiles con experiencia. Proceso personalizado.",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all">
