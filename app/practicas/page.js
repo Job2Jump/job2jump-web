@@ -143,75 +143,74 @@ export default function Practicas() {
       </section>
 
       {/* PLANES */}
-      <section id="planes" className="py-24 bg-[#F0F4F8]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
+      <section id="planes" className="py-16 bg-[#F0F4F8]">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="text-center mb-10">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige cómo quieres empezar</h2>
-            <p className="text-gray-500 mt-4">Todos incluyen sesión inicial gratuita de 15 min.</p>
+            <h2 className="text-3xl font-bold text-[#000000] mt-2">Elige cómo quieres empezar</h2>
+            <p className="text-gray-500 text-sm mt-2">Todos incluyen sesión inicial gratuita de 15 min.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[{
-                nombre: "Pack Medio",
-                precio: "99,90€",
-                desc: "El más popular",
-                bg: "bg-[#000000]",
-                textP: "text-white",
-                textS: "text-gray-300",
-                btn: "bg-[#3BB54A] text-white hover:bg-[#2ea03c]",
-                checkBg: "bg-[#3BB54A]",
-                badge: "Más popular",
-                items: [
-                  "1 sesión de 60 min con orientadora",
-                  "Autoconocimiento y salidas profesionales",
-                  "LinkedIn en vivo durante la sesión",
-                  "Informe personalizado con plan de acción",
-                ],
-              },
-              {
-                nombre: "Pack Premium",
-                precio: "199€",
-                desc: "Resultados garantizados",
-                bg: "bg-[#3BB54A]",
-                textP: "text-white",
-                textS: "text-white/80",
-                btn: "bg-white text-[#000000] hover:bg-gray-100",
-                checkBg: "bg-white/30",
-                badge: "Más completo",
-                items: [
-                  "3 sesiones de 60 min con orientadora",
-                  "Simulación real de entrevistas",
-                  "Búsqueda activa de prácticas incluida",
-                  "Soporte por WhatsApp y email",
-                ],
-              },
-            ].map((pack, i) => (
-              <div key={i} className={`${pack.bg} rounded-2xl p-8 shadow-sm flex flex-col relative`}>
-                {pack.badge && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">
-                    {pack.badge}
-                  </span>
-                )}
-                <p className={`text-xs font-semibold uppercase tracking-widest ${pack.textS} mb-2`}>{pack.desc}</p>
-                <h3 className={`text-xl font-bold ${pack.textP} mb-1`}>{pack.nombre}</h3>
-                <p className={`text-4xl font-bold ${pack.textP} mb-6`}>{pack.precio}</p>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {pack.items.map((item, j) => (
-                    <li key={j} className={`flex items-start gap-3 text-sm ${pack.textS}`}>
-                      <div className={`w-5 h-5 rounded-full ${pack.checkBg} flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <a href="mailto:hola@job2jump.es" className={`block text-center py-3.5 rounded-full font-semibold text-sm transition ${pack.btn}`}>
-                  Quiero este pack
-                </a>
-              </div>
-            ))}
+
+            {/* Pack Medio */}
+            <div className="bg-[#000000] rounded-2xl p-8 shadow-sm flex flex-col relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">Más popular</span>
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">Pack Medio · 99,90€</p>
+              <h3 className="text-xl font-bold text-white mb-2">Prepárate para destacar</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-5">
+                Ideal si tu instituto ya te busca las prácticas o tienes tiempo para buscar empleo por tu cuenta, pero no sabes cómo superar las entrevistas ni cómo presentarte para que te elijan a ti.
+              </p>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  "Asesoramiento laboral y plan de carrera personalizado para tu profesión",
+                  "CV atractivo y perfil de LinkedIn optimizado para que te encuentren",
+                  "Técnicas y trucos reales para superar cualquier entrevista con seguridad",
+                ].map((item, j) => (
+                  <li key={j} className="flex items-start gap-3 text-sm text-gray-300">
+                    <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-[#3BB54A] text-white hover:bg-[#2ea03c]">
+                Quiero este plan
+              </a>
+            </div>
+
+            {/* Pack Premium */}
+            <div className="bg-[#3BB54A] rounded-2xl p-8 shadow-sm flex flex-col relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">Más completo</span>
+              <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-1">Pack Premium · 199€</p>
+              <h3 className="text-xl font-bold text-white mb-2">Nosotros buscamos por ti</h3>
+              <p className="text-white/90 text-sm leading-relaxed mb-5">
+                Ideal si no tienes tiempo ni ganas de buscar tú mismo. Analizamos tu perfil, te preparamos a fondo y nos movemos en tu nombre ante las empresas que más encajan contigo. Ahorra tiempo y ve a tiro hecho.
+              </p>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  "CV actualizado y LinkedIn optimizado para atraer a los reclutadores correctos",
+                  "Asesoramiento laboral y plan de carrera adaptado a tu perfil y sector",
+                  "Role plays de entrevistas reales para que llegues sin nervios",
+                  "Movemos tu CV en nuestra base de datos de +10.000 contactos y empresas potenciales",
+                ].map((item, j) => (
+                  <li key={j} className="flex items-start gap-3 text-sm text-white/90">
+                    <div className="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-white text-[#000000] hover:bg-gray-100">
+                Quiero este plan
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
