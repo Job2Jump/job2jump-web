@@ -201,85 +201,64 @@ export default function Empresas() {
       </section>
 
       {/* PRECIOS */}
-      <section id="precios" className="py-24 bg-white">
+      <section id="precios" className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Precios</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Claro, sencillo y sin sorpresas</h2>
-            <p className="text-gray-500 mt-4">3 a 5 veces más barato que una consultora tradicional.</p>
+            <h2 className="text-3xl font-bold text-[#000000] mt-2">Claro, sencillo y sin sorpresas</h2>
+            <p className="text-gray-500 text-sm mt-2">3 a 5 veces más barato que una consultora tradicional.</p>
           </div>
-          <div className="bg-[#F0F4F8] rounded-2xl p-10 border border-gray-100">
+          <div className="bg-[#F0F4F8] rounded-2xl p-6 border border-gray-100">
 
-            {/* Retainer — siempre primero */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                <span className="text-white text-sm font-bold">1</span>
-              </div>
-              <p className="text-sm font-bold text-[#000000]">Siempre se empieza aquí</p>
-            </div>
-            <div className="flex justify-center mb-6">
-              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center w-full max-w-sm">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Retainer inicial</p>
-                <p className="text-4xl font-bold text-[#000000] mb-2">100€</p>
-                <p className="text-gray-400 text-xs leading-relaxed">Se abona al arrancar el proceso. Se descuenta del siguiente paso en ambas opciones.</p>
-              </div>
-            </div>
+            {/* Fila única: Retainer + flecha + dos caminos */}
+            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
 
-            {/* Flecha que se divide */}
-            <div className="flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {/* Retainer */}
+              <div className="bg-white rounded-xl px-6 py-4 border border-gray-100 text-center flex-shrink-0 w-full md:w-48">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Retainer inicial</p>
+                <p className="text-3xl font-bold text-[#000000]">100€</p>
+                <p className="text-gray-400 text-xs mt-1">Al arrancar · se descuenta</p>
+              </div>
+
+              {/* Flecha */}
+              <svg className="w-5 h-5 text-[#3BB54A] rotate-0 md:rotate-[-90deg] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </div>
-
-            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Elige tu camino</p>
-
-            {/* Dos caminos */}
-            <div className="grid md:grid-cols-2 gap-6 mb-4">
 
               {/* Camino A */}
-              <div className="bg-white rounded-2xl p-6 border-2 border-[#3BB54A]">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino A</p>
-                <p className="text-sm font-bold text-[#000000] mb-4">Primero prácticas, luego decides</p>
-                <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
-                  <p className="text-xs text-gray-400 mb-1">Al incorporar al alumno en prácticas</p>
-                  <p className="text-2xl font-bold text-[#000000]">250€</p>
-                  <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado · Sin coste salarial</p>
-                </div>
+              <div className="bg-white rounded-xl px-5 py-4 border-2 border-[#3BB54A] flex-1 w-full">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-0.5">Camino A</p>
+                <p className="text-sm font-bold text-[#000000] mb-1">Prácticas, luego decides</p>
+                <p className="text-2xl font-bold text-[#000000]">250€</p>
+                <p className="text-xs text-[#3BB54A] font-medium">Sin coste salarial</p>
               </div>
 
               {/* Camino B */}
-              <div className="bg-[#F0F4F8] rounded-2xl p-6 border-2 border-gray-200">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino B</p>
-                <p className="text-sm font-bold text-[#000000] mb-4">Contrato junior directo</p>
-                <div className="bg-white rounded-xl p-4 text-center">
-                  <p className="text-xs text-gray-400 mb-1">Al incorporar al perfil junior</p>
-                  <p className="text-2xl font-bold text-[#000000]">400€</p>
-                  <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado</p>
-                </div>
+              <div className="bg-white rounded-xl px-5 py-4 border-2 border-gray-200 flex-1 w-full">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-0.5">Camino B</p>
+                <p className="text-sm font-bold text-[#000000] mb-1">Contrato junior directo</p>
+                <p className="text-2xl font-bold text-[#000000]">400€</p>
+                <p className="text-xs text-gray-400 font-medium">Retainer ya descontado</p>
               </div>
             </div>
 
-            <p className="text-center text-xs text-gray-400 mb-8">Todos los precios sin IVA · Solo pagas si hay resultado</p>
-            <div className="border-t border-gray-200 pt-8">
-              <p className="text-center text-sm font-bold text-[#000000] mb-4">Incluido en todos los procesos:</p>
-              <div className="grid md:grid-cols-2 gap-3 max-w-xl mx-auto">
-                {[
-                  "Garantía de sustitución gratuita",
-                  "Gestión completa de la documentación",
-                  "3-4 candidatos filtrados por proceso",
-                  "Proceso completo en 2-4 semanas",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                    <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    {item}
+            <p className="text-xs text-gray-400 text-center mb-4">Todos los precios sin IVA · Solo pagas si hay resultado</p>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              {[
+                "Garantía de sustitución gratuita",
+                "Gestión completa de la documentación",
+                "3-4 candidatos filtrados",
+                "Proceso en 2-4 semanas",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-1.5 text-xs text-gray-600">
+                  <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
                   </div>
-                ))}
-              </div>
+                  {item}
+                </div>
+              ))}
             </div>
           </div>
         </div>
