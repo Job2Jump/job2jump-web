@@ -227,8 +227,8 @@ export default function Empresas() {
                 {
                   icono: "📊",
                   nombre: "Administración y gestión",
-                  desc: "Facturación, contabilidad básica, RRHH y atención al cliente. El perfil más solicitado por pymes de cualquier sector.",
-                  tags: ["Facturación", "Contabilidad", "RRHH", "Atención cliente"],
+                  desc: "¿Cuántas horas pierdes tú o tu equipo con facturas, presupuestos, seguimiento de pagos y papeleo? Este perfil se encarga de todo eso. Formado, con ganas y sin coste salarial.",
+                  tags: ["Facturación", "Contabilidad básica", "Presupuestos", "RRHH", "Atención cliente", "Gestión documental"],
                 },
                 {
                   icono: "🛒",
