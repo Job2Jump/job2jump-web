@@ -219,6 +219,66 @@ export default function Practicas() {
         </div>
       </section>
 
+      {/* DATOS OFICIALES */}
+      <section className="py-24 bg-[#F0F4F8]">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">El mercado laboral para jóvenes en España</h2>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Cifras reales que explican por qué prepararse bien marca la diferencia.</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+            {[
+              {
+                valor: "28%",
+                label: "tasa de paro entre jóvenes menores de 25 años en España",
+                fuente: "Eurostat, 2024",
+              },
+              {
+                valor: "6 seg",
+                label: "es el tiempo medio que un reclutador dedica a leer un CV antes de decidir",
+                fuente: "The Ladders / LinkedIn Research",
+              },
+              {
+                valor: "87%",
+                label: "de los reclutadores usa LinkedIn para buscar y evaluar candidatos",
+                fuente: "LinkedIn Global Recruiting Trends",
+              },
+              {
+                valor: "1 de 3",
+                label: "ofertas de empleo junior exige experiencia previa, aunque sea una beca",
+                fuente: "Infojobs / Adecco — Informe mercado laboral",
+              },
+            ].map((d, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+                <p className="text-4xl font-bold text-[#000000] mb-2">{d.valor}</p>
+                <p className="text-sm text-gray-600 leading-snug mb-3">{d.label}</p>
+                <p className="text-xs text-gray-400 italic">{d.fuente}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-[#000000] rounded-2xl p-8 text-white">
+              <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">La paradoja de la experiencia</p>
+              <p className="text-3xl font-bold mb-2">Sin experiencia no te contratan.<br />Sin contrato no tienes experiencia.</p>
+              <p className="text-gray-400 text-sm leading-relaxed mt-4">
+                Las prácticas rompen ese círculo. Son la vía más directa para conseguir tu primera experiencia real y diferenciarte del resto de candidatos con tu mismo perfil.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+              <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">LinkedIn: el nuevo CV</p>
+              <p className="text-3xl font-bold text-[#000000] mb-2">+40% más de respuestas</p>
+              <p className="text-gray-500 text-sm leading-relaxed mb-2">
+                Los candidatos con un perfil de LinkedIn optimizado reciben hasta un 40% más de respuestas de reclutadores que los que tienen un perfil incompleto o desactualizado.
+              </p>
+              <p className="text-gray-400 text-xs italic">LinkedIn Talent Solutions Report</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
