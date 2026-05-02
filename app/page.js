@@ -38,22 +38,22 @@ export default function Home() {
           {/* Titular */}
           <div className="text-center mb-6 md:mb-16">
             <span className="hidden md:inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
-              Para jóvenes que buscan empleo · Para empresas que buscan talento
+              Para talento junior · Para pymes y startups
             </span>
             <h1 className="text-3xl md:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight">
-              Tu primer empleo no debería<br />
-              <span className="text-[#3BB54A]">ser un golpe de suerte.</span>
+              Conectamos talento joven<br />
+              <span className="text-[#3BB54A]">con empresas que lo necesitan.</span>
             </h1>
             <p className="text-sm md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-0 md:mb-10 hidden md:block">
-              Te preparamos para destacar, trabajamos tu CV y LinkedIn, y buscamos activamente las oportunidades que encajan contigo.
+              Si buscas prácticas o tu primer empleo, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado sin coste salarial ni papeleo.
             </p>
           </div>
 
           {/* 2 Tarjetas — joven primero, empresa segundo */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
 
-            {/* Card joven — protagonista */}
-            <a href="/jovenes" className="md:col-span-3 group bg-[#3BB54A]/10 backdrop-blur-sm border-2 border-[#3BB54A]/50 rounded-3xl p-6 md:p-10 hover:bg-[#3BB54A] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+            {/* Card joven */}
+            <a href="/jovenes" className="group bg-[#3BB54A]/10 backdrop-blur-sm border-2 border-[#3BB54A]/50 rounded-3xl p-6 md:p-10 hover:bg-[#3BB54A] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
               <div className="w-10 h-10 md:w-14 md:h-14 bg-[#3BB54A] group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
                 <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
@@ -70,8 +70,8 @@ export default function Home() {
               </span>
             </a>
 
-            {/* Card empresa — secundaria */}
-            <a href="/empresas" className="md:col-span-2 group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-6 md:p-10 hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+            {/* Card empresa */}
+            <a href="/empresas" className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-6 md:p-10 hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
               <div className="w-10 h-10 md:w-14 md:h-14 bg-white/10 group-hover:bg-[#3BB54A] rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
                 <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
               </div>
@@ -97,9 +97,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { valor: "73%", label: "de los jóvenes tarda más de 6 meses en encontrar su primer empleo", fuente: "Adecco" },
-              { valor: "6s", label: "tarda un reclutador en revisar un CV. El tuyo tiene que funcionar.", fuente: "Ladders" },
-              { valor: "8/10", label: "ofertas de trabajo nunca se publican. Hay que saber moverse.", fuente: "LinkedIn" },
+              { valor: "0€", label: "coste salarial para pymes que acogen alumnos de FP en prácticas", fuente: "Job2Jump" },
+              { valor: "1 de 3", label: "alumnos en prácticas acaba contratado por la misma empresa", fuente: "Job2Jump" },
+              { valor: "80%", label: "de pymes tiene dificultades para cubrir vacantes con perfiles adecuados", fuente: "ManpowerGroup 2024" },
               { valor: "99€", label: "sesión personalizada de orientación, CV y LinkedIn en vivo", fuente: "Job2Jump" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
