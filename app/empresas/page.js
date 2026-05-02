@@ -126,32 +126,32 @@ export default function Empresas() {
                 {
                   icono: "💻",
                   nombre: "Informática y desarrollo",
-                  desc: "¿Tu web está desactualizada, tu sistema falla o nadie tiene tiempo de arreglarlo? Este perfil lo resuelve. Formado en las tecnologías que usas, listo para ponerse a trabajar desde el primer día.",
+                  desc: "Web, apps, sistemas y soporte técnico. Listo para trabajar con tus herramientas desde el primer día.",
                   tags: ["Desarrollo web", "Apps móviles", "Sistemas IT", "Soporte técnico"],
                 },
                 {
                   icono: "📣",
                   nombre: "Marketing digital",
-                  desc: "Captación de leads, gestión de redes sociales, publicidad online y creación de contenido. Incorpora a alguien que ya sabe usar las herramientas que tu negocio necesita para crecer.",
-                  tags: ["Captación de leads", "Redes sociales", "SEO/SEM", "Publicidad online", "Contenido"],
+                  desc: "Capta leads, gestiona redes sociales y lanza campañas. Sin que tengas que hacerlo tú.",
+                  tags: ["Captación de leads", "Redes sociales", "SEO/SEM", "Publicidad online"],
                 },
                 {
                   icono: "📊",
                   nombre: "Administración y gestión",
-                  desc: "¿Cuántas horas pierdes tú o tu equipo con facturas, presupuestos, seguimiento de pagos y papeleo? Este perfil se encarga de todo eso. Formado, con ganas y sin coste salarial.",
-                  tags: ["Facturación", "Contabilidad básica", "Presupuestos", "RRHH", "Atención cliente", "Gestión documental"],
+                  desc: "Facturas, presupuestos, RRHH y papeleo. Todo lo que te quita horas, resuelto.",
+                  tags: ["Facturación", "Contabilidad", "RRHH", "Atención cliente"],
                 },
                 {
                   icono: "🛒",
                   nombre: "Comercial y logística",
-                  desc: "¿Te faltan manos para gestionar pedidos, atender clientes o mantener el almacén en orden? Este perfil libera a tu equipo de las tareas del día a día para que puedas enfocarte en crecer.",
-                  tags: ["Ventas", "Atención cliente", "Ecommerce", "Almacén", "Logística"],
+                  desc: "Gestión de pedidos, atención al cliente y almacén. Libera a tu equipo para lo importante.",
+                  tags: ["Ventas", "Ecommerce", "Almacén", "Logística"],
                 },
                 {
                   icono: "🔒",
                   nombre: "Ciberseguridad y datos",
-                  desc: "¿Sabes lo que le costaría a tu empresa un ciberataque o una fuga de datos? Este perfil protege tu negocio y organiza tu información. El más escaso del mercado — y el que más van a necesitar las empresas en los próximos años.",
-                  tags: ["Ciberseguridad", "Protección de datos", "Cloud", "Big Data", "IA"],
+                  desc: "Protege tu negocio y organiza tu información. El perfil más escaso y más demandado del mercado.",
+                  tags: ["Ciberseguridad", "Protección de datos", "Cloud", "Big Data"],
                 },
               ].map((p, i) => (
                 <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all flex gap-4">
