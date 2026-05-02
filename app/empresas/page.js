@@ -72,58 +72,6 @@ export default function Empresas() {
             ))}
           </div>
 
-          {/* Datos */}
-          <div className="mb-4">
-            <p className="text-center text-white/50 text-xs font-semibold uppercase tracking-widest mb-8">La realidad del mercado laboral español</p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-              {[
-                {
-                  dato: "80%",
-                  titulo: "de las pymes no encuentran lo que buscan",
-                  desc: "8 de cada 10 pymes españolas tienen dificultades para cubrir sus vacantes con perfiles adecuados.",
-                  fuente: "ManpowerGroup 2024",
-                },
-                {
-                  dato: "10%",
-                  titulo: "de empresas consigue el perfil adecuado",
-                  desc: "Solo 1 de cada 10 empresas logra cubrir la vacante con el candidato correcto. El 90% restante falla o se conforma.",
-                  fuente: "Hays, Guía del Mercado Laboral 2025",
-                },
-                {
-                  dato: "22-26h",
-                  titulo: "consume un proceso de selección interno",
-                  desc: "Redactar la oferta, publicar, cribar CVs, llamadas, entrevistas... Horas que el gerente de una pyme o startup no tiene.",
-                  fuente: "InfoJobs RRHH",
-                },
-                {
-                  dato: "7.400€",
-                  titulo: "cuesta de media reemplazar a un empleado",
-                  desc: "Cada vez que una contratación no funciona y hay que repetir el proceso, la empresa pierde 7.400€ de golpe.",
-                  fuente: "Ricoh / CEBR",
-                },
-                {
-                  dato: "17%",
-                  titulo: "de digitalización en pymes vs 54% en grandes",
-                  desc: "La brecha digital entre pymes y grandes empresas es enorme. Incorporar talento joven es la vía más rápida y barata de cerrarla.",
-                  fuente: "Ministerio de Industria / España Digital 2026",
-                },
-                {
-                  dato: "407.900",
-                  titulo: "jóvenes cualificados sin trabajo en España",
-                  desc: "El problema no es que no haya candidatos. Es que nadie los está conectando con las pymes que los necesitan.",
-                  fuente: "INE / EPA 2025",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                  <p className="text-4xl font-bold text-[#3BB54A] mb-2">{item.dato}</p>
-                  <h3 className="text-sm font-bold text-white mb-2 leading-snug">{item.titulo}</h3>
-                  <p className="text-white/60 text-xs leading-relaxed mb-3">{item.desc}</p>
-                  <p className="text-xs text-white/40 font-medium">Fuente: {item.fuente}</p>
-                </div>
-              ))}
-            </div>
-
-          </div>
 
         </div>
       </section>
