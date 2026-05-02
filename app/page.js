@@ -15,9 +15,6 @@ export default function Home() {
             <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
           </div>
           <div className="flex items-center gap-3">
-            <a href="/empresas" className="hidden md:inline-block border border-[#000000] text-[#000000] px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#000000] hover:text-white transition">
-              Soy empresa
-            </a>
             <a href="/sesion-gratuita" className="bg-[#3BB54A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
               Sesión gratuita
             </a>
