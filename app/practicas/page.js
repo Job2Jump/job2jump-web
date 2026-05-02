@@ -130,25 +130,8 @@ export default function Practicas() {
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige cómo quieres empezar</h2>
             <p className="text-gray-500 mt-4">Todos incluyen sesión inicial gratuita de 15 min.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                nombre: "Pack Básico",
-                precio: "29,90€",
-                desc: "Para empezar con buen pie",
-                bg: "bg-white",
-                textP: "text-[#000000]",
-                textS: "text-gray-500",
-                btn: "bg-[#000000] text-white hover:bg-[#222222]",
-                checkBg: "bg-[#3BB54A]",
-                badge: null,
-                items: [
-                  "Vídeo: cómo hacer un CV que destaque",
-                  "Cómo optimizar tu LinkedIn paso a paso",
-                  "Plantilla de CV profesional descargable",
-                ],
-              },
-              {
+          <div className="grid md:grid-cols-2 gap-6">
+            {[{
                 nombre: "Pack Medio",
                 precio: "99,90€",
                 desc: "El más popular",
