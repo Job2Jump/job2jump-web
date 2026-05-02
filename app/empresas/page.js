@@ -300,6 +300,69 @@ export default function Empresas() {
         </div>
       </section>
 
+      {/* DATOS OFICIALES */}
+      <section className="py-24 bg-[#F0F4F8]">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">El mercado de talento joven en España</h2>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Cifras reales que explican por qué cada vez más pymes apuestan por este modelo.</p>
+          </div>
+
+          {/* Fila 1 — 4 datos grandes */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+            {[
+              {
+                valor: "+940.000",
+                label: "alumnos matriculados en FP en España",
+                fuente: "Ministerio de Educación, curso 2022-23",
+              },
+              {
+                valor: "100%",
+                label: "de los alumnos de FP deben hacer prácticas para titular",
+                fuente: "RD 659/2023 — Ley Orgánica de FP",
+              },
+              {
+                valor: "28%",
+                label: "tasa de paro juvenil en España (menores de 25 años)",
+                fuente: "Eurostat, 2024",
+              },
+              {
+                valor: "+3M",
+                label: "pymes en España, el 99,8% del tejido empresarial",
+                fuente: "INE / Retrato de las pymes 2023",
+              },
+            ].map((d, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+                <p className="text-4xl font-bold text-[#000000] mb-2">{d.valor}</p>
+                <p className="text-sm text-gray-600 leading-snug mb-3">{d.label}</p>
+                <p className="text-xs text-gray-400 italic">{d.fuente}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Fila 2 — 2 bloques más amplios */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-[#000000] rounded-2xl p-8 text-white">
+              <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">El coste real de contratar</p>
+              <p className="text-3xl font-bold mb-2">1.200€ – 2.000€</p>
+              <p className="text-gray-300 text-sm leading-relaxed mb-2">
+                Es lo que cuesta de media un proceso de selección para una pyme cuando se externaliza con una consultora tradicional de RRHH.
+              </p>
+              <p className="text-gray-500 text-xs italic">SHRM / informes sectoriales RRHH España</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+              <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">FP: el perfil más empleable</p>
+              <p className="text-3xl font-bold text-[#000000] mb-2">76% de empleabilidad</p>
+              <p className="text-gray-500 text-sm leading-relaxed mb-2">
+                Los titulados de FP tienen una de las tasas de inserción laboral más altas de España, por encima de muchas titulaciones universitarias.
+              </p>
+              <p className="text-gray-400 text-xs italic">Ministerio de Educación — Informe de inserción laboral FP 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA FINAL */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
