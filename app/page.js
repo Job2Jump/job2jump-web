@@ -173,7 +173,7 @@ export default function Home() {
               {
                 nombre: "Pack Premium",
                 precio: "199€",
-                desc: "3 sesiones de 60 minutos. Buscamos el trabajo por ti.",
+                desc: "3 sesiones de 60 minutos. Buscamos tus prácticas o tu trabajo por ti.",
                 items: [
                   "Actualizamos tu CV y optimizamos tu LinkedIn",
                   "Redactamos tu carta de presentación",
