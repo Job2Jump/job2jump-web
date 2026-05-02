@@ -221,8 +221,8 @@ export default function Empresas() {
                 {
                   icono: "📣",
                   nombre: "Marketing digital",
-                  desc: "Gestión de redes sociales, contenido, publicidad online y email marketing. Imprescindible para cualquier negocio hoy.",
-                  tags: ["Redes sociales", "Contenido", "SEO/SEM", "Email marketing"],
+                  desc: "Captación de leads, gestión de redes sociales, publicidad online y creación de contenido. Incorpora a alguien que ya sabe usar las herramientas que tu negocio necesita para crecer.",
+                  tags: ["Captación de leads", "Redes sociales", "SEO/SEM", "Publicidad online", "Contenido"],
                 },
                 {
                   icono: "📊",
