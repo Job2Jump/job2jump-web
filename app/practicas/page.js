@@ -146,8 +146,8 @@ export default function Practicas() {
       <section id="planes" className="py-16 bg-[#F0F4F8]">
         <div className="max-w-5xl mx-auto px-8">
           <div className="text-center mb-10">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
-            <h2 className="text-3xl font-bold text-[#000000] mt-2">Elige cómo quieres empezar</h2>
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">¿Cómo te ayudamos?</span>
+            <h2 className="text-3xl font-bold text-[#000000] mt-2">Elige tu camino</h2>
             <p className="text-gray-500 text-sm mt-2">Todos incluyen sesión inicial gratuita de 15 min.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -155,7 +155,7 @@ export default function Practicas() {
             {/* Pack Medio */}
             <div className="bg-[#000000] rounded-2xl p-8 shadow-sm flex flex-col relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">Más popular</span>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">Pack Medio · 99,90€</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">Opción 1</p>
               <h3 className="text-xl font-bold text-white mb-2">Prepárate para destacar</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-5">
                 Ideal si tu instituto ya te busca las prácticas o tienes tiempo para buscar empleo por tu cuenta, pero no sabes cómo superar las entrevistas ni cómo presentarte para que te elijan a ti.
@@ -184,7 +184,7 @@ export default function Practicas() {
             {/* Pack Premium */}
             <div className="bg-[#3BB54A] rounded-2xl p-8 shadow-sm flex flex-col relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">Más completo</span>
-              <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-1">Pack Premium · 199€</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-1">Opción 2</p>
               <h3 className="text-xl font-bold text-white mb-2">Nosotros buscamos por ti</h3>
               <p className="text-white/90 text-sm leading-relaxed mb-5">
                 Ideal si no tienes tiempo ni ganas de buscar tú mismo. Analizamos tu perfil, te preparamos a fondo y nos movemos en tu nombre ante las empresas que más encajan contigo. Ahorra tiempo y ve a tiro hecho.
