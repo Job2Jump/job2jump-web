@@ -205,20 +205,55 @@ export default function Empresas() {
           </div>
 
           {/* Perfiles más demandados */}
-          <div className="bg-[#F0F4F8] rounded-2xl p-8 mb-12">
-            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Perfiles FP que más buscan las pymes</p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+          <div className="mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-[#000000]">¿Qué perfil necesitas en tu empresa?</h3>
+              <p className="text-gray-500 text-sm mt-2">Estos son los más solicitados por pymes y startups como la tuya</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { icono: "💻", nombre: "Informática", ciclos: "DAM · DAW · ASIR" },
-                { icono: "📊", nombre: "Administración", ciclos: "Gestión · RRHH · Marketing" },
-                { icono: "⚡", nombre: "Electricidad", ciclos: "Instalaciones · Mantenimiento" },
-                { icono: "🛒", nombre: "Comercio", ciclos: "Comercio · Ecommerce" },
-                { icono: "🏥", nombre: "Sanidad", ciclos: "Aux. Enfermería · Farmacia" },
+                {
+                  icono: "💻",
+                  nombre: "Informática y desarrollo",
+                  desc: "Programadores web, apps móviles, sistemas y redes. Los más demandados por startups y empresas digitales.",
+                  tags: ["Desarrollo web", "Apps móviles", "Sistemas IT", "Soporte técnico"],
+                },
+                {
+                  icono: "📣",
+                  nombre: "Marketing digital",
+                  desc: "Gestión de redes sociales, contenido, publicidad online y email marketing. Imprescindible para cualquier negocio hoy.",
+                  tags: ["Redes sociales", "Contenido", "SEO/SEM", "Email marketing"],
+                },
+                {
+                  icono: "📊",
+                  nombre: "Administración y gestión",
+                  desc: "Facturación, contabilidad básica, RRHH y atención al cliente. El perfil más solicitado por pymes de cualquier sector.",
+                  tags: ["Facturación", "Contabilidad", "RRHH", "Atención cliente"],
+                },
+                {
+                  icono: "🛒",
+                  nombre: "Comercial y logística",
+                  desc: "Captación de clientes, gestión de pedidos, almacén y ecommerce. Clave en empresas de producto y distribución.",
+                  tags: ["Ventas", "Ecommerce", "Almacén", "Logística"],
+                },
+                {
+                  icono: "🔒",
+                  nombre: "Ciberseguridad y datos",
+                  desc: "El perfil del futuro. Cada vez más demandado por startups y empresas tecnológicas. Muy poca oferta en el mercado.",
+                  tags: ["Ciberseguridad", "Big Data", "Cloud", "IA"],
+                },
               ].map((p, i) => (
-                <div key={i} className="bg-white rounded-xl p-4">
-                  <p className="text-2xl mb-2">{p.icono}</p>
-                  <p className="text-sm font-bold text-[#000000]">{p.nombre}</p>
-                  <p className="text-xs text-gray-400 mt-1 leading-snug">{p.ciclos}</p>
+                <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all flex gap-4">
+                  <span className="text-3xl flex-shrink-0">{p.icono}</span>
+                  <div>
+                    <p className="text-base font-bold text-[#000000] mb-1">{p.nombre}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed mb-3">{p.desc}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {p.tags.map((tag, j) => (
+                        <span key={j} className="bg-[#F0F4F8] text-gray-500 text-xs px-2 py-1 rounded-full">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
