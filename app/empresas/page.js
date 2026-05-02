@@ -215,7 +215,7 @@ export default function Empresas() {
                 {
                   icono: "💻",
                   nombre: "Informática y desarrollo",
-                  desc: "Programadores web, apps móviles, sistemas y redes. Los más demandados por startups y empresas digitales.",
+                  desc: "¿Tu web está desactualizada, tu sistema falla o nadie tiene tiempo de arreglarlo? Este perfil lo resuelve. Formado en las tecnologías que usas, listo para ponerse a trabajar desde el primer día.",
                   tags: ["Desarrollo web", "Apps móviles", "Sistemas IT", "Soporte técnico"],
                 },
                 {
@@ -233,14 +233,14 @@ export default function Empresas() {
                 {
                   icono: "🛒",
                   nombre: "Comercial y logística",
-                  desc: "Captación de clientes, gestión de pedidos, almacén y ecommerce. Clave en empresas de producto y distribución.",
-                  tags: ["Ventas", "Ecommerce", "Almacén", "Logística"],
+                  desc: "¿Te faltan manos para gestionar pedidos, atender clientes o mantener el almacén en orden? Este perfil libera a tu equipo de las tareas del día a día para que puedas enfocarte en crecer.",
+                  tags: ["Ventas", "Atención cliente", "Ecommerce", "Almacén", "Logística"],
                 },
                 {
                   icono: "🔒",
                   nombre: "Ciberseguridad y datos",
-                  desc: "El perfil del futuro. Cada vez más demandado por startups y empresas tecnológicas. Muy poca oferta en el mercado.",
-                  tags: ["Ciberseguridad", "Big Data", "Cloud", "IA"],
+                  desc: "¿Sabes lo que le costaría a tu empresa un ciberataque o una fuga de datos? Este perfil protege tu negocio y organiza tu información. El más escaso del mercado — y el que más van a necesitar las empresas en los próximos años.",
+                  tags: ["Ciberseguridad", "Protección de datos", "Cloud", "Big Data", "IA"],
                 },
               ].map((p, i) => (
                 <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all flex gap-4">
