@@ -124,6 +124,112 @@ export default function Empresas() {
       </section>
 
 
+      {/* LÍNEA FP — SIN COSTE */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nueva línea de servicio</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Talento FP en tu empresa.<br />Sin coste salarial.</h2>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+              Conectamos tu pyme con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
+            </p>
+          </div>
+
+          {/* Dos modalidades */}
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="bg-[#F0F4F8] rounded-2xl p-8 border-2 border-gray-100">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A]">FCT — Prácticas curriculares</p>
+                  <p className="text-xs text-gray-400">El modelo más sencillo</p>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-[#000000] mb-3">Coste para la empresa: 0 €</h3>
+              <p className="text-gray-500 text-sm leading-relaxed mb-5">
+                El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses (380-410 horas) a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos.
+              </p>
+              <ul className="space-y-2">
+                {["Sin salario ni contrato laboral", "La SS la cubre el Estado, no tú", "Disponible en todos los ciclos FP", "Posibilidad de contratarle al terminar"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
+                    <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="bg-[#000000] rounded-2xl p-8 border-2 border-[#3BB54A] relative">
+              <span className="absolute -top-3 left-8 bg-[#3BB54A] text-white text-xs font-bold px-4 py-1 rounded-full">Para empresas que quieren retener</span>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A]">FP Dual — Formación en alternancia</p>
+                  <p className="text-xs text-gray-400">El modelo para fidelizar talento</p>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Lo formas a tu imagen durante 1-2 años</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-5">
+                El alumno alterna empresa e instituto desde el principio del ciclo. Hasta 30h/semana en tu empresa. Sin contrato: coste 0€. Con contrato de alternancia: 60-75% del SMI + bonificaciones en SS que reducen el coste casi a cero.
+              </p>
+              <ul className="space-y-2">
+                {["1-2 años para conocerle a fondo", "Lo moldeas desde el día 1", "Sin obligación de contratar al terminar", "Mejor que cualquier periodo de prueba"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
+                    <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Perfiles más demandados */}
+          <div className="bg-[#F0F4F8] rounded-2xl p-8 mb-12">
+            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Perfiles FP que más buscan las pymes</p>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+              {[
+                { icono: "💻", nombre: "Informática", ciclos: "DAM · DAW · ASIR" },
+                { icono: "📊", nombre: "Administración", ciclos: "Gestión · RRHH · Marketing" },
+                { icono: "⚡", nombre: "Electricidad", ciclos: "Instalaciones · Mantenimiento" },
+                { icono: "🛒", nombre: "Comercio", ciclos: "Comercio · Ecommerce" },
+                { icono: "🏥", nombre: "Sanidad", ciclos: "Aux. Enfermería · Farmacia" },
+              ].map((p, i) => (
+                <div key={i} className="bg-white rounded-xl p-4">
+                  <p className="text-2xl mb-2">{p.icono}</p>
+                  <p className="text-sm font-bold text-[#000000]">{p.nombre}</p>
+                  <p className="text-xs text-gray-400 mt-1 leading-snug">{p.ciclos}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Dato clave */}
+          <div className="bg-[#3BB54A] rounded-2xl p-8 text-center text-white">
+            <p className="text-5xl font-bold mb-3">1 de cada 3</p>
+            <p className="text-lg font-semibold mb-2">alumnos en prácticas acaba contratado por la misma empresa</p>
+            <p className="text-white/70 text-sm max-w-xl mx-auto">
+              La FCT es la mejor prueba de trabajo que existe: 3-4 meses viendo cómo trabaja alguien de verdad, antes de comprometerte. Job2Jump te lleva hasta ahí sin que muevas un dedo.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* LO QUE NOSOTROS HACEMOS */}
       <section className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
