@@ -9,7 +9,7 @@ export default function Navbar() {
         </a>
         <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
           <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
-          <a href="/practicas" className="hover:text-[#3BB54A] transition">Soy talento junior</a>
+          <a href="/practicas" className="hover:text-[#3BB54A] transition">Soy talento joven</a>
           <a href="/empresas" className="hover:text-[#3BB54A] transition">Soy empresa</a>
           <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
         </div>
