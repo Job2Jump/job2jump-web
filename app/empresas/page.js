@@ -169,15 +169,6 @@ export default function Empresas() {
               ))}
             </div>
           </div>
-
-          {/* Dato clave */}
-          <div className="bg-[#3BB54A] rounded-2xl p-8 text-center text-white">
-            <p className="text-5xl font-bold mb-3">1 de cada 3</p>
-            <p className="text-lg font-semibold mb-2">alumnos en prácticas acaba contratado por la misma empresa</p>
-            <p className="text-white/70 text-sm max-w-xl mx-auto">
-              Las prácticas en empresa son la mejor prueba de trabajo que existe: 3-4 meses viendo cómo trabaja alguien de verdad, antes de comprometerte. Job2Jump te lleva hasta ahí sin que muevas un dedo.
-            </p>
-          </div>
         </div>
       </section>
 
