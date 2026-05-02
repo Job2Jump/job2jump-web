@@ -47,6 +47,26 @@ export default function Practicas() {
         </div>
       </section>
 
+      {/* ELIGE TU SITUACIÓN */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-8 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-3">¿Cuál es tu situación?</p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <a href="#planes" className="block bg-[#F0F4F8] hover:bg-[#3BB54A]/10 border-2 border-transparent hover:border-[#3BB54A] rounded-2xl p-6 text-left transition-all">
+              <p className="text-2xl mb-2">🎓</p>
+              <p className="font-bold text-[#000000] mb-1">Busco prácticas</p>
+              <p className="text-sm text-gray-500">Necesito hacer prácticas en empresa para titular o ganar experiencia real.</p>
+            </a>
+            <a href="#planes" className="block bg-[#F0F4F8] hover:bg-[#3BB54A]/10 border-2 border-transparent hover:border-[#3BB54A] rounded-2xl p-6 text-left transition-all">
+              <p className="text-2xl mb-2">💼</p>
+              <p className="font-bold text-[#000000] mb-1">Busco mi primer empleo</p>
+              <p className="text-sm text-gray-500">Ya tengo formación y quiero dar el salto a mi primer trabajo de verdad.</p>
+            </a>
+          </div>
+          <p className="text-xs text-gray-400 mt-4">En ambos casos, te preparamos y buscamos por ti.</p>
+        </div>
+      </section>
+
       {/* ¿TE IDENTIFICAS? */}
       <section className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
