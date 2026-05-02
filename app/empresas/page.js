@@ -12,12 +12,12 @@ export default function Empresas() {
           </a>
           <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
-            <a href="mailto:hola@job2jump.es" className="hover:text-[#3BB54A] transition">Contacto</a>
-            <a href="#como-funciona" className="hover:text-[#3BB54A] transition">Cómo funciona</a>
-            <a href="#precios" className="hover:text-[#3BB54A] transition">Precios</a>
+            <a href="/talento" className="hover:text-[#3BB54A] transition">Soy talento junior</a>
+            <a href="/empresas" className="hover:text-[#3BB54A] transition">Soy empresa</a>
+            <a href="/#faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
           </div>
-          <a href="mailto:hola@job2jump.es" className="bg-[#000000] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#222222] transition">
-            Contactar
+          <a href="/#contacto" className="bg-[#3BB54A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
+            Sesión gratuita
           </a>
         </div>
       </nav>
