@@ -24,15 +24,15 @@ export default function Practicas() {
         <div className="relative z-10 max-w-7xl mx-auto px-8 py-32 w-full">
           <div className="max-w-3xl">
             <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
-              Busco prácticas
+              Busco prácticas · Busco mi primer empleo
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Unas prácticas pueden<br />
-              <span className="text-[#3BB54A]">cambiar tu futuro.</span><br />
-              Nosotros te preparamos<br />y las buscamos por ti.
+              Tu primer paso profesional<br />
+              <span className="text-[#3BB54A]">empieza aquí.</span><br />
+              Nosotros te preparamos<br />y buscamos por ti.
             </h1>
             <p className="text-lg text-white/70 mb-8 leading-relaxed">
-              Te preparamos para que destaques en la entrevista frente a otros candidatos. Y si quieres, también buscamos activamente por ti — contactamos empresas, presentamos tu perfil y gestionamos el proceso.
+              Tanto si buscas prácticas como tu primer empleo, te preparamos para que destaques frente a otros candidatos. Y si quieres, también buscamos activamente por ti — contactamos empresas, presentamos tu perfil y gestionamos el proceso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg text-center">
@@ -57,7 +57,7 @@ export default function Practicas() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               "Mandas CVs y no recibes respuesta. O peor: ni te leen.",
-              "No sabes bien qué tipo de prácticas encajan con tu perfil o tu carrera.",
+              "No sabes si buscar prácticas o tirarte directamente a por un empleo.",
               "Tu CV existe, pero no destaca. Tu LinkedIn está a medias.",
               "Llegas a una entrevista y no sabes qué decir ni cómo venderte.",
               "Todas las ofertas piden experiencia. Pero nadie te da la primera oportunidad.",
