@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PreciosAccordion from "./PreciosAccordion";
 
 export default function Empresas() {
   return (
@@ -250,30 +251,7 @@ export default function Empresas() {
             <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Elige tu camino</p>
 
             {/* Dos caminos */}
-            <div className="grid md:grid-cols-2 gap-6 mb-4">
-
-              {/* Camino A */}
-              <div className="bg-white rounded-2xl p-6 border-2 border-[#3BB54A]">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino A</p>
-                <p className="text-sm font-bold text-[#000000] mb-4">Primero prácticas, luego decides</p>
-                <div className="bg-[#F0F4F8] rounded-xl p-4 text-center">
-                  <p className="text-xs text-gray-400 mb-1">Al incorporar al alumno en prácticas</p>
-                  <p className="text-2xl font-bold text-[#000000]">250€</p>
-                  <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado · Sin coste salarial</p>
-                </div>
-              </div>
-
-              {/* Camino B */}
-              <div className="bg-[#F0F4F8] rounded-2xl p-6 border-2 border-gray-200">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Camino B</p>
-                <p className="text-sm font-bold text-[#000000] mb-4">Contrato junior directo</p>
-                <div className="bg-white rounded-xl p-4 text-center">
-                  <p className="text-xs text-gray-400 mb-1">Al incorporar al perfil junior</p>
-                  <p className="text-2xl font-bold text-[#000000]">400€</p>
-                  <p className="text-xs text-[#3BB54A] font-medium mt-1">Retainer ya descontado</p>
-                </div>
-              </div>
-            </div>
+            <PreciosAccordion />
 
             <p className="text-center text-xs text-gray-400 mb-8">Todos los precios sin IVA · Solo pagas si hay resultado</p>
             <div className="border-t border-gray-200 pt-8">
