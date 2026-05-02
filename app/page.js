@@ -10,8 +10,9 @@ export default function Home() {
           <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           <div className="hidden md:flex items-center gap-8 text-[#000000] font-medium text-sm">
             <a href="/quienes-somos" className="hover:text-[#3BB54A] transition">Quiénes somos</a>
-            <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
+            <a href="/practicas" className="hover:text-[#3BB54A] transition">Busco prácticas</a>
             <a href="/empresas" className="hover:text-[#3BB54A] transition">Soy empresa</a>
+            <a href="/faq" className="hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
           </div>
           <div className="flex items-center gap-3">
             <a href="/empresas" className="hidden md:inline-block border border-[#000000] text-[#000000] px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#000000] hover:text-white transition">
