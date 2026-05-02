@@ -175,8 +175,7 @@ export default function Home() {
                 precio: "199€",
                 desc: "Buscamos el trabajo por ti. Despreocúpate.",
                 items: [
-                  "Actualizamos y personalizamos tu CV",
-                  "Optimizamos y posicionamos tu LinkedIn",
+                  "Actualizamos tu CV y optimizamos tu LinkedIn",
                   "Redactamos tu carta de presentación",
                   "Te asesoramos sobre tu carrera laboral",
                   "Entrenamos tus entrevistas con role plays reales",
