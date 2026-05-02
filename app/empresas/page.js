@@ -81,8 +81,8 @@ export default function Empresas() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nueva línea de servicio</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Talento FP en tu empresa.<br />Sin coste salarial.</h2>
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Incorpora talento joven.<br />Nosotros nos encargamos de todo.</h2>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
               Conectamos tu pyme o startup con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
             </p>
