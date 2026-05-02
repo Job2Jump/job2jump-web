@@ -88,67 +88,30 @@ export default function Empresas() {
             </p>
           </div>
 
-          {/* Dos modalidades */}
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            <div className="bg-[#F0F4F8] rounded-2xl p-8 border-2 border-gray-100">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A]">Prácticas en empresa — Obligatorias para titular</p>
-                  <p className="text-xs text-gray-400">El modelo más sencillo</p>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-[#000000] mb-3">Coste para la empresa: 0 €</h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses (380-410 horas) a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos.
+          {/* Modalidad principal — Prácticas */}
+          <div className="bg-[#000000] rounded-2xl p-10 mb-16 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Prácticas en empresa — Obligatorias para titular</p>
+              <h3 className="text-3xl font-bold text-white mb-4">Coste para la empresa: 0 €</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
               </p>
-              <ul className="space-y-2">
-                {["Sin salario ni contrato laboral", "La SS la cubre el Estado, no tú", "Disponible en todos los ciclos FP", "Posibilidad de contratarle al terminar"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                    <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
+                Quiero un alumno en prácticas
+              </a>
             </div>
-
-            <div className="bg-[#000000] rounded-2xl p-8 border-2 border-[#3BB54A] relative">
-              <span className="absolute -top-3 left-8 bg-[#3BB54A] text-white text-xs font-bold px-4 py-1 rounded-full">Para empresas que quieren retener</span>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { titulo: "Sin salario ni contrato", desc: "Cero coste salarial. Solo un convenio que tramitamos nosotros." },
+                { titulo: "La SS la paga el Estado", desc: "No sale de tu bolsillo. El alumno cotiza y tú no pagas nada." },
+                { titulo: "3-4 meses reales", desc: "Tiempo suficiente para ver cómo trabaja antes de decidir." },
+                { titulo: "Puedes contratarle después", desc: "1 de cada 3 alumnos acaba en plantilla. La mejor prueba de trabajo." },
+              ].map((item, i) => (
+                <div key={i} className="bg-white/10 rounded-xl p-4">
+                  <p className="text-sm font-bold text-white mb-1">{item.titulo}</p>
+                  <p className="text-xs text-gray-400 leading-relaxed">{item.desc}</p>
                 </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A]">FP Dual — Formación en alternancia</p>
-                  <p className="text-xs text-gray-400">El modelo para fidelizar talento</p>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Lo formas a tu imagen durante 1-2 años</h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-5">
-                El alumno alterna empresa e instituto desde el principio del ciclo. Hasta 30h/semana en tu empresa. Sin contrato: coste 0€. Con contrato de alternancia: 60-75% del SMI + bonificaciones en SS que reducen el coste casi a cero.
-              </p>
-              <ul className="space-y-2">
-                {["1-2 años para conocerle a fondo", "Lo moldeas desde el día 1", "Sin obligación de contratar al terminar", "Mejor que cualquier periodo de prueba"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                    <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              ))}
             </div>
           </div>
 
