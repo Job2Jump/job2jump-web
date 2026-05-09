@@ -177,7 +177,8 @@ export default function QuienesSomos() {
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Hablamos?</h2>
-          <p className="text-gray-300 text-lg mb-10">Cuéntanos tu situación y vemos cómo podemos ayudarte.</p>
+          <p className="text-gray-300 text-lg mb-3">Cuéntanos tu situación y vemos cómo podemos ayudarte.</p>
+          <p className="text-[#3BB54A] font-semibold text-base mb-10">Trabajamos a éxito. No pagas hasta que te encontramos el perfil.</p>
           <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             Sesión gratuita
           </a>
