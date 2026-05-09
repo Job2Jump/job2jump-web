@@ -214,31 +214,31 @@ export default function Empresas() {
             <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
 
               {/* Retainer */}
-              <div className="bg-white rounded-xl px-6 py-4 border border-gray-100 text-center flex-shrink-0 w-full md:w-48">
+              <div className="bg-[#000000] rounded-xl px-6 py-5 text-center flex-shrink-0 w-full md:w-52">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Retainer inicial</p>
-                <p className="text-3xl font-bold text-[#000000]">100€</p>
-                <p className="text-gray-400 text-xs mt-1">Al arrancar · se descuenta</p>
+                <p className="text-5xl font-bold text-white">100€</p>
+                <p className="text-gray-400 text-xs mt-2">Al arrancar · se descuenta</p>
               </div>
 
               {/* Flecha */}
-              <svg className="w-5 h-5 text-[#3BB54A] rotate-0 md:rotate-[-90deg] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#3BB54A] rotate-0 md:rotate-[-90deg] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
 
               {/* Camino A */}
-              <div className="bg-white rounded-xl px-5 py-4 border-2 border-[#3BB54A] flex-1 w-full">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-0.5">Camino A</p>
-                <p className="text-sm font-bold text-[#000000] mb-1">Prácticas, luego decides</p>
-                <p className="text-2xl font-bold text-[#000000]">250€</p>
-                <p className="text-xs text-[#3BB54A] font-medium">Sin coste salarial</p>
+              <div className="bg-[#3BB54A] rounded-xl px-5 py-5 border-2 border-[#3BB54A] flex-1 w-full">
+                <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-0.5">Camino A</p>
+                <p className="text-sm font-bold text-white mb-2">Prácticas, luego decides</p>
+                <p className="text-5xl font-bold text-white">250€</p>
+                <p className="text-xs text-white/80 font-medium mt-1">Sin coste salarial</p>
               </div>
 
               {/* Camino B */}
-              <div className="bg-white rounded-xl px-5 py-4 border-2 border-gray-200 flex-1 w-full">
+              <div className="bg-white rounded-xl px-5 py-5 border-2 border-[#000000] flex-1 w-full">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-0.5">Camino B</p>
-                <p className="text-sm font-bold text-[#000000] mb-1">Contrato junior directo</p>
-                <p className="text-2xl font-bold text-[#000000]">400€</p>
-                <p className="text-xs text-gray-400 font-medium">Retainer ya descontado</p>
+                <p className="text-sm font-bold text-[#000000] mb-2">Contrato junior directo</p>
+                <p className="text-5xl font-bold text-[#000000]">400€</p>
+                <p className="text-xs text-gray-400 font-medium mt-1">Retainer ya descontado</p>
               </div>
             </div>
 
