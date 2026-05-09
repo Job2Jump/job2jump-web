@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+  title: "Busco prácticas o primer empleo | Orientación laboral para jóvenes | Job2Jump",
+  description: "Te ayudamos a conseguir prácticas en empresa o tu primer empleo. CV, LinkedIn, entrevistas y búsqueda activa. Orientación laboral personalizada para jóvenes y recién titulados.",
+  keywords: "buscar prácticas empresa, cómo conseguir prácticas, primer empleo joven, orientación laboral jóvenes, prácticas remuneradas, CV para prácticas, LinkedIn jóvenes, entrevista de trabajo joven, recién titulado trabajo, FP prácticas cómo conseguir",
+};
+
 export default function Practicas() {
   return (
     <div className="min-h-screen">

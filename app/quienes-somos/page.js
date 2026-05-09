@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+  title: "Quiénes somos | Job2Jump — Agencia de talento joven para pymes",
+  description: "Job2Jump es una agencia especializada en conectar talento joven con pymes y startups. Más de 10 años de experiencia en selección. +300 jóvenes y empresas conectados.",
+  keywords: "agencia empleo jóvenes, agencia selección pymes, headhunting junior, orientación laboral España, empleo jóvenes España, talento FP pymes",
+};
+
 export default function QuienesSomos() {
   return (
     <div className="min-h-screen">

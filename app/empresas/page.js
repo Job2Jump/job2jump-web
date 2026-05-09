@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+  title: "Alumnos de FP en prácticas para tu empresa | Job2Jump",
+  description: "Incorpora alumnos de Formación Profesional en prácticas sin coste salarial. Gestionamos todo el proceso para pymes y startups. Trabajamos a éxito.",
+  keywords: "alumnos FP prácticas empresa, becarios formación profesional, prácticas empresa sin coste, talento junior pymes, contratar becario FP, formación dual empresa, prácticas empresa España, selección talento junior",
+};
+
 export default function Empresas() {
   return (
     <div className="min-h-screen">
