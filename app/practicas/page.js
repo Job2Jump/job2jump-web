@@ -209,7 +209,7 @@ export default function Practicas() {
                   </li>
                 ))}
               </ul>
-              <p className="text-center text-white font-bold text-xl underline mb-3">199€ <span className="text-white/60 text-xs font-normal no-underline">· sesión gratuita incluida</span></p>
+              <p className="text-center text-white font-bold text-xl underline mb-3">149€ <span className="text-white/60 text-xs font-normal no-underline">· sesión gratuita incluida</span></p>
               <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-white text-[#000000] hover:bg-gray-100">
                 Quiero este plan
               </a>
