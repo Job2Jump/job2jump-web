@@ -77,13 +77,13 @@ export default function Practicas() {
       <section className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-14">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Sabemos cómo te sientes</span>
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Tanto si buscas prácticas como tu primer empleo</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">¿Te suena esto?</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               "Mandas CVs y no recibes respuesta. O peor: ni te leen.",
-              "No sabes si buscar prácticas o tirarte directamente a por un empleo.",
+              "No sabes si buscar prácticas o lanzarte directamente a por tu primer empleo.",
               "Tu CV existe, pero no destaca. Tu LinkedIn está a medias.",
               "Llegas a una entrevista y no sabes qué decir ni cómo venderte.",
               "Todas las ofertas piden experiencia. Pero nadie te da la primera oportunidad.",
