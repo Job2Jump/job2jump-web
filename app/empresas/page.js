@@ -108,53 +108,56 @@ export default function Empresas() {
 
           {/* Perfiles más demandados */}
           <div className="mb-12">
-            <div className="text-center mb-8">
+            <div className="text-center mb-10">
               <h3 className="text-2xl font-bold text-[#000000]">¿Qué perfil necesitas en tu empresa?</h3>
-              <p className="text-gray-500 text-sm mt-2">Estos son los más solicitados por pymes y startups como la tuya</p>
+              <p className="text-gray-500 text-sm mt-2">Los más solicitados por pymes y startups como la tuya</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   icono: "💻",
                   nombre: "Informática y desarrollo",
-                  desc: "Web, apps, sistemas y soporte técnico. Listo para trabajar con tus herramientas desde el primer día.",
+                  desc: "Web, apps, sistemas y soporte técnico.",
                   tags: ["Desarrollo web", "Apps móviles", "Sistemas IT", "Soporte técnico"],
+                  color: "bg-blue-50 border-blue-100",
                 },
                 {
                   icono: "📣",
                   nombre: "Marketing digital",
-                  desc: "Capta leads, gestiona redes sociales y lanza campañas. Sin que tengas que hacerlo tú.",
-                  tags: ["Captación de leads", "Redes sociales", "SEO/SEM", "Publicidad online"],
+                  desc: "Redes sociales, campañas y captación de leads.",
+                  tags: ["Redes sociales", "SEO/SEM", "Publicidad online", "Captación leads"],
+                  color: "bg-orange-50 border-orange-100",
                 },
                 {
                   icono: "📊",
                   nombre: "Administración y gestión",
-                  desc: "Facturas, presupuestos, RRHH y papeleo. Todo lo que te quita horas, resuelto.",
+                  desc: "Facturas, contabilidad, RRHH y papeleo.",
                   tags: ["Facturación", "Contabilidad", "RRHH", "Atención cliente"],
+                  color: "bg-purple-50 border-purple-100",
                 },
                 {
                   icono: "🛒",
                   nombre: "Comercial y logística",
-                  desc: "Gestión de pedidos, atención al cliente y almacén. Libera a tu equipo para lo importante.",
+                  desc: "Ventas, pedidos, atención al cliente y almacén.",
                   tags: ["Ventas", "Ecommerce", "Almacén", "Logística"],
+                  color: "bg-yellow-50 border-yellow-100",
                 },
                 {
                   icono: "🔒",
                   nombre: "Ciberseguridad y datos",
-                  desc: "Protege tu negocio y organiza tu información. El perfil más escaso y más demandado del mercado.",
-                  tags: ["Ciberseguridad", "Protección de datos", "Cloud", "Big Data"],
+                  desc: "El perfil más escaso y más demandado del mercado.",
+                  tags: ["Ciberseguridad", "Protección datos", "Cloud", "Big Data"],
+                  color: "bg-red-50 border-red-100",
                 },
               ].map((p, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#3BB54A]/40 hover:shadow-md transition-all flex gap-4">
-                  <span className="text-3xl flex-shrink-0">{p.icono}</span>
-                  <div>
-                    <p className="text-base font-bold text-[#000000] mb-1">{p.nombre}</p>
-                    <p className="text-gray-500 text-xs leading-relaxed mb-3">{p.desc}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {p.tags.map((tag, j) => (
-                        <span key={j} className="bg-[#F0F4F8] text-gray-500 text-xs px-2 py-1 rounded-full">{tag}</span>
-                      ))}
-                    </div>
+                <div key={i} className={`${p.color} rounded-2xl p-6 border hover:shadow-md transition-all`}>
+                  <span className="text-4xl mb-4 block">{p.icono}</span>
+                  <p className="text-base font-bold text-[#000000] mb-2">{p.nombre}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed mb-4">{p.desc}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {p.tags.map((tag, j) => (
+                      <span key={j} className="bg-white text-gray-600 text-xs px-2 py-1 rounded-full border border-gray-200">{tag}</span>
+                    ))}
                   </div>
                 </div>
               ))}
