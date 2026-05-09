@@ -206,7 +206,7 @@ export default function Empresas() {
           <div className="text-center mb-8">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Precios</span>
             <h2 className="text-3xl font-bold text-[#000000] mt-2">Claro, sencillo y sin sorpresas</h2>
-            <p className="text-gray-500 text-sm mt-2">3 a 5 veces más barato que una consultora tradicional.</p>
+            <p className="text-gray-500 text-sm mt-2">Solo pagas si hay resultado. Sin letra pequeña.</p>
           </div>
           <div className="bg-[#F0F4F8] rounded-2xl p-6 border border-gray-100">
 
