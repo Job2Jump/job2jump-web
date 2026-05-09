@@ -22,6 +22,24 @@ export default function QuienesSomos() {
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
               Somos un equipo con más de 10 años de experiencia en selección de talento en consultoras internacionales de headhunting, grandes multinacionales y escuelas de negocio de referencia. Conocemos el mercado laboral por dentro — y decidimos ponerlo al servicio de las pymes y del talento joven que merece una oportunidad real.
             </p>
+
+            {/* Datos destacados */}
+            <div className="flex flex-wrap gap-8 mt-12">
+              <div>
+                <p className="text-5xl font-bold text-[#3BB54A]">+300</p>
+                <p className="text-white/60 text-sm mt-1">jóvenes y empresas conectados</p>
+              </div>
+              <div className="w-px bg-white/10 hidden md:block"></div>
+              <div>
+                <p className="text-5xl font-bold text-[#3BB54A]">10+</p>
+                <p className="text-white/60 text-sm mt-1">años de experiencia en selección</p>
+              </div>
+              <div className="w-px bg-white/10 hidden md:block"></div>
+              <div>
+                <p className="text-5xl font-bold text-[#3BB54A]">100%</p>
+                <p className="text-white/60 text-sm mt-1">a éxito — no pagas si no hay resultado</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
