@@ -15,88 +15,114 @@ export default function QuienesSomos() {
               Quiénes somos
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Más de 10 años<br />
-              <span className="text-[#3BB54A]">en selección de talento.</span>
+              El puente entre<br />
+              <span className="text-[#3BB54A]">el talento joven y las empresas</span><br />
+              que lo necesitan.
             </h1>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-              Hemos trabajado en algunas de las empresas más exigentes del sector: Hays, thePower MBA, Ferrovial. Conocemos el mercado laboral por dentro. Y decidimos ponerlo al servicio de las pymes y de los jóvenes que merecen una oportunidad real.
+              Somos un equipo especializado en selección de talento con más de 10 años de experiencia en empresas líderes del sector. Decidimos crear Job2Jump para resolver un problema real: jóvenes con formación que no saben cómo entrar al mercado laboral, y pymes con necesidades reales que no tienen tiempo ni recursos para cubrirlas bien.
             </p>
           </div>
         </div>
       </section>
 
-      {/* CELIA */}
+      {/* PARA QUIÉN */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">El equipo</span>
-              <h2 className="text-3xl font-bold text-[#000000] mt-3 mb-2">Celia Salgado Mena</h2>
-              <p className="text-[#3BB54A] font-semibold mb-6">Fundadora y directora de talento</p>
-              <div className="space-y-4 text-gray-500 leading-relaxed">
-                <p>
-                  Más de 10 años dedicada a la selección de personal y el headhunting. Ha trabajado en Hays —una de las consultoras de RRHH más grandes del mundo—, en thePower MBA y en Ferrovial, gestionando procesos de selección para equipos de todos los tamaños.
-                </p>
-                <p>
-                  Esa experiencia le dio una visión muy clara del problema: por un lado, jóvenes con formación pero sin orientación. Por otro, pymes con necesidades reales pero sin tiempo ni recursos para cubrirlas bien.
-                </p>
-                <p>
-                  Job2Jump es la respuesta a ese problema. Un servicio humano, especializado y accesible, que conecta a los dos lados del mercado con el rigor de una gran consultora y el trato de un equipo pequeño.
-                </p>
-              </div>
-              <div className="flex gap-4 mt-8">
-                <a href="https://instagram.com/job2jump" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#F0F4F8] text-[#000000] px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#3BB54A] hover:text-white transition">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
-                  @job2jump
-                </a>
-              </div>
+          <div className="text-center mb-16">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">A quién ayudamos</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Dos lados del mismo mercado</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+
+            {/* Para empresas */}
+            <div className="bg-[#000000] rounded-2xl p-10">
+              <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">Para pymes y startups</span>
+              <h3 className="text-2xl font-bold text-white mb-4">Tu departamento de talento externo</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                Sabemos lo que cuesta un proceso de selección mal hecho: tiempo perdido, candidatos que no encajan, frustraciones. Las pymes no tienen un departamento de RRHH dedicado — nosotros lo somos. Gestionamos todo el proceso para que tú solo tengas que tomar la decisión final.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Alumnos de FP en prácticas sin coste salarial",
+                  "Perfiles junior para contrato directo",
+                  "Proceso completo gestionado por nosotros",
+                  "Garantía de sustitución incluida",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-sm text-gray-300">
+                    <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="/empresas" className="inline-block mt-8 bg-[#3BB54A] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
+                Soy empresa →
+              </a>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { num: "10+", label: "años en selección y headhunting" },
-                { num: "Hays", label: "consultora global de RRHH" },
-                { num: "thePower", label: "MBA de referencia en España" },
-                { num: "Ferrovial", label: "empresa líder en infraestructuras" },
-              ].map((item, i) => (
-                <div key={i} className="bg-[#F0F4F8] rounded-2xl p-6 text-center">
-                  <p className="text-2xl font-bold text-[#3BB54A] mb-2">{item.num}</p>
-                  <p className="text-sm text-gray-500 leading-snug">{item.label}</p>
-                </div>
-              ))}
+
+            {/* Para talento */}
+            <div className="bg-[#F0F4F8] rounded-2xl p-10">
+              <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">Para talento joven</span>
+              <h3 className="text-2xl font-bold text-[#000000] mb-4">Tu apoyo para el primer salto profesional</h3>
+              <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                Mandar CVs a ciegas no funciona. El mercado laboral tiene reglas que nadie te enseña: cómo presentarte, cómo destacar en LinkedIn, qué decir en una entrevista. Nosotros te preparamos y, si quieres, buscamos activamente por ti.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Busco prácticas en empresa",
+                  "Busco mi primer empleo",
+                  "CV y LinkedIn que abren puertas",
+                  "Te buscamos las entrevistas tú decides",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-sm text-gray-600">
+                    <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="/practicas" className="inline-block mt-8 bg-[#000000] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#222222] transition">
+                Soy talento joven →
+              </a>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* RRSS */}
-      <section className="py-20 bg-[#F0F4F8]">
-        <div className="max-w-7xl mx-auto px-8 text-center">
-          <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Síguenos</span>
-          <h2 className="text-3xl font-bold text-[#000000] mt-3 mb-4">Mucho contenido gratuito en redes</h2>
-          <p className="text-gray-500 max-w-xl mx-auto mb-10">
-            Consejos de CV, entrevistas, LinkedIn, orientación profesional y mucho más. Todo gratis, todo los días, en Instagram y TikTok.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://instagram.com/job2jump" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#222222] transition">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-              Instagram · @job2jump
-            </a>
-            <a href="https://tiktok.com/@job2jump" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-gray-900 transition">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
-              </svg>
-              TikTok · @job2jump
-            </a>
+      {/* EXPERIENCIA */}
+      <section className="py-24 bg-[#F0F4F8]">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nuestra experiencia</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Conocemos el mercado por dentro</h2>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Más de 10 años gestionando selección en empresas líderes nos dan una perspectiva que pocos tienen.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { num: "10+", label: "años en selección de talento" },
+              { num: "Hays", label: "consultora global de RRHH" },
+              { num: "thePower", label: "MBA de referencia en España" },
+              { num: "Ferrovial", label: "empresa líder en infraestructuras" },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+                <p className="text-2xl font-bold text-[#3BB54A] mb-2">{item.num}</p>
+                <p className="text-sm text-gray-500 leading-snug">{item.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* VALORES */}
-      <section className="py-24 bg-[#F0F4F8]">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Cómo trabajamos</span>
@@ -106,19 +132,19 @@ export default function QuienesSomos() {
             {[
               {
                 titulo: "Personas, no CVs",
-                desc: "No somos una base de datos. Nos reunimos con cada candidato y con cada empresa. Entendemos qué buscan de verdad antes de empezar.",
+                desc: "No somos una base de datos. Nos reunimos con cada candidato y con cada empresa para entender qué buscan de verdad antes de empezar.",
               },
               {
                 titulo: "Calidad sobre cantidad",
                 desc: "No enviamos 20 candidatos para que tú los filtres. Enviamos 3 o 4, bien seleccionados. Tu tiempo vale.",
               },
               {
-                titulo: "Precio justo",
-                desc: "3 a 5 veces más barato que una consultora tradicional, con el mismo nivel de servicio. Porque el tamaño de tu empresa no debería determinar el acceso a buen talento.",
+                titulo: "Servicio humano",
+                desc: "Trato directo, sin intermediarios, sin bots. Siempre hay una persona al otro lado que conoce tu caso y da la cara.",
               },
               {
                 titulo: "Proceso transparente",
-                desc: "Sabes en todo momento en qué punto está el proceso. Sin humo, sin promesas vacías, sin esperar semanas sin noticias.",
+                desc: "Sabes en todo momento en qué punto está el proceso. Sin humo, sin promesas vacías, sin semanas sin noticias.",
               },
               {
                 titulo: "Experiencia real",
@@ -129,7 +155,7 @@ export default function QuienesSomos() {
                 desc: "Si la incorporación no funciona, buscamos un sustituto sin coste adicional. Nos importa que funcione, no solo que ocurra.",
               },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-gray-100">
+              <div key={i} className="bg-[#F0F4F8] rounded-2xl p-8 border border-gray-100">
                 <div className="w-10 h-10 rounded-xl bg-[#3BB54A]/10 flex items-center justify-center mb-4">
                   <svg className="w-5 h-5 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -150,14 +176,10 @@ export default function QuienesSomos() {
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            ¿Hablamos?
-          </h2>
-          <p className="text-gray-300 text-lg mb-10">
-            Cuéntanos tu situación y vemos cómo podemos ayudarte.
-          </p>
-          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
-            Contactar
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Hablamos?</h2>
+          <p className="text-gray-300 text-lg mb-10">Cuéntanos tu situación y vemos cómo podemos ayudarte.</p>
+          <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
+            Sesión gratuita
           </a>
         </div>
       </section>
