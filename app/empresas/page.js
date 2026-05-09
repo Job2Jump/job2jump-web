@@ -39,7 +39,7 @@ export default function Empresas() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
-                Quiero un alumno de FP
+                Quiero un becario/a
               </a>
               <a href="#como-funciona" className="inline-block border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white transition text-center">
                 Cómo funciona
@@ -88,7 +88,7 @@ export default function Empresas() {
                 El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
               </p>
               <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
-                Quiero un alumno en prácticas
+                Quiero un becario/a
               </a>
             </div>
             <div className="grid grid-cols-2 gap-4">
