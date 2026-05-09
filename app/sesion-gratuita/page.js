@@ -64,7 +64,7 @@ export default function SesionGratuita() {
   };
 
   return (
-    <div className="min-h-screen font-sans bg-[#F0F4F8]">
+    <div className="min-h-screen bg-[#F0F4F8]">
 
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">

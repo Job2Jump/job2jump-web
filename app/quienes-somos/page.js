@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export default function QuienesSomos() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen">
 
       <Navbar />
 

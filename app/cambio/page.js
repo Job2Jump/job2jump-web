@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export default function CambioEmpleo() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen">
 
       <Navbar />
 

@@ -93,7 +93,7 @@ function Accordion({ items }) {
 
 export default function FAQ() {
   return (
-    <div className="min-h-screen font-sans bg-[#F0F4F8]">
+    <div className="min-h-screen bg-[#F0F4F8]">
 
       <Navbar />
 
