@@ -197,7 +197,7 @@ export default function Practicas() {
                   "CV actualizado y LinkedIn optimizado para atraer a los reclutadores correctos",
                   "Asesoramiento laboral y plan de carrera adaptado a tu perfil y sector",
                   "Role plays de entrevistas reales para que llegues sin nervios",
-                  "Movemos tu CV en nuestra base de datos de +10.000 contactos y empresas potenciales",
+                  "Te buscamos las entrevistas: movemos tu CV entre +10.000 contactos y empresas potenciales",
                 ].map((item, j) => (
                   <li key={j} className="flex items-start gap-3 text-sm text-white/90">
                     <div className="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center flex-shrink-0 mt-0.5">
