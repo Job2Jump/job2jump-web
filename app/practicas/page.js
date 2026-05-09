@@ -158,7 +158,7 @@ export default function Practicas() {
               <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">Opción 1</p>
               <h3 className="text-xl font-bold text-white mb-2">Prepárate para destacar</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-5">
-                Ideal si tu instituto ya te busca las prácticas o tienes tiempo para buscar empleo por tu cuenta, pero no sabes cómo superar las entrevistas ni cómo presentarte para que te elijan a ti.
+                Ideal si tu instituto o universidad ya te busca las prácticas o tienes tiempo para buscar empleo por tu cuenta, pero no sabes cómo superar las entrevistas ni cómo presentarte para que te elijan a ti.
               </p>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
