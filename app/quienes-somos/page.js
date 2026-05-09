@@ -20,7 +20,7 @@ export default function QuienesSomos() {
               que lo necesitan.
             </h1>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-              Somos un equipo especializado en selección de talento con más de 10 años de experiencia en empresas líderes del sector. Decidimos crear Job2Jump para resolver un problema real: jóvenes con formación que no saben cómo entrar al mercado laboral, y pymes con necesidades reales que no tienen tiempo ni recursos para cubrirlas bien.
+              Somos un equipo con más de 10 años de experiencia en selección de talento en consultoras internacionales de headhunting, grandes multinacionales y escuelas de negocio de referencia. Conocemos el mercado laboral por dentro — y decidimos ponerlo al servicio de las pymes y del talento joven que merece una oportunidad real.
             </p>
           </div>
         </div>
@@ -103,14 +103,14 @@ export default function QuienesSomos() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nuestra experiencia</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Conocemos el mercado por dentro</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Más de 10 años gestionando selección en empresas líderes nos dan una perspectiva que pocos tienen.</p>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Venimos de las consultoras de headhunting más exigentes del mercado. Sabemos exactamente cómo funciona la selección de talento — y cómo hacerlo bien.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { num: "10+", label: "años en selección de talento" },
-              { num: "Hays", label: "consultora global de RRHH" },
-              { num: "thePower", label: "MBA de referencia en España" },
-              { num: "Ferrovial", label: "empresa líder en infraestructuras" },
+              { num: "10+", label: "años en selección y headhunting de alto nivel" },
+              { num: "#1", label: "consultoras internacionales de RRHH donde hemos trabajado" },
+              { num: "Top", label: "escuelas de negocio y multinacionales en nuestra trayectoria" },
+              { num: "100%", label: "servicio humano, sin bots ni automatismos" },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
                 <p className="text-2xl font-bold text-[#3BB54A] mb-2">{item.num}</p>
