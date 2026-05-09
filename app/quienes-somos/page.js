@@ -24,20 +24,26 @@ export default function QuienesSomos() {
             </p>
 
             {/* Datos destacados */}
-            <div className="flex flex-wrap gap-8 mt-12">
-              <div>
-                <p className="text-5xl font-bold text-[#3BB54A]">+300</p>
-                <p className="text-white/60 text-sm mt-1">jóvenes y empresas conectados</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                <p className="text-xs text-[#3BB54A] font-semibold uppercase tracking-widest mb-2">Para empresas</p>
+                <p className="text-4xl font-bold text-white">+150</p>
+                <p className="text-white/50 text-xs mt-1">pymes y startups que han incorporado talento con nosotros</p>
               </div>
-              <div className="w-px bg-white/10 hidden md:block"></div>
-              <div>
-                <p className="text-5xl font-bold text-[#3BB54A]">10+</p>
-                <p className="text-white/60 text-sm mt-1">años de experiencia en selección</p>
+              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                <p className="text-xs text-[#3BB54A] font-semibold uppercase tracking-widest mb-2">Para empresas</p>
+                <p className="text-4xl font-bold text-white">100%</p>
+                <p className="text-white/50 text-xs mt-1">a éxito — no pagas si no incorporas</p>
               </div>
-              <div className="w-px bg-white/10 hidden md:block"></div>
-              <div>
-                <p className="text-5xl font-bold text-[#3BB54A]">100%</p>
-                <p className="text-white/60 text-sm mt-1">a éxito — no pagas si no hay resultado</p>
+              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                <p className="text-xs text-[#3BB54A] font-semibold uppercase tracking-widest mb-2">Para talento joven</p>
+                <p className="text-4xl font-bold text-white">+300</p>
+                <p className="text-white/50 text-xs mt-1">jóvenes orientados y colocados en su primer empleo o prácticas</p>
+              </div>
+              <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                <p className="text-xs text-[#3BB54A] font-semibold uppercase tracking-widest mb-2">Para talento joven</p>
+                <p className="text-4xl font-bold text-white">10+</p>
+                <p className="text-white/50 text-xs mt-1">años de experiencia en selección de alto nivel</p>
               </div>
             </div>
           </div>
