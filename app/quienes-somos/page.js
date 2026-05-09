@@ -110,7 +110,7 @@ export default function QuienesSomos() {
               { num: "10+", label: "años en selección y headhunting de alto nivel" },
               { num: "#1", label: "consultoras internacionales de RRHH donde hemos trabajado" },
               { num: "Top", label: "escuelas de negocio y multinacionales en nuestra trayectoria" },
-              { num: "100%", label: "servicio humano, sin bots ni automatismos" },
+              { num: "100%", label: "servicio humano, sin portales de empleo ni automatismos" },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
                 <p className="text-2xl font-bold text-[#3BB54A] mb-2">{item.num}</p>
