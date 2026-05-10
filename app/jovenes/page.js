@@ -1,6 +1,20 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+  title: "Soy talento joven — Job2Jump | Prácticas, primer empleo o cambio de trabajo",
+  description: "¿Buscas prácticas, tu primer empleo o quieres cambiar de trabajo? Job2Jump te prepara, trabaja tu candidatura y busca activamente por ti. Orientación laboral personalizada.",
+  keywords: "buscar prácticas empresa, primer empleo joven, cambiar de trabajo confidencial, orientación laboral jóvenes, cómo encontrar prácticas, ayuda primer empleo España, orientación profesional joven",
+  openGraph: {
+    title: "Soy talento joven — Job2Jump",
+    description: "Prácticas, primer empleo o cambio de trabajo. Te preparamos y buscamos activamente por ti.",
+    url: "https://www.job2jump.es/jovenes",
+    siteName: "Job2Jump",
+    locale: "es_ES",
+    type: "website",
+  },
+};
+
 export default function Jovenes() {
   return (
     <div className="min-h-screen">

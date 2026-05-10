@@ -85,7 +85,7 @@ export default function Home() {
               { valor: "0€", label: "coste salarial para pymes que acogen alumnos de FP en prácticas", fuente: "Job2Jump" },
               { valor: "1 de 3", label: "alumnos en prácticas acaba contratado por la misma empresa", fuente: "Job2Jump" },
               { valor: "80%", label: "de pymes tiene dificultades para cubrir vacantes con perfiles adecuados", fuente: "ManpowerGroup 2024" },
-              { valor: "99€", label: "sesión personalizada de orientación, CV y LinkedIn en vivo", fuente: "Job2Jump" },
+              { valor: "75€", label: "sesión personalizada de orientación, CV y LinkedIn para jóvenes", fuente: "Job2Jump" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
                 <p className="text-3xl font-bold text-[#3BB54A] mb-1">{item.valor}</p>
@@ -126,7 +126,7 @@ export default function Home() {
                 Conectamos tu empresa con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti — nosotros gestionamos todo el proceso. Tú solo recibes el perfil y decides.
               </p>
               <p className="text-gray-500 mb-10 leading-relaxed">
-                100€ para arrancar + 250€ al incorporar al alumno. Solo pagas si hay resultado.
+                Trabajamos a éxito. Solo pagas si incorporas al perfil. Sin riesgo.
               </p>
               <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
                 Ver cómo funciona para empresas
