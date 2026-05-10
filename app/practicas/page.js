@@ -150,76 +150,68 @@ export default function Practicas() {
       </section>
 
       {/* PLANES */}
-      <section id="planes" className="py-16 bg-[#F0F4F8]">
-        <div className="max-w-5xl mx-auto px-8">
-          <div className="text-center mb-10">
+      <section id="planes" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="text-center mb-12">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">¿Cómo te ayudamos?</span>
             <h2 className="text-3xl font-bold text-[#000000] mt-2">Elige tu camino</h2>
-            <p className="text-gray-500 text-sm mt-2">Todos incluyen sesión inicial gratuita de 15 min.</p>
+            <p className="text-gray-400 text-sm mt-2">Todos incluyen sesión inicial gratuita de 15 min.</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5">
 
-            {/* Pack Medio */}
-            <div className="bg-[#000000] rounded-2xl p-8 shadow-sm flex flex-col relative">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">Más popular</span>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">Opción 1</p>
-              <h3 className="text-xl font-bold text-white mb-2">Prepárate para destacar</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-5">
-                Ideal si tu instituto o universidad ya te busca las prácticas o tienes tiempo para buscar empleo por tu cuenta, pero no sabes cómo superar las entrevistas ni cómo presentarte para que te elijan a ti.
-              </p>
-              <ul className="space-y-3 mb-8 flex-1">
+            {/* Opción 1 */}
+            <div className="border-2 border-gray-100 rounded-3xl p-8 flex flex-col relative hover:border-gray-200 transition">
+              <span className="absolute -top-3 left-8 bg-[#000000] text-white text-xs font-bold px-3 py-1 rounded-full">Más popular</span>
+              <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 1</p>
+              <h3 className="text-2xl font-bold text-[#000000] mb-6">Prepárate para destacar</h3>
+              <ul className="space-y-4 flex-1 mb-8">
                 {[
-                  "1 sesión de 60 min con orientadora laboral",
-                  "Asesoramiento laboral y plan de carrera personalizado para tu profesión",
-                  "CV atractivo y perfil de LinkedIn optimizado para que te encuentren",
-                  "Técnicas y trucos reales para superar cualquier entrevista con seguridad",
+                  "1 sesión de 60 min",
+                  "Plan de carrera personalizado",
+                  "CV + LinkedIn optimizados",
+                  "Técnicas para superar entrevistas",
                 ].map((item, j) => (
-                  <li key={j} className="flex items-start gap-3 text-sm text-gray-300">
-                    <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
+                  <li key={j} className="flex items-center gap-3 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-center text-white font-bold text-xl underline mb-3">75€ <span className="text-gray-400 text-xs font-normal no-underline">· sesión gratuita incluida</span></p>
-              <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-[#3BB54A] text-white hover:bg-[#2ea03c]">
-                Quiero este plan
-              </a>
+              <div className="border-t border-gray-100 pt-6">
+                <p className="text-4xl font-bold text-[#000000] mb-1">75€</p>
+                <p className="text-gray-400 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
+                <a href="/contacto" className="block text-center py-3.5 rounded-full font-semibold text-sm bg-[#000000] text-white hover:bg-[#222] transition">
+                  Quiero este plan
+                </a>
+              </div>
             </div>
 
-            {/* Pack Premium */}
-            <div className="bg-[#3BB54A] rounded-2xl p-8 shadow-sm flex flex-col relative">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#000000] text-xs font-bold px-4 py-1 rounded-full shadow">Más completo</span>
-              <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-1">Opción 2</p>
-              <h3 className="text-xl font-bold text-white mb-2">Nosotros buscamos por ti</h3>
-              <p className="text-white/90 text-sm leading-relaxed mb-5">
-                Ideal si no tienes tiempo ni ganas de buscar tú mismo. Analizamos tu perfil, te preparamos a fondo y nos movemos en tu nombre ante las empresas que más encajan contigo. Ahorra tiempo y ve a tiro hecho.
-              </p>
-              <ul className="space-y-3 mb-8 flex-1">
+            {/* Opción 2 */}
+            <div className="bg-[#000000] rounded-3xl p-8 flex flex-col relative">
+              <span className="absolute -top-3 left-8 bg-[#3BB54A] text-white text-xs font-bold px-3 py-1 rounded-full">Más completo</span>
+              <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 2</p>
+              <h3 className="text-2xl font-bold text-white mb-6">Nosotros buscamos por ti</h3>
+              <ul className="space-y-4 flex-1 mb-8">
                 {[
-                  "3 sesiones de 60 min con orientadora laboral",
-                  "CV actualizado y LinkedIn optimizado para atraer a los reclutadores correctos",
-                  "Asesoramiento laboral y plan de carrera adaptado a tu perfil y sector",
-                  "Role plays de entrevistas reales para que llegues sin nervios",
-                  "Te buscamos las entrevistas: movemos tu CV entre +10.000 contactos y empresas potenciales",
+                  "3 sesiones de 60 min",
+                  "CV + LinkedIn para atraer reclutadores",
+                  "Role plays de entrevistas reales",
+                  "Búsqueda activa en +10.000 empresas",
+                  "Te gestionamos todo el proceso",
                 ].map((item, j) => (
-                  <li key={j} className="flex items-start gap-3 text-sm text-white/90">
-                    <div className="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
+                  <li key={j} className="flex items-center gap-3 text-sm text-gray-300">
+                    <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-center text-white font-bold text-xl underline mb-3">149€ <span className="text-white/60 text-xs font-normal no-underline">· sesión gratuita incluida</span></p>
-              <a href="/sesion-gratuita" className="block text-center py-3.5 rounded-full font-semibold text-sm transition bg-white text-[#000000] hover:bg-gray-100">
-                Quiero este plan
-              </a>
+              <div className="border-t border-white/10 pt-6">
+                <p className="text-4xl font-bold text-white mb-1">149€</p>
+                <p className="text-gray-500 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
+                <a href="/contacto" className="block text-center py-3.5 rounded-full font-semibold text-sm bg-[#3BB54A] text-white hover:bg-[#2ea03c] transition">
+                  Quiero este plan
+                </a>
+              </div>
             </div>
 
           </div>
