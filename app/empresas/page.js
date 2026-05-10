@@ -14,8 +14,8 @@ export default function Empresas() {
 
       <Navbar />
 
-      {/* HERO + DATOS */}
-      <section className="relative">
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center">
         <Image
           src="/empresas-hero.jpg"
           alt="Equipo de trabajo en empresa"
@@ -24,22 +24,20 @@ export default function Empresas() {
           priority
         />
         <div className="absolute inset-0 bg-[#000000]/80"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-8 pt-40 pb-20 w-full">
-
-          {/* Título */}
-          <div className="text-center mb-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 pt-32 pb-20 w-full">
+          <div className="max-w-3xl mb-20">
             <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
-              Para pymes y startups · Perfiles FP y junior sin coste salarial
+              Para pymes y startups · Perfiles FP sin coste salarial
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Talento joven en tu empresa.<br />
-              <span className="text-[#3BB54A]">Sin salario. Sin papeleo. Sin complicaciones.</span>
+              <span className="text-[#3BB54A]">Sin salario. Sin papeleo.</span>
             </h1>
-            <p className="text-lg text-white/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Conectamos tu pyme o startup con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
+            <p className="text-lg text-white/70 mb-10 leading-relaxed">
+              Conectamos tu pyme o startup con alumnos de FP que necesitan hacer prácticas. Sin coste salarial, sin trámites — nosotros lo gestionamos todo. Tú solo decides.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg text-center">
                 Infórmate sin compromiso
               </a>
               <a href="#como-funciona" className="inline-block border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white transition text-center">
@@ -48,117 +46,56 @@ export default function Empresas() {
             </div>
           </div>
 
-          {/* Beneficios clave */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
+          {/* Stats — tira horizontal sin cajas */}
+          <div className="border-t border-white/20 pt-10 grid grid-cols-2 md:grid-cols-5 gap-8">
             {[
               { valor: "0 €", label: "coste salarial en prácticas" },
               { valor: "26-30h", label: "de gestión que te ahorramos" },
               { valor: "1 de 3", label: "alumnos acaba contratado" },
               { valor: "100%", label: "garantía de sustitución" },
-              { valor: "Prácticas · Dual", label: "gestionamos ambas modalidades" },
+              { valor: "2-4 sem", label: "duración del proceso" },
             ].map((item, i) => (
-              <div key={i} className="flex flex-col items-center gap-1">
-                <p className="text-xl font-bold text-[#3BB54A]">{item.valor}</p>
-                <p className="text-xs text-white/60 leading-snug">{item.label}</p>
+              <div key={i}>
+                <p className="text-2xl font-bold text-[#3BB54A]">{item.valor}</p>
+                <p className="text-xs text-white/50 mt-1 leading-snug">{item.label}</p>
               </div>
             ))}
           </div>
-
-
         </div>
       </section>
 
-
-      {/* LÍNEA FP — SIN COSTE */}
+      {/* COSTE 0€ — dos columnas, texto + lista */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Incorpora talento joven.<br />Nosotros nos encargamos de todo.</h2>
-            <p className="text-[#000000] mt-4 max-w-2xl mx-auto">
-              Conectamos tu pyme o startup con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
-            </p>
-          </div>
-
-          {/* Modalidad principal — Prácticas */}
-          <div className="bg-[#000000] rounded-2xl p-10 mb-16 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Prácticas en empresa — Obligatorias para titular</p>
-              <h3 className="text-3xl font-bold text-white mb-4">Coste para la empresa: 0 €</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-6">
-                El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
+              <span className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest">Prácticas en empresa — Obligatorias para titular</span>
+              <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-5 leading-tight">
+                Coste para<br />la empresa: 0 €
+              </h2>
+              <p className="text-[#000000] text-sm leading-relaxed mb-8">
+                El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato laboral. Solo firmas un convenio de colaboración con el instituto — y eso lo tramitamos nosotros.
               </p>
-              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
+              <a href="/contacto" className="inline-block bg-[#000000] text-white px-8 py-3.5 rounded-full font-semibold text-sm hover:bg-[#222] transition">
                 Infórmate sin compromiso
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-6">
               {[
                 { titulo: "Sin salario ni contrato", desc: "Cero coste salarial. Solo un convenio que tramitamos nosotros." },
-                { titulo: "La SS la paga el Estado", desc: "No sale de tu bolsillo. El alumno cotiza y tú no pagas nada." },
-                { titulo: "3-4 meses reales", desc: "Tiempo suficiente para ver cómo trabaja antes de decidir." },
+                { titulo: "La Seguridad Social la paga el Estado", desc: "No sale de tu bolsillo. El alumno cotiza y tú no pagas nada." },
+                { titulo: "3-4 meses reales de trabajo", desc: "Tiempo suficiente para ver cómo trabaja antes de decidir." },
                 { titulo: "Puedes contratarle después", desc: "1 de cada 3 alumnos acaba en plantilla. La mejor prueba de trabajo." },
               ].map((item, i) => (
-                <div key={i} className="bg-white/10 rounded-xl p-4">
-                  <p className="text-sm font-bold text-white mb-1">{item.titulo}</p>
-                  <p className="text-xs text-white/60 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Perfiles más demandados */}
-          <div className="mb-12">
-            <div className="text-center mb-10">
-              <h3 className="text-2xl font-bold text-[#000000]">¿Qué perfil necesitas en tu empresa?</h3>
-              <p className="text-[#000000] text-sm mt-2">Los más solicitados por pymes y startups como la tuya</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  icono: "💻",
-                  nombre: "Informática y desarrollo",
-                  desc: "Web, apps, sistemas y soporte técnico.",
-                  tags: ["Desarrollo web", "Apps móviles", "Sistemas IT", "Soporte técnico"],
-                  color: "bg-blue-50 border-blue-100",
-                },
-                {
-                  icono: "📣",
-                  nombre: "Marketing digital",
-                  desc: "Redes sociales, campañas y captación de leads.",
-                  tags: ["Redes sociales", "SEO/SEM", "Publicidad online", "Captación leads"],
-                  color: "bg-orange-50 border-orange-100",
-                },
-                {
-                  icono: "📊",
-                  nombre: "Administración y gestión",
-                  desc: "Facturas, contabilidad, RRHH y papeleo.",
-                  tags: ["Facturación", "Contabilidad", "RRHH", "Atención cliente"],
-                  color: "bg-purple-50 border-purple-100",
-                },
-                {
-                  icono: "🛒",
-                  nombre: "Comercial y logística",
-                  desc: "Ventas, pedidos, atención al cliente y almacén.",
-                  tags: ["Ventas", "Ecommerce", "Almacén", "Logística"],
-                  color: "bg-yellow-50 border-yellow-100",
-                },
-                {
-                  icono: "🔒",
-                  nombre: "Ciberseguridad y datos",
-                  desc: "El perfil más escaso y más demandado del mercado.",
-                  tags: ["Ciberseguridad", "Protección datos", "Cloud", "Big Data"],
-                  color: "bg-red-50 border-red-100",
-                },
-              ].map((p, i) => (
-                <div key={i} className={`${p.color} rounded-2xl p-6 border hover:shadow-md transition-all`}>
-                  <span className="text-4xl mb-4 block">{p.icono}</span>
-                  <p className="text-base font-bold text-[#000000] mb-2">{p.nombre}</p>
-                  <p className="text-[#000000] text-xs leading-relaxed mb-4">{p.desc}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {p.tags.map((tag, j) => (
-                      <span key={j} className="bg-white text-[#000000] text-xs px-2 py-1 rounded-full border border-gray-200">{tag}</span>
-                    ))}
+                <div key={i} className="flex items-start gap-4 pb-6 border-b border-gray-100 last:border-0 last:pb-0">
+                  <div className="w-7 h-7 rounded-full bg-[#3BB54A]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3.5 h-3.5 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-bold text-[#000000] text-sm mb-0.5">{item.titulo}</p>
+                    <p className="text-sm text-[#000000]/60 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -167,171 +104,166 @@ export default function Empresas() {
         </div>
       </section>
 
-      {/* LO QUE NOSOTROS HACEMOS */}
-      <section id="como-funciona" className="py-24 bg-[#F0F4F8]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">La solución</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Lo que hacemos por ti</h2>
-            <p className="text-[#000000] mt-4 max-w-xl mx-auto">Somos tu departamento de selección de talento joven externo. Tú te dedicas a tu negocio.</p>
+      {/* PERFILES — lista horizontal limpia */}
+      <section className="py-20 bg-[#F0F4F8]">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="mb-10">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Perfiles disponibles</span>
+            <h2 className="text-3xl font-bold text-[#000000] mt-2">¿Qué perfil necesitas?</h2>
+            <p className="text-[#000000] text-sm mt-2">Los más solicitados por pymes y startups como la tuya</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-2xl overflow-hidden">
             {[
-              {
-                num: "01",
-                titulo: "Entendemos exactamente lo que necesitas",
-                desc: "Nos reunimos contigo para hacer un briefing detallado. Qué perfil, qué funciones, qué esperas. Sin eso, no empezamos.",
-              },
-              {
-                num: "02",
-                titulo: "Publicamos, filtramos y entrevistamos",
-                desc: "Nos encargamos de todo el proceso: publicación en los canales adecuados, cribado de CVs y primeras entrevistas. Sin que muevas un dedo.",
-              },
-              {
-                num: "03",
-                titulo: "Te presentamos solo los mejores",
-                desc: "Recibes entre 3 y 4 candidatos filtrados y preparados. Tú decides si haces la entrevista final solo o con nosotros.",
-              },
-              {
-                num: "04",
-                titulo: "Gestionamos toda la documentación",
-                desc: "Convenio de prácticas, papeles, trámites. Todo gestionado. Tú solo firmas la incorporación.",
-              },
-            ].map((item, i) => (
-              <div key={i} className="flex gap-6 p-8 bg-white rounded-2xl shadow-sm">
-                <span className="text-5xl font-bold text-[#3BB54A]/20 leading-none flex-shrink-0">{item.num}</span>
-                <div>
-                  <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
-                  <p className="text-[#000000] text-sm leading-relaxed">{item.desc}</p>
+              { icono: "💻", nombre: "Informática y desarrollo", desc: "Web, apps, sistemas y soporte técnico.", tags: ["Desarrollo web", "Apps móviles", "Sistemas IT", "Soporte técnico"] },
+              { icono: "📣", nombre: "Marketing digital", desc: "Redes sociales, campañas y captación de leads.", tags: ["Redes sociales", "SEO/SEM", "Publicidad online", "Captación leads"] },
+              { icono: "📊", nombre: "Administración y gestión", desc: "Facturas, contabilidad, RRHH y papeleo.", tags: ["Facturación", "Contabilidad", "RRHH", "Atención cliente"] },
+              { icono: "🛒", nombre: "Comercial y logística", desc: "Ventas, pedidos, atención al cliente y almacén.", tags: ["Ventas", "Ecommerce", "Almacén", "Logística"] },
+              { icono: "🔒", nombre: "Ciberseguridad y datos", desc: "El perfil más escaso y más demandado del mercado.", tags: ["Ciberseguridad", "Protección datos", "Cloud", "Big Data"] },
+            ].map((p, i) => (
+              <div key={i} className="flex items-center gap-6 px-8 py-5 border-b border-gray-100 last:border-0 hover:bg-[#F0F4F8] transition-colors">
+                <span className="text-2xl w-8 flex-shrink-0">{p.icono}</span>
+                <div className="w-52 flex-shrink-0">
+                  <p className="font-bold text-[#000000] text-sm">{p.nombre}</p>
+                  <p className="text-xs text-[#000000]/50 mt-0.5">{p.desc}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {p.tags.map((tag, j) => (
+                    <span key={j} className="text-xs px-3 py-1 bg-[#F0F4F8] border border-gray-200 rounded-full text-[#000000]">{tag}</span>
+                  ))}
                 </div>
               </div>
             ))}
+          </div>
+          <p className="text-xs text-[#000000]/50 mt-4 text-center">¿No encuentras tu perfil? Escríbenos — trabajamos con cualquier familia de FP.</p>
+        </div>
+      </section>
+
+      {/* CÓMO FUNCIONA — timeline vertical */}
+      <section id="como-funciona" className="py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">El proceso</span>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3">Lo que hacemos por ti</h2>
+            <p className="text-[#000000] mt-4">Somos tu departamento de selección externo. Tú te dedicas a tu negocio.</p>
+          </div>
+          <div className="relative">
+            <div className="absolute left-5 top-2 bottom-2 w-px bg-gray-200"></div>
+            <div className="space-y-10">
+              {[
+                { titulo: "Entendemos exactamente lo que necesitas", desc: "Nos reunimos contigo para hacer un briefing detallado. Qué perfil, qué funciones, qué esperas. Sin eso, no empezamos." },
+                { titulo: "Publicamos, filtramos y entrevistamos", desc: "Nos encargamos de todo el proceso: publicación en los canales adecuados, cribado de CVs y primeras entrevistas. Sin que muevas un dedo." },
+                { titulo: "Te presentamos solo los mejores", desc: "Recibes entre 3 y 4 candidatos filtrados y preparados. Tú decides si haces la entrevista final solo o con nosotros." },
+                { titulo: "Gestionamos toda la documentación", desc: "Convenio de prácticas, papeles, trámites. Todo gestionado. Tú solo firmas la incorporación." },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-8 relative">
+                  <div className="w-10 h-10 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0 relative z-10 text-white font-bold text-sm">
+                    {i + 1}
+                  </div>
+                  <div className="pt-1.5 pb-4">
+                    <h3 className="font-bold text-[#000000] text-lg mb-2">{item.titulo}</h3>
+                    <p className="text-sm text-[#000000]/60 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* PRECIOS */}
-      <section id="precios" className="py-12 bg-white">
+      <section id="precios" className="py-20 bg-[#F0F4F8]">
         <div className="max-w-4xl mx-auto px-8">
-          <div className="text-center mb-8">
+          <div className="text-center mb-10">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Precios</span>
             <h2 className="text-3xl font-bold text-[#000000] mt-2">Claro, sencillo y sin sorpresas</h2>
             <p className="text-[#000000] text-sm mt-2">Trabajamos a éxito. Solo pagas si incorporas.</p>
           </div>
-          <div className="bg-[#F0F4F8] rounded-2xl p-6 border border-gray-100">
 
-            {/* Fila única: Retainer + flecha + dos caminos */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-
-              {/* Retainer */}
-              <div className="bg-[#000000] rounded-xl px-6 py-5 text-center flex-shrink-0 w-full md:w-52">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Retainer inicial</p>
-                <p className="text-5xl font-bold text-white">100€</p>
-                <p className="text-white/60 text-xs mt-2">Al arrancar · se descuenta</p>
+          <div className="bg-white rounded-2xl overflow-hidden border border-gray-100">
+            {/* Retainer */}
+            <div className="px-8 py-6 border-b border-gray-100 flex items-center justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#3BB54A] mb-1">Retainer inicial</p>
+                <p className="text-sm text-[#000000]/60">Se paga al arrancar · se descuenta del success fee si hay contratación</p>
               </div>
-
-              {/* Flecha */}
-              <svg className="w-6 h-6 text-[#3BB54A] rotate-0 md:rotate-[-90deg] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-
-              {/* Camino A */}
-              <div className="bg-[#3BB54A] rounded-xl px-5 py-5 border-2 border-[#3BB54A] flex-1 w-full">
-                <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-0.5">Camino A</p>
-                <p className="text-sm font-bold text-white mb-2">Prácticas, luego decides</p>
-                <p className="text-5xl font-bold text-white">250€</p>
-                <p className="text-xs text-white/80 font-medium mt-1">Sin coste salarial</p>
-              </div>
-
-              {/* Camino B */}
-              <div className="bg-white rounded-xl px-5 py-5 border-2 border-[#000000] flex-1 w-full">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-0.5">Camino B</p>
-                <p className="text-sm font-bold text-[#000000] mb-2">Contrato junior directo</p>
-                <p className="text-5xl font-bold text-[#000000]">400€</p>
-                <p className="text-xs text-[#000000] font-medium mt-1">Retainer ya descontado</p>
-              </div>
+              <p className="text-4xl font-bold text-[#000000]">100€</p>
             </div>
-
-            <p className="text-xs text-[#000000] text-center mb-4">Todos los precios sin IVA · Solo pagas si hay resultado</p>
-            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-              {[
-                "Garantía de sustitución gratuita",
-                "Gestión completa de la documentación",
-                "3-4 candidatos filtrados",
-                "Proceso en 2-4 semanas",
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-1.5 text-xs text-[#000000]">
-                  <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
-                    <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  {item}
-                </div>
-              ))}
+            {/* Camino A */}
+            <div className="px-8 py-6 border-b border-gray-100 flex items-center justify-between bg-[#3BB54A]/5">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#3BB54A] mb-1">Prácticas → luego decides</p>
+                <p className="text-sm text-[#000000]/60">Incorporas al alumno en prácticas. Sin coste salarial. Retenemos 100€ del fee.</p>
+              </div>
+              <p className="text-4xl font-bold text-[#000000]">250€</p>
             </div>
+            {/* Camino B */}
+            <div className="px-8 py-6 flex items-center justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-[#000000] mb-1">Contrato junior directo</p>
+                <p className="text-sm text-[#000000]/60">Contratas directamente. Retainer ya descontado.</p>
+              </div>
+              <p className="text-4xl font-bold text-[#000000]">400€</p>
+            </div>
+          </div>
+
+          <p className="text-xs text-[#000000]/50 text-center mt-4 mb-6">Todos los precios sin IVA · Solo pagas si hay resultado</p>
+
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            {[
+              "Garantía de sustitución gratuita",
+              "Gestión completa de la documentación",
+              "3-4 candidatos filtrados",
+              "Proceso en 2-4 semanas",
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-2 text-sm text-[#000000]">
+                <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* DATOS OFICIALES */}
-      <section className="py-24 bg-[#F0F4F8]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
+      {/* DATOS */}
+      <section className="py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-8">
+          <div className="text-center mb-14">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">El mercado de talento joven en España</h2>
-            <p className="text-[#000000] mt-4 max-w-xl mx-auto">Cifras reales que explican por qué cada vez más pymes apuestan por este modelo.</p>
           </div>
 
-          {/* Fila 1 — 4 datos grandes */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+          {/* Stats — tira sin cajas */}
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200 border border-gray-200 rounded-2xl overflow-hidden mb-10">
             {[
-              {
-                valor: "+940.000",
-                label: "alumnos matriculados en FP en España",
-                fuente: "Ministerio de Educación, curso 2022-23",
-              },
-              {
-                valor: "100%",
-                label: "de los alumnos de FP deben hacer prácticas para titular",
-                fuente: "RD 659/2023 — Ley Orgánica de FP",
-              },
-              {
-                valor: "28%",
-                label: "tasa de paro juvenil en España (menores de 25 años)",
-                fuente: "Eurostat, 2024",
-              },
-              {
-                valor: "+3M",
-                label: "pymes en España, el 99,8% del tejido empresarial",
-                fuente: "INE / Retrato de las pymes 2023",
-              },
+              { valor: "+940.000", label: "alumnos matriculados en FP", fuente: "Min. Educación 2022-23" },
+              { valor: "100%", label: "de alumnos FP necesitan prácticas para titular", fuente: "RD 659/2023" },
+              { valor: "28%", label: "tasa de paro juvenil en España", fuente: "Eurostat 2024" },
+              { valor: "+3M", label: "pymes en España, el 99,8% del tejido empresarial", fuente: "INE 2023" },
             ].map((d, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
-                <p className="text-4xl font-bold text-[#000000] mb-2">{d.valor}</p>
-                <p className="text-sm text-[#000000] leading-snug mb-3">{d.label}</p>
-                <p className="text-xs text-[#000000] italic">{d.fuente}</p>
+              <div key={i} className="p-8 text-center">
+                <p className="text-3xl font-bold text-[#000000] mb-2">{d.valor}</p>
+                <p className="text-xs text-[#000000]/60 leading-snug mb-2">{d.label}</p>
+                <p className="text-xs text-[#000000]/30 italic">{d.fuente}</p>
               </div>
             ))}
           </div>
 
-          {/* Fila 2 — 2 bloques más amplios */}
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#000000] rounded-2xl p-8 text-white">
+            <div className="bg-[#000000] rounded-2xl p-8">
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">El coste real de contratar</p>
-              <p className="text-3xl font-bold mb-2">1.200€ – 2.000€</p>
-              <p className="text-white/80 text-sm leading-relaxed mb-2">
-                Es lo que cuesta de media un proceso de selección para una pyme cuando se externaliza con una consultora tradicional de RRHH.
+              <p className="text-3xl font-bold text-white mb-3">1.200€ – 2.000€</p>
+              <p className="text-white/70 text-sm leading-relaxed">
+                Es lo que cuesta de media un proceso de selección con una consultora tradicional de RRHH. Job2Jump lo hace por 250-400€.
               </p>
-              <p className="text-white/50 text-xs italic">SHRM / informes sectoriales RRHH España</p>
             </div>
-            <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <div className="bg-[#F0F4F8] rounded-2xl p-8">
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">FP: el perfil más empleable</p>
-              <p className="text-3xl font-bold text-[#000000] mb-2">76% de empleabilidad</p>
-              <p className="text-[#000000] text-sm leading-relaxed mb-2">
+              <p className="text-3xl font-bold text-[#000000] mb-3">76% de empleabilidad</p>
+              <p className="text-[#000000]/70 text-sm leading-relaxed">
                 Los titulados de FP tienen una de las tasas de inserción laboral más altas de España, por encima de muchas titulaciones universitarias.
               </p>
-              <p className="text-[#000000] text-xs italic">Ministerio de Educación — Informe de inserción laboral FP 2023</p>
             </div>
           </div>
         </div>
@@ -347,10 +279,10 @@ export default function Empresas() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             ¿Listo para incorporar talento?
           </h2>
-          <p className="text-white/80 text-lg mb-10">
+          <p className="text-white/70 text-lg mb-10">
             Cuéntanos qué perfil necesitas. Te respondemos en menos de 24 horas.
           </p>
-          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
+          <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             Contactar ahora
           </a>
         </div>
