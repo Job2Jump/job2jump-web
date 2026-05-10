@@ -103,12 +103,22 @@ export default function FAQ() {
           <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
             Preguntas frecuentes
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Resolvemos tus dudas
           </h1>
-          <p className="text-white/70 text-lg">
-            Si no encuentras lo que buscas, escríbenos a hola@job2jump.es o llámanos al <a href="tel:664740677" className="text-white font-semibold hover:text-[#3BB54A] transition">664 74 06 77</a>.
+          <p className="text-white/70 text-base mb-8">
+            Si no encuentras lo que buscas, estamos aquí para ayudarte.
           </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="mailto:hola@job2jump.es" className="flex items-center justify-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium hover:border-white transition">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              hola@job2jump.es
+            </a>
+            <a href="tel:664740677" className="flex items-center justify-center gap-2 bg-[#3BB54A] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              664 74 06 77
+            </a>
+          </div>
         </div>
       </section>
 
