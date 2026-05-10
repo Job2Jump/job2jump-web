@@ -66,7 +66,7 @@ export default function CambioEmpleo() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
-                <p className="text-gray-900 leading-relaxed text-sm">{text}</p>
+                <p className="text-[#000000] leading-relaxed text-sm">{text}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function CambioEmpleo() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
-                  <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-[#000000] text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -135,7 +135,7 @@ export default function CambioEmpleo() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige tu modalidad</h2>
-            <p className="text-gray-900 mt-4">Sesión inicial gratuita de 15 min para analizar tu caso y ofrecerte un plan personalizado.</p>
+            <p className="text-[#000000] mt-4">Sesión inicial gratuita de 15 min para analizar tu caso y ofrecerte un plan personalizado.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
@@ -145,7 +145,7 @@ export default function CambioEmpleo() {
                 desc: "Tú aplicas, nosotros te preparamos",
                 bg: "bg-white",
                 textP: "text-[#000000]",
-                textS: "text-gray-900",
+                textS: "text-[#000000]",
                 btn: "bg-[#000000] text-white hover:bg-[#222222]",
                 checkBg: "bg-[#3BB54A]",
                 items: [
@@ -162,7 +162,7 @@ export default function CambioEmpleo() {
                 desc: "Nosotros buscamos en tu nombre",
                 bg: "bg-[#000000]",
                 textP: "text-white",
-                textS: "text-gray-300",
+                textS: "text-white/80",
                 btn: "bg-[#3BB54A] text-white hover:bg-[#2ea03c]",
                 checkBg: "bg-[#3BB54A]",
                 items: [
@@ -209,7 +209,7 @@ export default function CambioEmpleo() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             El cambio que llevas tiempo pensando
           </h2>
-          <p className="text-gray-300 text-lg mb-10">
+          <p className="text-white/80 text-lg mb-10">
             Empieza con una sesión gratuita de 15 minutos. Analizamos tu caso y te decimos qué podemos hacer por ti.
           </p>
           <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">

@@ -63,7 +63,7 @@ export default function QuienesSomos() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nuestro propósito</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-4">Por qué nacimos</h2>
-            <p className="text-xl font-semibold text-gray-900 max-w-xl mx-auto leading-snug">
+            <p className="text-xl font-semibold text-[#000000] max-w-xl mx-auto leading-snug">
               Vimos que el sistema estaba roto para los dos lados.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function QuienesSomos() {
               <div key={i} className="bg-white rounded-2xl p-7 border border-gray-100">
                 <p className="text-3xl font-bold text-[#3BB54A] mb-4">{item.num}</p>
                 <h3 className="font-bold text-[#000000] text-base mb-2">{item.titulo}</h3>
-                <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-[#000000] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function QuienesSomos() {
             <div className="bg-[#000000] rounded-2xl p-10">
               <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">Para pymes y startups</span>
               <h3 className="text-2xl font-bold text-white mb-4">Tu departamento de talento externo</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+              <p className="text-white/80 text-sm leading-relaxed mb-6">
                 Sabemos lo que cuesta un proceso de selección mal hecho: tiempo perdido, candidatos que no encajan, frustraciones. Las pymes no tienen un departamento de RRHH dedicado — nosotros lo somos. Gestionamos todo el proceso para que tú solo tengas que tomar la decisión final.
               </p>
               <ul className="space-y-3">
@@ -131,7 +131,7 @@ export default function QuienesSomos() {
                   "Proceso completo gestionado por nosotros",
                   "Garantía de sustitución incluida",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-gray-300">
+                  <li key={i} className="flex items-center gap-3 text-sm text-white/80">
                     <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -150,7 +150,7 @@ export default function QuienesSomos() {
             <div className="bg-[#F0F4F8] rounded-2xl p-10">
               <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">Para talento joven</span>
               <h3 className="text-2xl font-bold text-[#000000] mb-4">Tu apoyo para el primer salto profesional</h3>
-              <p className="text-gray-900 text-sm leading-relaxed mb-6">
+              <p className="text-[#000000] text-sm leading-relaxed mb-6">
                 Mandar CVs a ciegas no funciona. El mercado laboral tiene reglas que nadie te enseña: cómo presentarte, cómo destacar en LinkedIn, qué decir en una entrevista. Nosotros te preparamos y, si quieres, buscamos activamente por ti.
               </p>
               <ul className="space-y-3">
@@ -160,7 +160,7 @@ export default function QuienesSomos() {
                   "CV y LinkedIn que abren puertas",
                   "Te buscamos las entrevistas tú decides",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-gray-900">
+                  <li key={i} className="flex items-center gap-3 text-sm text-[#000000]">
                     <div className="w-5 h-5 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -185,7 +185,7 @@ export default function QuienesSomos() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nuestra experiencia</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Conocemos el mercado por dentro</h2>
-            <p className="text-gray-900 mt-4 max-w-xl mx-auto">Venimos de las consultoras de headhunting más exigentes del mercado. Sabemos exactamente cómo funciona la selección de talento — y cómo hacerlo bien.</p>
+            <p className="text-[#000000] mt-4 max-w-xl mx-auto">Venimos de las consultoras de headhunting más exigentes del mercado. Sabemos exactamente cómo funciona la selección de talento — y cómo hacerlo bien.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -196,7 +196,7 @@ export default function QuienesSomos() {
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
                 <p className="text-2xl font-bold text-[#3BB54A] mb-2">{item.num}</p>
-                <p className="text-sm text-gray-900 leading-snug">{item.label}</p>
+                <p className="text-sm text-[#000000] leading-snug">{item.label}</p>
               </div>
             ))}
           </div>
@@ -244,7 +244,7 @@ export default function QuienesSomos() {
                   </svg>
                 </div>
                 <h3 className="text-base font-bold text-[#000000] mb-2">{item.titulo}</h3>
-                <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-[#000000] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -259,7 +259,7 @@ export default function QuienesSomos() {
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Hablamos?</h2>
-          <p className="text-gray-300 text-lg mb-3">Cuéntanos tu situación y vemos cómo podemos ayudarte.</p>
+          <p className="text-white/80 text-lg mb-3">Cuéntanos tu situación y vemos cómo podemos ayudarte.</p>
           <p className="text-[#3BB54A] font-semibold text-base mb-10">Trabajamos a éxito. No pagas hasta que te encontramos el perfil.</p>
           <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             Sesión gratuita

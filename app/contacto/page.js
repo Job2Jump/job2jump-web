@@ -55,7 +55,7 @@ export default function Contacto() {
               <h1 className="text-3xl font-bold text-[#000000] mb-2 leading-tight">
                 Te llamamos
               </h1>
-              <p className="text-gray-900 text-sm mb-8 leading-relaxed">
+              <p className="text-[#000000] text-sm mb-8 leading-relaxed">
                 Déjanos tus datos y nos ponemos en contacto contigo en menos de 24 horas.
               </p>
 
@@ -94,8 +94,8 @@ export default function Contacto() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        <p className={`text-sm font-semibold ${perfil === op.valor ? "text-[#000000]" : "text-gray-700"}`}>{op.label}</p>
-                        <p className="text-xs text-gray-400 mt-0.5">{op.desc}</p>
+                        <p className={`text-sm font-semibold ${perfil === op.valor ? "text-[#000000]" : "text-[#000000]"}`}>{op.label}</p>
+                        <p className="text-xs text-[#000000] mt-0.5">{op.desc}</p>
                       </button>
                     ))}
                   </div>
@@ -135,7 +135,7 @@ export default function Contacto() {
                   className={`w-full py-4 rounded-full font-semibold text-base transition mt-2 ${
                     valido && !enviando
                       ? "bg-[#3BB54A] text-white hover:bg-[#2ea03c]"
-                      : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                      : "bg-gray-200 text-[#000000] cursor-not-allowed"
                   }`}
                 >
                   {enviando ? "Enviando..." : "Quiero que me llaméis"}
@@ -148,9 +148,9 @@ export default function Contacto() {
                   </p>
                 )}
 
-                <p className="text-center text-xs text-gray-400">
+                <p className="text-center text-xs text-[#000000]">
                   Al enviar este formulario aceptas nuestra{" "}
-                  <a href="/privacidad" className="underline hover:text-gray-900">política de privacidad</a>.
+                  <a href="/privacidad" className="underline hover:text-[#000000]">política de privacidad</a>.
                 </p>
               </form>
             </div>
@@ -163,7 +163,7 @@ export default function Contacto() {
                 </svg>
               </div>
               <h2 className="text-2xl font-bold text-[#000000] mb-3">¡Recibido, {form.nombre.split(" ")[0]}!</h2>
-              <p className="text-gray-900 leading-relaxed mb-8">
+              <p className="text-[#000000] leading-relaxed mb-8">
                 Te llamamos en menos de 24 horas al número que nos has dejado. Si tienes cualquier urgencia, escríbenos a{" "}
                 <a href="mailto:hola@job2jump.es" className="text-[#3BB54A] hover:underline">hola@job2jump.es</a>.
               </p>

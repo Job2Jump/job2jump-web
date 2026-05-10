@@ -82,7 +82,7 @@ function Accordion({ items }) {
           </button>
           {abierto === i && (
             <div className="px-6 pb-5">
-              <p className="text-gray-900 text-sm leading-relaxed">{item.respuesta}</p>
+              <p className="text-[#000000] text-sm leading-relaxed">{item.respuesta}</p>
             </div>
           )}
         </div>
@@ -149,7 +149,7 @@ export default function FAQ() {
       <section className="py-20 bg-[#000000] text-center">
         <div className="max-w-xl mx-auto px-8">
           <h2 className="text-3xl font-bold text-white mb-4">¿Tienes más preguntas?</h2>
-          <p className="text-gray-300 mb-8">Escríbenos y te respondemos en menos de 24 horas.</p>
+          <p className="text-white/80 mb-8">Escríbenos y te respondemos en menos de 24 horas.</p>
           <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             hola@job2jump.es
           </a>

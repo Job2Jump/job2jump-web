@@ -64,7 +64,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#000000] mb-2 md:mb-4 leading-tight transition-colors">
                 Quiero contratar<br />talento joven
               </h2>
-              <p className="text-white/60 group-hover:text-gray-900 text-sm leading-relaxed mb-4 md:mb-8 flex-1 transition-colors">
+              <p className="text-white/60 group-hover:text-[#000000] text-sm leading-relaxed mb-4 md:mb-8 flex-1 transition-colors">
                 Buscamos, filtramos y te presentamos a las personas adecuadas.
               </p>
               <span className="inline-flex items-center gap-2 text-white group-hover:text-[#000000] font-semibold text-sm md:text-base transition-colors">
@@ -113,7 +113,7 @@ export default function Home() {
                     <svg className="w-4 h-4 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
                   </div>
                   <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
-                  <p className="text-xs text-gray-900 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-[#000000] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -122,10 +122,10 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
                 Talento joven en tu empresa.<br />Sin salario. Sin papeleo.
               </h2>
-              <p className="text-gray-900 mb-8 leading-relaxed">
+              <p className="text-[#000000] mb-8 leading-relaxed">
                 Conectamos tu empresa con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti — nosotros gestionamos todo el proceso. Tú solo recibes el perfil y decides.
               </p>
-              <p className="text-gray-900 mb-10 leading-relaxed">
+              <p className="text-[#000000] mb-10 leading-relaxed">
                 Trabajamos a éxito. Solo pagas si incorporas al perfil. Sin riesgo.
               </p>
               <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
@@ -146,7 +146,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
                 Tu primer empleo o prácticas.<br />Te lo buscamos nosotros.
               </h2>
-              <p className="text-gray-900 mb-10 leading-relaxed">
+              <p className="text-[#000000] mb-10 leading-relaxed">
                 Te preparamos, trabajamos tu CV y LinkedIn, y presentamos tu perfil a nuestra base de datos de más de 10.000 empresas. Tú solo tienes que prepararte para la entrevista.
               </p>
               <a href="/practicas" className="inline-flex items-center gap-2 bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2ea03c] transition">
@@ -166,7 +166,7 @@ export default function Home() {
                     <svg className="w-4 h-4 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
                   </div>
                   <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
-                  <p className="text-xs text-gray-900 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-[#000000] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Listo para dar el salto?</h2>
-          <p className="text-gray-300 text-lg mb-10">Primera sesión gratuita de 15 min. Sin compromiso. Solo tú y nosotros.</p>
+          <p className="text-white/80 text-lg mb-10">Primera sesión gratuita de 15 min. Sin compromiso. Solo tú y nosotros.</p>
           <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg shadow-green-900/30">
             Reservar sesión gratuita
           </a>

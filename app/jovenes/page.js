@@ -55,7 +55,7 @@ export default function Jovenes() {
               <h2 className="text-2xl font-bold text-white group-hover:text-[#000000] transition-colors mb-3 leading-snug">
                 Busco prácticas
               </h2>
-              <p className="text-white/60 group-hover:text-gray-900 transition-colors text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-white/60 group-hover:text-[#000000] transition-colors text-sm leading-relaxed mb-6 flex-1">
                 Estás estudiando o acabas de terminar y quieres conseguir unas prácticas en una empresa que realmente merezca la pena. Te preparamos y buscamos activamente por ti.
               </p>
               <span className="inline-flex items-center gap-2 text-[#3BB54A] font-semibold text-sm">
@@ -75,7 +75,7 @@ export default function Jovenes() {
               <h2 className="text-2xl font-bold text-white group-hover:text-[#000000] transition-colors mb-3 leading-snug">
                 Busco mi primer empleo
               </h2>
-              <p className="text-white/60 group-hover:text-gray-900 transition-colors text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-white/60 group-hover:text-[#000000] transition-colors text-sm leading-relaxed mb-6 flex-1">
                 Ya tienes la formación pero el mercado laboral es una jungla. Te ayudamos a diferenciarte, prepararte para entrevistas y conseguir el primer contrato que mereces.
               </p>
               <span className="inline-flex items-center gap-2 text-[#3BB54A] font-semibold text-sm">
@@ -95,7 +95,7 @@ export default function Jovenes() {
               <h2 className="text-2xl font-bold text-white group-hover:text-[#000000] transition-colors mb-3 leading-snug">
                 Quiero cambiar de trabajo
               </h2>
-              <p className="text-white/60 group-hover:text-gray-900 transition-colors text-sm leading-relaxed mb-6 flex-1">
+              <p className="text-white/60 group-hover:text-[#000000] transition-colors text-sm leading-relaxed mb-6 flex-1">
                 Llevas tiempo en tu empresa y quieres dar el salto. Te acompañamos con total confidencialidad — buscamos en tu nombre sin que nadie se entere.
               </p>
               <span className="inline-flex items-center gap-2 text-[#3BB54A] font-semibold text-sm">

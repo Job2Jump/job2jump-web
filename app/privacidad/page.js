@@ -13,9 +13,9 @@ export default function Privacidad() {
 
       <section className="pt-40 pb-24 max-w-3xl mx-auto px-8">
         <h1 className="text-4xl font-bold text-[#000000] mb-2">Política de privacidad</h1>
-        <p className="text-gray-400 text-sm mb-12">Última actualización: mayo de 2026</p>
+        <p className="text-[#000000] text-sm mb-12">Última actualización: mayo de 2026</p>
 
-        <div className="prose prose-sm max-w-none text-gray-900 leading-relaxed space-y-10">
+        <div className="prose prose-sm max-w-none text-[#000000] leading-relaxed space-y-10">
 
           <div>
             <h2 className="text-lg font-bold text-[#000000] mb-3">1. Responsable del tratamiento</h2>
