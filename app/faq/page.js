@@ -107,7 +107,7 @@ export default function FAQ() {
             Resolvemos tus dudas
           </h1>
           <p className="text-white/70 text-lg">
-            Si no encuentras lo que buscas, escríbenos a hola@job2jump.es.
+            Si no encuentras lo que buscas, escríbenos a hola@job2jump.es o llámanos al <a href="tel:664740677" className="text-white font-semibold hover:text-[#3BB54A] transition">664 74 06 77</a>.
           </p>
         </div>
       </section>
