@@ -78,7 +78,7 @@ export default function QuienesSomos() {
             <div className="space-y-4">
               {[
                 { icono: "💡", titulo: "El problema del joven", desc: "Tiene formación pero no sabe cómo presentarse, qué decir en una entrevista ni cómo moverse en el mercado. Nadie se lo ha enseñado." },
-                { icono: "🏢", titulo: "El problema de la pyme", desc: "Necesita talento pero no tiene RRHH, no tiene tiempo y no puede pagar 2.000€ a una consultora por cada incorporación." },
+                { icono: "🏢", titulo: "El problema de la pyme y startup", desc: "Necesitan talento pero no tienen RRHH, no tienen tiempo y no pueden pagar 2.000€ a una consultora por cada incorporación." },
                 { icono: "🔗", titulo: "Nuestra respuesta", desc: "Conectar ambos lados con el conocimiento de las grandes firmas de headhunting, pero adaptado a su escala y a su bolsillo." },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4 bg-[#F0F4F8] rounded-2xl p-5">
