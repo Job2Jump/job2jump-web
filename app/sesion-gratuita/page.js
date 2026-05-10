@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const preguntas = [
   {
@@ -269,16 +269,7 @@ export default function SesionGratuita() {
         </div>
       </div>
 
-      {/* FOOTER */}
-      <footer className="bg-[#0a0a0a] text-white py-10">
-        <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <Image src="/logo.png" alt="Job2Jump" width={130} height={33} />
-          <p className="text-gray-400 text-sm">© 2026 Job2Jump. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-sm text-gray-400">
-            <a href="mailto:hola@job2jump.es" className="hover:text-white transition">hola@job2jump.es</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );
