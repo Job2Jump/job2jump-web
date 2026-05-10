@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 
 export default function Contacto() {
   const [enviado, setEnviado] = useState(false);
+  const [enviando, setEnviando] = useState(false);
+  const [error, setError] = useState(false);
   const [perfil, setPerfil] = useState("");
   const [form, setForm] = useState({ nombre: "", email: "", telefono: "" });
 
@@ -15,10 +17,27 @@ export default function Contacto() {
 
   const valido = form.nombre && form.email && form.telefono && perfil;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!valido) return;
-    setEnviado(true);
+    setEnviando(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/contacto", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, perfil }),
+      });
+      if (res.ok) {
+        setEnviado(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setEnviando(false);
+    }
   };
 
   return (
@@ -112,15 +131,22 @@ export default function Contacto() {
 
                 <button
                   type="submit"
-                  disabled={!valido}
+                  disabled={!valido || enviando}
                   className={`w-full py-4 rounded-full font-semibold text-base transition mt-2 ${
-                    valido
+                    valido && !enviando
                       ? "bg-[#3BB54A] text-white hover:bg-[#2ea03c]"
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
                 >
-                  Quiero que me llaméis
+                  {enviando ? "Enviando..." : "Quiero que me llaméis"}
                 </button>
+
+                {error && (
+                  <p className="text-center text-xs text-red-500">
+                    Ha habido un error. Escríbenos a{" "}
+                    <a href="mailto:hola@job2jump.es" className="underline">hola@job2jump.es</a>.
+                  </p>
+                )}
 
                 <p className="text-center text-xs text-gray-400">
                   Al enviar este formulario aceptas nuestra{" "}
