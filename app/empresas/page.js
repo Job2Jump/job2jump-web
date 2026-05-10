@@ -39,8 +39,8 @@ export default function Empresas() {
               Conectamos tu pyme o startup con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
-                Quiero un becario/a
+              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
+                Infórmate sin compromiso
               </a>
               <a href="#como-funciona" className="inline-block border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white transition text-center">
                 Cómo funciona
@@ -88,8 +88,8 @@ export default function Empresas() {
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
               </p>
-              <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
-                Quiero un becario/a
+              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
+                Infórmate sin compromiso
               </a>
             </div>
             <div className="grid grid-cols-2 gap-4">
