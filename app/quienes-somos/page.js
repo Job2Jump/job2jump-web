@@ -68,12 +68,6 @@ export default function QuienesSomos() {
               <p className="text-2xl font-bold text-[#000000] leading-snug mb-6">
                 Vimos que el sistema estaba roto para los dos lados.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-4">
-                Llevamos más de una década trabajando en selección de talento para grandes multinacionales y consultoras internacionales. Desde dentro, vimos algo que nos incomodaba: las pymes quedaban fuera del juego porque no podían permitirse el coste de una consultora tradicional, y los jóvenes quedaban solos ante un mercado laboral que nadie les había explicado.
-              </p>
-              <p className="text-gray-500 leading-relaxed">
-                Mientras tanto, miles de jóvenes bien formados mandaban CVs a ciegas sin obtener respuesta. Y miles de pymes luchaban para encontrar el perfil adecuado sin tener tiempo ni recursos para buscarlos bien.
-              </p>
             </div>
             <div className="space-y-4">
               {[
