@@ -36,7 +36,7 @@ export default function Empresas() {
               <span className="text-[#3BB54A]">Sin salario. Sin papeleo. Sin complicaciones.</span>
             </h1>
             <p className="text-lg text-white/70 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Conectamos tu pyme o startup con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
+              Conectamos tu pyme o startup con <strong className="text-white">alumnos de FP</strong> que necesitan hacer prácticas. <strong className="text-white">Sin coste salarial</strong>, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
@@ -76,7 +76,7 @@ export default function Empresas() {
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Incorpora talento joven.<br />Nosotros nos encargamos de todo.</h2>
             <p className="text-[#000000] mt-4 max-w-2xl mx-auto">
-              Conectamos tu pyme o startup con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
+              Conectamos tu pyme o startup con alumnos de <strong>Formación Profesional</strong> que necesitan hacer prácticas. Tú recibes un perfil <strong>formado, motivado y listo para aprender</strong>. Nosotros gestionamos todo el papeleo.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export default function Empresas() {
               <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Prácticas en empresa — Obligatorias para titular</p>
               <h3 className="text-3xl font-bold text-white mb-4">Coste para la empresa: 0 €</h3>
               <p className="text-white/70 text-sm leading-relaxed mb-6">
-                El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
+                El alumno ya ha terminado su formación teórica. Viene a tu empresa <strong className="text-white">entre 3 y 4 meses</strong> a aplicar lo aprendido. <strong className="text-white">Sin salario, sin contrato.</strong> Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
               </p>
               <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
                 Infórmate sin compromiso

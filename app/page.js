@@ -30,7 +30,7 @@ export default function Home() {
               <span className="text-[#3BB54A]">con empresas que lo necesitan.</span>
             </h1>
             <p className="text-sm md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-0 md:mb-10 hidden md:block">
-              Si buscas prácticas o tu primer empleo, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado sin coste salarial ni papeleo.
+              Si buscas <strong className="text-white">prácticas o tu primer empleo</strong>, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado <strong className="text-white">sin coste salarial ni papeleo</strong>.
             </p>
           </div>
 
@@ -123,10 +123,10 @@ export default function Home() {
                 Talento joven en tu empresa.<br />Sin salario. Sin papeleo.
               </h2>
               <p className="text-[#000000] mb-8 leading-relaxed">
-                Conectamos tu empresa con alumnos de FP que necesitan hacer prácticas. Sin coste salarial para ti — nosotros gestionamos todo el proceso. Tú solo recibes el perfil y decides.
+                Conectamos tu empresa con <strong>alumnos de FP</strong> que necesitan hacer prácticas. <strong>Sin coste salarial</strong> para ti — nosotros gestionamos todo el proceso. Tú solo recibes el perfil y decides.
               </p>
               <p className="text-[#000000] mb-10 leading-relaxed">
-                Trabajamos a éxito. Solo pagas si incorporas al perfil. Sin riesgo.
+                Trabajamos a éxito. <strong>Solo pagas si incorporas</strong> al perfil. <strong>Sin riesgo.</strong>
               </p>
               <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
                 Ver cómo funciona para empresas
@@ -147,7 +147,7 @@ export default function Home() {
                 Tu primer empleo o prácticas.<br />Te lo buscamos nosotros.
               </h2>
               <p className="text-[#000000] mb-10 leading-relaxed">
-                Te preparamos, trabajamos tu CV y LinkedIn, y presentamos tu perfil a nuestra base de datos de más de 10.000 empresas. Tú solo tienes que prepararte para la entrevista.
+                Te preparamos, trabajamos tu <strong>CV y LinkedIn</strong>, y presentamos tu perfil a nuestra base de datos de <strong>más de 10.000 empresas</strong>. Tú solo tienes que prepararte para <strong>la entrevista</strong>.
               </p>
               <a href="/practicas" className="inline-flex items-center gap-2 bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2ea03c] transition">
                 Ver cómo te ayudamos

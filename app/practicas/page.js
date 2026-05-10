@@ -39,7 +39,7 @@ export default function Practicas() {
               Nosotros te preparamos<br />y buscamos por ti.
             </h1>
             <p className="text-lg text-white/70 mb-8 leading-relaxed">
-              Tanto si buscas prácticas como tu primer empleo, te preparamos para que destaques frente a otros candidatos. Y si quieres, también buscamos activamente por ti — contactamos empresas, presentamos tu perfil y gestionamos el proceso.
+              Tanto si buscas <strong className="text-white">prácticas</strong> como tu <strong className="text-white">primer empleo</strong>, te preparamos para que <strong className="text-white">destaques frente a otros candidatos</strong>. Y si quieres, también buscamos activamente por ti — contactamos empresas, presentamos tu perfil y gestionamos el proceso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg text-center">
@@ -112,7 +112,7 @@ export default function Practicas() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Lo que hacemos por ti</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Así te preparamos para destacar</h2>
-            <p className="text-[#000000] mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una entrevista, seas el candidato que recuerdan.</p>
+            <p className="text-[#000000] mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una <strong>entrevista</strong>, seas <strong>el candidato que recuerdan</strong>.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -164,7 +164,7 @@ export default function Practicas() {
               <span className="absolute -top-3 left-8 bg-[#000000] text-white text-xs font-bold px-3 py-1 rounded-full">Más popular</span>
               <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 1</p>
               <h3 className="text-2xl font-bold text-[#000000] mb-2">Prepárate para destacar</h3>
-              <p className="text-[#000000] text-sm leading-relaxed mb-6">Ideal si tu centro ya te gestiona las prácticas o tienes tiempo para buscar, pero quieres llegar mejor preparado que el resto.</p>
+              <p className="text-[#000000] text-sm leading-relaxed mb-6">Ideal si tu centro ya te gestiona las prácticas o tienes tiempo para buscar, pero quieres <strong>llegar mejor preparado que el resto</strong>.</p>
               <ul className="space-y-3 flex-1 mb-8">
                 {[
                   { titulo: "1 sesión de 60 min", desc: "Con orientadora laboral. Personalizada para tu caso." },
@@ -195,7 +195,7 @@ export default function Practicas() {
               <span className="absolute -top-3 left-8 bg-[#3BB54A] text-white text-xs font-bold px-3 py-1 rounded-full">Más completo</span>
               <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 2</p>
               <h3 className="text-2xl font-bold text-white mb-2">Nosotros buscamos por ti</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-6">Ideal si quieres delegar el proceso entero. Te preparamos y además movemos tu perfil entre miles de empresas para conseguirte entrevistas.</p>
+              <p className="text-white/70 text-sm leading-relaxed mb-6">Ideal si quieres <strong className="text-white">delegar el proceso entero</strong>. Te preparamos y además movemos tu perfil entre miles de empresas para <strong className="text-white">conseguirte entrevistas</strong>.</p>
               <ul className="space-y-3 flex-1 mb-8">
                 {[
                   { titulo: "3 sesiones de 60 min", desc: "Seguimiento real en cada fase del proceso." },
