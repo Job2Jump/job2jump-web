@@ -163,17 +163,21 @@ export default function Practicas() {
             <div className="border-2 border-gray-100 rounded-3xl p-8 flex flex-col relative hover:border-gray-200 transition">
               <span className="absolute -top-3 left-8 bg-[#000000] text-white text-xs font-bold px-3 py-1 rounded-full">Más popular</span>
               <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 1</p>
-              <h3 className="text-2xl font-bold text-[#000000] mb-6">Prepárate para destacar</h3>
-              <ul className="space-y-4 flex-1 mb-8">
+              <h3 className="text-2xl font-bold text-[#000000] mb-2">Prepárate para destacar</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">Ideal si tu centro ya te gestiona las prácticas o tienes tiempo para buscar, pero quieres llegar mejor preparado que el resto.</p>
+              <ul className="space-y-3 flex-1 mb-8">
                 {[
-                  "1 sesión de 60 min",
-                  "Plan de carrera personalizado",
-                  "CV + LinkedIn optimizados",
-                  "Técnicas para superar entrevistas",
+                  { titulo: "1 sesión de 60 min", desc: "Con orientadora laboral. Personalizada para tu caso." },
+                  { titulo: "Plan de carrera a medida", desc: "Qué sectores te encajan, cómo posicionarte, por dónde empezar." },
+                  { titulo: "CV + LinkedIn optimizados", desc: "Para que los reclutadores te encuentren y te llamen." },
+                  { titulo: "Entrevistas sin nervios", desc: "Técnicas y simulaciones reales para que te elijan a ti." },
                 ].map((item, j) => (
-                  <li key={j} className="flex items-center gap-3 text-sm text-gray-600">
-                    <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
-                    {item}
+                  <li key={j} className="flex items-start gap-3">
+                    <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
+                    <div>
+                      <p className="text-sm font-semibold text-[#000000]">{item.titulo}</p>
+                      <p className="text-xs text-gray-400 leading-snug">{item.desc}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -190,18 +194,22 @@ export default function Practicas() {
             <div className="bg-[#000000] rounded-3xl p-8 flex flex-col relative">
               <span className="absolute -top-3 left-8 bg-[#3BB54A] text-white text-xs font-bold px-3 py-1 rounded-full">Más completo</span>
               <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 2</p>
-              <h3 className="text-2xl font-bold text-white mb-6">Nosotros buscamos por ti</h3>
-              <ul className="space-y-4 flex-1 mb-8">
+              <h3 className="text-2xl font-bold text-white mb-2">Nosotros buscamos por ti</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">Ideal si quieres delegar el proceso entero. Te preparamos y además movemos tu perfil entre miles de empresas para conseguirte entrevistas.</p>
+              <ul className="space-y-3 flex-1 mb-8">
                 {[
-                  "3 sesiones de 60 min",
-                  "CV + LinkedIn para atraer reclutadores",
-                  "Role plays de entrevistas reales",
-                  "Búsqueda activa en +10.000 empresas",
-                  "Te gestionamos todo el proceso",
+                  { titulo: "3 sesiones de 60 min", desc: "Seguimiento real en cada fase del proceso." },
+                  { titulo: "CV + LinkedIn para reclutadores", desc: "Optimizados para que te encuentren los que más interesan." },
+                  { titulo: "Role plays de entrevistas", desc: "Simulaciones reales para que llegues con seguridad." },
+                  { titulo: "Búsqueda activa en +10.000 empresas", desc: "Movemos tu candidatura. Tú solo preparas la entrevista." },
+                  { titulo: "Gestión completa del proceso", desc: "Desde el primer contacto hasta que firmas." },
                 ].map((item, j) => (
-                  <li key={j} className="flex items-center gap-3 text-sm text-gray-300">
-                    <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
-                    {item}
+                  <li key={j} className="flex items-start gap-3">
+                    <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{item.titulo}</p>
+                      <p className="text-xs text-gray-500 leading-snug">{item.desc}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
