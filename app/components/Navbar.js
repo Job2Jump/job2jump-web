@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <a href="mailto:hola@job2jump.es" className="bg-[#3BB54A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
+            <a href="/contacto" className="bg-[#3BB54A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
               Contáctanos
             </a>
             {/* Hamburger — mobile only */}
@@ -48,7 +48,7 @@ export default function Navbar() {
             <a href="/practicas" onClick={() => setOpen(false)} className="border-b border-gray-100 pb-6 hover:text-[#3BB54A] transition">Soy talento joven</a>
             <a href="/empresas" onClick={() => setOpen(false)} className="border-b border-gray-100 pb-6 hover:text-[#3BB54A] transition">Soy empresa</a>
             <a href="/faq" onClick={() => setOpen(false)} className="border-b border-gray-100 pb-6 hover:text-[#3BB54A] transition">Preguntas frecuentes</a>
-            <a href="mailto:hola@job2jump.es" onClick={() => setOpen(false)} className="mt-2 bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base text-center hover:bg-[#2ea03c] transition">
+            <a href="/contacto" onClick={() => setOpen(false)} className="mt-2 bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base text-center hover:bg-[#2ea03c] transition">
               Contáctanos
             </a>
           </div>
