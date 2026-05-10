@@ -195,7 +195,7 @@ export default function Practicas() {
               <span className="absolute -top-3 left-8 bg-[#3BB54A] text-white text-xs font-bold px-3 py-1 rounded-full">Más completo</span>
               <p className="text-[#3BB54A] text-xs font-bold uppercase tracking-widest mb-3">Opción 2</p>
               <h3 className="text-2xl font-bold text-white mb-2">Nosotros buscamos por ti</h3>
-              <p className="text-[#000000] text-sm leading-relaxed mb-6">Ideal si quieres delegar el proceso entero. Te preparamos y además movemos tu perfil entre miles de empresas para conseguirte entrevistas.</p>
+              <p className="text-white/70 text-sm leading-relaxed mb-6">Ideal si quieres delegar el proceso entero. Te preparamos y además movemos tu perfil entre miles de empresas para conseguirte entrevistas.</p>
               <ul className="space-y-3 flex-1 mb-8">
                 {[
                   { titulo: "3 sesiones de 60 min", desc: "Seguimiento real en cada fase del proceso." },
@@ -208,14 +208,14 @@ export default function Practicas() {
                     <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
                     <div>
                       <p className="text-sm font-semibold text-white">{item.titulo}</p>
-                      <p className="text-xs text-[#000000] leading-snug">{item.desc}</p>
+                      <p className="text-xs text-white/60 leading-snug">{item.desc}</p>
                     </div>
                   </li>
                 ))}
               </ul>
               <div className="border-t border-white/10 pt-6">
-                <p className="text-4xl font-bold text-white mb-1">149€ <span className="text-base font-normal text-[#000000]">IVA incluido</span></p>
-                <p className="text-[#000000] text-xs mb-5">Sesión gratuita de 15 min incluida</p>
+                <p className="text-4xl font-bold text-white mb-1">149€ <span className="text-base font-normal text-white/60">IVA incluido</span></p>
+                <p className="text-white/60 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
                 <a href="/contacto" className="block text-center py-3.5 rounded-full font-semibold text-sm bg-[#3BB54A] text-white hover:bg-[#2ea03c] transition">
                   Quiero este plan
                 </a>
@@ -270,7 +270,7 @@ export default function Practicas() {
             <div className="bg-[#000000] rounded-2xl p-8 text-white">
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">La paradoja de la experiencia</p>
               <p className="text-3xl font-bold mb-2">Sin experiencia no te contratan.<br />Sin contrato no tienes experiencia.</p>
-              <p className="text-[#000000] text-sm leading-relaxed mt-4">
+              <p className="text-white/70 text-sm leading-relaxed mt-4">
                 Las prácticas rompen ese círculo. Son la vía más directa para conseguir tu primera experiencia real y diferenciarte del resto de candidatos con tu mismo perfil.
               </p>
             </div>
