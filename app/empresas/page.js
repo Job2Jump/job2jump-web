@@ -85,7 +85,7 @@ export default function Empresas() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Prácticas en empresa — Obligatorias para titular</p>
               <h3 className="text-3xl font-bold text-white mb-4">Coste para la empresa: 0 €</h3>
-              <p className="text-[#000000] text-sm leading-relaxed mb-6">
+              <p className="text-white/70 text-sm leading-relaxed mb-6">
                 El alumno ya ha terminado su formación teórica. Viene a tu empresa entre 3 y 4 meses a aplicar lo aprendido. Sin salario, sin contrato. Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
               </p>
               <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
@@ -101,7 +101,7 @@ export default function Empresas() {
               ].map((item, i) => (
                 <div key={i} className="bg-white/10 rounded-xl p-4">
                   <p className="text-sm font-bold text-white mb-1">{item.titulo}</p>
-                  <p className="text-xs text-[#000000] leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-white/60 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -227,7 +227,7 @@ export default function Empresas() {
               <div className="bg-[#000000] rounded-xl px-6 py-5 text-center flex-shrink-0 w-full md:w-52">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Retainer inicial</p>
                 <p className="text-5xl font-bold text-white">100€</p>
-                <p className="text-[#000000] text-xs mt-2">Al arrancar · se descuenta</p>
+                <p className="text-white/60 text-xs mt-2">Al arrancar · se descuenta</p>
               </div>
 
               {/* Flecha */}
@@ -323,7 +323,7 @@ export default function Empresas() {
               <p className="text-white/80 text-sm leading-relaxed mb-2">
                 Es lo que cuesta de media un proceso de selección para una pyme cuando se externaliza con una consultora tradicional de RRHH.
               </p>
-              <p className="text-[#000000] text-xs italic">SHRM / informes sectoriales RRHH España</p>
+              <p className="text-white/50 text-xs italic">SHRM / informes sectoriales RRHH España</p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">FP: el perfil más empleable</p>
