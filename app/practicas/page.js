@@ -182,7 +182,7 @@ export default function Practicas() {
                 ))}
               </ul>
               <div className="border-t border-gray-100 pt-6">
-                <p className="text-4xl font-bold text-[#000000] mb-1">75€</p>
+                <p className="text-4xl font-bold text-[#000000] mb-1">75€ <span className="text-base font-normal text-gray-400">IVA incluido</span></p>
                 <p className="text-gray-400 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
                 <a href="/contacto" className="block text-center py-3.5 rounded-full font-semibold text-sm bg-[#000000] text-white hover:bg-[#222] transition">
                   Quiero este plan
@@ -214,7 +214,7 @@ export default function Practicas() {
                 ))}
               </ul>
               <div className="border-t border-white/10 pt-6">
-                <p className="text-4xl font-bold text-white mb-1">149€</p>
+                <p className="text-4xl font-bold text-white mb-1">149€ <span className="text-base font-normal text-gray-500">IVA incluido</span></p>
                 <p className="text-gray-500 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
                 <a href="/contacto" className="block text-center py-3.5 rounded-full font-semibold text-sm bg-[#3BB54A] text-white hover:bg-[#2ea03c] transition">
                   Quiero este plan
