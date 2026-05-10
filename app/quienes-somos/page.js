@@ -57,40 +57,54 @@ export default function QuienesSomos() {
       </section>
 
       {/* POR QUÉ NACIMOS */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F0F4F8]">
         <div className="max-w-4xl mx-auto px-8">
+
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Nuestro propósito</span>
-            <h2 className="text-4xl font-bold text-[#000000] mt-3">Por qué nacimos</h2>
+            <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-4">Por qué nacimos</h2>
+            <p className="text-xl font-semibold text-gray-500 max-w-xl mx-auto leading-snug">
+              Vimos que el sistema estaba roto para los dos lados.
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <p className="text-2xl font-bold text-[#000000] leading-snug mb-6">
-                Vimos que el sistema estaba roto para los dos lados.
-              </p>
-            </div>
-            <div className="space-y-4">
-              {[
-                { icono: "💡", titulo: "El problema del joven", desc: "Tiene formación pero no sabe cómo presentarse, qué decir en una entrevista ni cómo moverse en el mercado. Nadie se lo ha enseñado." },
-                { icono: "🏢", titulo: "El problema de la pyme y startup", desc: "Necesitan talento pero no tienen RRHH, no tienen tiempo y no pueden pagar 2.000€ a una consultora por cada incorporación." },
-                { icono: "🔗", titulo: "Nuestra respuesta", desc: "Conectar ambos lados con el conocimiento de las grandes firmas de headhunting, pero adaptado a su escala y a su bolsillo." },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 bg-[#F0F4F8] rounded-2xl p-5">
-                  <span className="text-2xl">{item.icono}</span>
-                  <div>
-                    <p className="font-bold text-[#000000] text-sm mb-1">{item.titulo}</p>
-                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
+
+          <div className="grid md:grid-cols-3 gap-5 mb-12">
+            {[
+              {
+                num: "01",
+                titulo: "El problema del joven",
+                desc: "Tiene formación pero nadie le enseña las reglas del mercado laboral: cómo presentarse, cómo destacar, qué decir en una entrevista.",
+              },
+              {
+                num: "02",
+                titulo: "El problema de la pyme y startup",
+                desc: "Necesitan talento pero no tienen RRHH, no tienen tiempo y no pueden pagar 2.000€ a una consultora por cada incorporación.",
+              },
+              {
+                num: "03",
+                titulo: "Nuestra respuesta",
+                desc: "Conectar ambos lados con el conocimiento de las grandes firmas de headhunting, adaptado a su escala y a su bolsillo.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl p-7 border border-gray-100">
+                <p className="text-3xl font-bold text-[#3BB54A] mb-4">{item.num}</p>
+                <h3 className="font-bold text-[#000000] text-base mb-2">{item.titulo}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-[#000000] rounded-3xl px-10 py-12 text-center">
+            <p className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-4">
+              "Job2Jump nació para que ningún joven con talento se quede sin oportunidad y ninguna pyme se quede sin el perfil que necesita."
+            </p>
+            <div className="flex flex-wrap justify-center gap-6 mt-6">
+              {["100% servicio humano", "Sin portales de empleo", "Sin algoritmos"].map((tag, i) => (
+                <span key={i} className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest">{tag}</span>
               ))}
             </div>
           </div>
-          <div className="bg-[#000000] rounded-3xl p-10 text-center">
-            <p className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-4">
-              "Job2Jump nació para que ningún joven con talento se quede sin oportunidad<br className="hidden md:block" /> y ninguna pyme se quede sin el perfil que necesita."
-            </p>
-            <p className="text-[#3BB54A] font-semibold text-sm">100% servicio humano · Sin portales de empleo · Sin algoritmos</p>
-          </div>
+
         </div>
       </section>
 
