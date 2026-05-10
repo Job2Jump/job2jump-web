@@ -75,7 +75,7 @@ export default function Empresas() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Incorpora talento joven.<br />Nosotros nos encargamos de todo.</h2>
-            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-900 mt-4 max-w-2xl mx-auto">
               Conectamos tu pyme o startup con alumnos de Formación Profesional que necesitan hacer prácticas. Tú recibes un perfil formado, motivado y listo para aprender. Nosotros gestionamos todo el papeleo.
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function Empresas() {
           <div className="mb-12">
             <div className="text-center mb-10">
               <h3 className="text-2xl font-bold text-[#000000]">¿Qué perfil necesitas en tu empresa?</h3>
-              <p className="text-gray-500 text-sm mt-2">Los más solicitados por pymes y startups como la tuya</p>
+              <p className="text-gray-900 text-sm mt-2">Los más solicitados por pymes y startups como la tuya</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
@@ -154,10 +154,10 @@ export default function Empresas() {
                 <div key={i} className={`${p.color} rounded-2xl p-6 border hover:shadow-md transition-all`}>
                   <span className="text-4xl mb-4 block">{p.icono}</span>
                   <p className="text-base font-bold text-[#000000] mb-2">{p.nombre}</p>
-                  <p className="text-gray-500 text-xs leading-relaxed mb-4">{p.desc}</p>
+                  <p className="text-gray-900 text-xs leading-relaxed mb-4">{p.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {p.tags.map((tag, j) => (
-                      <span key={j} className="bg-white text-gray-600 text-xs px-2 py-1 rounded-full border border-gray-200">{tag}</span>
+                      <span key={j} className="bg-white text-gray-900 text-xs px-2 py-1 rounded-full border border-gray-200">{tag}</span>
                     ))}
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export default function Empresas() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">La solución</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Lo que hacemos por ti</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Somos tu departamento de selección de talento joven externo. Tú te dedicas a tu negocio.</p>
+            <p className="text-gray-900 mt-4 max-w-xl mx-auto">Somos tu departamento de selección de talento joven externo. Tú te dedicas a tu negocio.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -202,7 +202,7 @@ export default function Empresas() {
                 <span className="text-5xl font-bold text-[#3BB54A]/20 leading-none flex-shrink-0">{item.num}</span>
                 <div>
                   <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -216,7 +216,7 @@ export default function Empresas() {
           <div className="text-center mb-8">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Precios</span>
             <h2 className="text-3xl font-bold text-[#000000] mt-2">Claro, sencillo y sin sorpresas</h2>
-            <p className="text-gray-500 text-sm mt-2">Trabajamos a éxito. Solo pagas si incorporas.</p>
+            <p className="text-gray-900 text-sm mt-2">Trabajamos a éxito. Solo pagas si incorporas.</p>
           </div>
           <div className="bg-[#F0F4F8] rounded-2xl p-6 border border-gray-100">
 
@@ -260,7 +260,7 @@ export default function Empresas() {
                 "3-4 candidatos filtrados",
                 "Proceso en 2-4 semanas",
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-1.5 text-xs text-gray-600">
+                <div key={i} className="flex items-center gap-1.5 text-xs text-gray-900">
                   <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
                     <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -280,7 +280,7 @@ export default function Empresas() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">El mercado de talento joven en España</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Cifras reales que explican por qué cada vez más pymes apuestan por este modelo.</p>
+            <p className="text-gray-900 mt-4 max-w-xl mx-auto">Cifras reales que explican por qué cada vez más pymes apuestan por este modelo.</p>
           </div>
 
           {/* Fila 1 — 4 datos grandes */}
@@ -309,7 +309,7 @@ export default function Empresas() {
             ].map((d, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
                 <p className="text-4xl font-bold text-[#000000] mb-2">{d.valor}</p>
-                <p className="text-sm text-gray-600 leading-snug mb-3">{d.label}</p>
+                <p className="text-sm text-gray-900 leading-snug mb-3">{d.label}</p>
                 <p className="text-xs text-gray-400 italic">{d.fuente}</p>
               </div>
             ))}
@@ -323,12 +323,12 @@ export default function Empresas() {
               <p className="text-gray-300 text-sm leading-relaxed mb-2">
                 Es lo que cuesta de media un proceso de selección para una pyme cuando se externaliza con una consultora tradicional de RRHH.
               </p>
-              <p className="text-gray-500 text-xs italic">SHRM / informes sectoriales RRHH España</p>
+              <p className="text-gray-900 text-xs italic">SHRM / informes sectoriales RRHH España</p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">FP: el perfil más empleable</p>
               <p className="text-3xl font-bold text-[#000000] mb-2">76% de empleabilidad</p>
-              <p className="text-gray-500 text-sm leading-relaxed mb-2">
+              <p className="text-gray-900 text-sm leading-relaxed mb-2">
                 Los titulados de FP tienen una de las tasas de inserción laboral más altas de España, por encima de muchas titulaciones universitarias.
               </p>
               <p className="text-gray-400 text-xs italic">Ministerio de Educación — Informe de inserción laboral FP 2023</p>

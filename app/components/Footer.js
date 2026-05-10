@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="https://instagram.com/job2jump" className="hover:text-white transition">Instagram</a>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-center gap-6 text-xs text-gray-600">
+        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-center gap-6 text-xs text-gray-900">
           <a href="/privacidad" className="hover:text-gray-400 transition">Política de privacidad</a>
           <a href="/aviso-legal" className="hover:text-gray-400 transition">Aviso legal</a>
         </div>

@@ -82,7 +82,7 @@ function Accordion({ items }) {
           </button>
           {abierto === i && (
             <div className="px-6 pb-5">
-              <p className="text-gray-500 text-sm leading-relaxed">{item.respuesta}</p>
+              <p className="text-gray-900 text-sm leading-relaxed">{item.respuesta}</p>
             </div>
           )}
         </div>

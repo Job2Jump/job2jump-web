@@ -70,7 +70,7 @@ export default function Empleo() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-sm">{text}</p>
+                <p className="text-gray-900 leading-relaxed text-sm">{text}</p>
               </div>
             ))}
           </div>
@@ -86,7 +86,7 @@ export default function Empleo() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Lo que hacemos por ti</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Así te ayudamos a conseguirlo</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una entrevista, seas el candidato que recuerdan.</p>
+            <p className="text-gray-900 mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una entrevista, seas el candidato que recuerdan.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -115,7 +115,7 @@ export default function Empleo() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#000000] mb-2">{item.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -129,7 +129,7 @@ export default function Empleo() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige cómo quieres empezar</h2>
-            <p className="text-gray-500 mt-4">Todos incluyen sesión inicial gratuita de 15 min.</p>
+            <p className="text-gray-900 mt-4">Todos incluyen sesión inicial gratuita de 15 min.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -139,7 +139,7 @@ export default function Empleo() {
                 desc: "Para empezar con buen pie",
                 bg: "bg-white",
                 textP: "text-[#000000]",
-                textS: "text-gray-500",
+                textS: "text-gray-900",
                 btn: "bg-[#000000] text-white hover:bg-[#222222]",
                 checkBg: "bg-[#3BB54A]",
                 badge: null,

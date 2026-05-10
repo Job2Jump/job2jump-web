@@ -66,7 +66,7 @@ export default function CambioEmpleo() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-sm">{text}</p>
+                <p className="text-gray-900 leading-relaxed text-sm">{text}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function CambioEmpleo() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -135,7 +135,7 @@ export default function CambioEmpleo() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige tu modalidad</h2>
-            <p className="text-gray-500 mt-4">Sesión inicial gratuita de 15 min para analizar tu caso y ofrecerte un plan personalizado.</p>
+            <p className="text-gray-900 mt-4">Sesión inicial gratuita de 15 min para analizar tu caso y ofrecerte un plan personalizado.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
@@ -145,7 +145,7 @@ export default function CambioEmpleo() {
                 desc: "Tú aplicas, nosotros te preparamos",
                 bg: "bg-white",
                 textP: "text-[#000000]",
-                textS: "text-gray-500",
+                textS: "text-gray-900",
                 btn: "bg-[#000000] text-white hover:bg-[#222222]",
                 checkBg: "bg-[#3BB54A]",
                 items: [

@@ -62,12 +62,12 @@ export default function Practicas() {
             <a href="#planes" className="block bg-[#F0F4F8] hover:bg-[#3BB54A]/10 border-2 border-transparent hover:border-[#3BB54A] rounded-2xl p-6 text-left transition-all">
               <p className="text-2xl mb-2">🎓</p>
               <p className="font-bold text-[#000000] mb-1">Busco prácticas</p>
-              <p className="text-sm text-gray-500">Necesito hacer prácticas en empresa para titular o ganar experiencia real.</p>
+              <p className="text-sm text-gray-900">Necesito hacer prácticas en empresa para titular o ganar experiencia real.</p>
             </a>
             <a href="#planes" className="block bg-[#F0F4F8] hover:bg-[#3BB54A]/10 border-2 border-transparent hover:border-[#3BB54A] rounded-2xl p-6 text-left transition-all">
               <p className="text-2xl mb-2">💼</p>
               <p className="font-bold text-[#000000] mb-1">Busco mi primer empleo</p>
-              <p className="text-sm text-gray-500">Ya tengo formación y quiero dar el salto a mi primer trabajo de verdad.</p>
+              <p className="text-sm text-gray-900">Ya tengo formación y quiero dar el salto a mi primer trabajo de verdad.</p>
             </a>
           </div>
           <p className="text-xs text-gray-400 mt-4">En ambos casos, te preparamos y buscamos por ti.</p>
@@ -96,7 +96,7 @@ export default function Practicas() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-sm">{text}</p>
+                <p className="text-gray-900 leading-relaxed text-sm">{text}</p>
               </div>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function Practicas() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Lo que hacemos por ti</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Así te preparamos para destacar</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una entrevista, seas el candidato que recuerdan.</p>
+            <p className="text-gray-900 mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una entrevista, seas el candidato que recuerdan.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -141,7 +141,7 @@ export default function Practicas() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#000000] mb-2">{item.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-900 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -208,14 +208,14 @@ export default function Practicas() {
                     <svg className="w-4 h-4 text-[#3BB54A] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
                     <div>
                       <p className="text-sm font-semibold text-white">{item.titulo}</p>
-                      <p className="text-xs text-gray-500 leading-snug">{item.desc}</p>
+                      <p className="text-xs text-gray-900 leading-snug">{item.desc}</p>
                     </div>
                   </li>
                 ))}
               </ul>
               <div className="border-t border-white/10 pt-6">
-                <p className="text-4xl font-bold text-white mb-1">149€ <span className="text-base font-normal text-gray-500">IVA incluido</span></p>
-                <p className="text-gray-500 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
+                <p className="text-4xl font-bold text-white mb-1">149€ <span className="text-base font-normal text-gray-900">IVA incluido</span></p>
+                <p className="text-gray-900 text-xs mb-5">Sesión gratuita de 15 min incluida</p>
                 <a href="/contacto" className="block text-center py-3.5 rounded-full font-semibold text-sm bg-[#3BB54A] text-white hover:bg-[#2ea03c] transition">
                   Quiero este plan
                 </a>
@@ -232,7 +232,7 @@ export default function Practicas() {
           <div className="text-center mb-16">
             <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">El mercado laboral para jóvenes en España</h2>
-            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Cifras reales que explican por qué prepararse bien marca la diferencia.</p>
+            <p className="text-gray-900 mt-4 max-w-xl mx-auto">Cifras reales que explican por qué prepararse bien marca la diferencia.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
@@ -260,7 +260,7 @@ export default function Practicas() {
             ].map((d, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
                 <p className="text-4xl font-bold text-[#000000] mb-2">{d.valor}</p>
-                <p className="text-sm text-gray-600 leading-snug mb-3">{d.label}</p>
+                <p className="text-sm text-gray-900 leading-snug mb-3">{d.label}</p>
                 <p className="text-xs text-gray-400 italic">{d.fuente}</p>
               </div>
             ))}
@@ -277,7 +277,7 @@ export default function Practicas() {
             <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
               <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">LinkedIn: el nuevo CV</p>
               <p className="text-3xl font-bold text-[#000000] mb-2">+40% más de respuestas</p>
-              <p className="text-gray-500 text-sm leading-relaxed mb-2">
+              <p className="text-gray-900 text-sm leading-relaxed mb-2">
                 Los candidatos con un perfil de LinkedIn optimizado reciben hasta un 40% más de respuestas de reclutadores que los que tienen un perfil incompleto o desactualizado.
               </p>
               <p className="text-gray-400 text-xs italic">LinkedIn Talent Solutions Report</p>

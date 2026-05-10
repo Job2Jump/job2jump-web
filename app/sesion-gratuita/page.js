@@ -91,7 +91,7 @@ export default function SesionGratuita() {
               <h1 className="text-3xl font-bold text-[#000000] mb-4 leading-tight">
                 Tu sesión de orientación gratuita
               </h1>
-              <p className="text-gray-500 mb-8 leading-relaxed">
+              <p className="text-gray-900 mb-8 leading-relaxed">
                 En 15 minutos vamos a ver juntos dónde estás, a dónde quieres llegar y cuál es el mejor camino para conseguirlo.
               </p>
 
@@ -112,7 +112,7 @@ export default function SesionGratuita() {
                       </div>
                       <p className="text-[#000000] font-semibold text-sm">{item.titulo}</p>
                     </div>
-                    <p className="text-gray-500 text-xs leading-relaxed pl-6">{item.desc}</p>
+                    <p className="text-gray-900 text-xs leading-relaxed pl-6">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -195,7 +195,7 @@ export default function SesionGratuita() {
               )}
 
               {paso > 1 && (
-                <button onClick={() => setPaso(paso - 1)} className="mt-6 text-gray-400 text-sm hover:text-gray-600 transition">
+                <button onClick={() => setPaso(paso - 1)} className="mt-6 text-gray-400 text-sm hover:text-gray-900 transition">
                   ← Volver
                 </button>
               )}
@@ -213,11 +213,11 @@ export default function SesionGratuita() {
                     </svg>
                   </div>
                   <h2 className="text-2xl font-bold text-[#000000] mb-3">¡Perfecto, {nombre}!</h2>
-                  <p className="text-gray-500 mb-8 leading-relaxed">
+                  <p className="text-gray-900 mb-8 leading-relaxed">
                     Todo listo para reservar tu sesión gratuita de 15 minutos con Celia. Elige el día y la hora que mejor te vengan.
                   </p>
                   <div className="bg-[#F0F4F8] rounded-2xl p-6 mb-6">
-                    <p className="text-sm text-gray-500 mb-1">Lo que veremos en tu sesión:</p>
+                    <p className="text-sm text-gray-900 mb-1">Lo que veremos en tu sesión:</p>
                     <ul className="text-sm text-[#000000] font-medium space-y-1 text-left">
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Diagnóstico de tu situación actual</li>
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Plan de acción concreto</li>
@@ -244,12 +244,12 @@ export default function SesionGratuita() {
                     </svg>
                   </div>
                   <h2 className="text-2xl font-bold text-[#000000] mb-3">Hola, {nombre}</h2>
-                  <p className="text-gray-500 mb-8 leading-relaxed">
+                  <p className="text-gray-900 mb-8 leading-relaxed">
                     Parece que todavía no es el momento exacto, pero nos encantaría ayudarte cuando llegue. Te avisamos con tiempo para que puedas prepararte bien y dar el salto en el momento adecuado.
                   </p>
                   <div className="bg-[#F0F4F8] rounded-2xl p-6 mb-6 text-left">
                     <p className="text-sm font-semibold text-[#000000] mb-2">Mientras tanto, te enviaremos:</p>
-                    <ul className="text-sm text-gray-500 space-y-1">
+                    <ul className="text-sm text-gray-900 space-y-1">
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Consejos para preparar tu búsqueda</li>
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Recursos gratuitos para mejorar tu CV y LinkedIn</li>
                       <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Información sobre empresas que buscan perfiles como el tuyo</li>
