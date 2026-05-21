@@ -14,8 +14,15 @@ export default function QuienesSomos() {
       <Navbar />
 
       {/* HERO */}
-      <section className="pt-40 pb-24 bg-[#000000]">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="pt-40 pb-24 bg-[#000000] relative overflow-hidden"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-[#000000]/82"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-8">
           <div className="max-w-3xl">
             <span className="inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] border border-[#7A9E3B]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
               Quiénes somos
