@@ -17,8 +17,8 @@ export default function Empresas() {
       {/* HERO + DATOS */}
       <section className="relative">
         <Image
-          src="/empresas-hero.jpg"
-          alt="Equipo de trabajo en empresa"
+          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1920&q=80"
+          alt="Profesional dando la mano a un joven candidato"
           fill
           className="object-cover blur-[2px]"
           priority
