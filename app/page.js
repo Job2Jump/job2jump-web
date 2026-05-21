@@ -22,12 +22,12 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-8 md:py-32 w-full">
           {/* Titular */}
           <div className="text-center mb-6 md:mb-16">
-            <span className="hidden md:inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+            <span className="hidden md:inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] border border-[#7A9E3B]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
               Para talento junior · Para pymes y startups
             </span>
             <h1 className="text-3xl md:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight">
               Conectamos talento joven<br />
-              <span className="text-[#3BB54A]">con empresas que lo necesitan.</span>
+              <span className="text-[#7A9E3B]">con empresas que lo necesitan.</span>
             </h1>
             <p className="text-sm md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-0 md:mb-10 hidden md:block">
               Si buscas <strong className="text-white">prácticas o tu primer empleo</strong>, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado <strong className="text-white">sin coste salarial ni papeleo</strong>.
@@ -38,11 +38,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
 
             {/* Card joven */}
-            <a href="/jovenes" className="group bg-[#3BB54A]/10 backdrop-blur-sm border-2 border-[#3BB54A]/50 rounded-3xl p-6 md:p-10 hover:bg-[#3BB54A] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
-              <div className="w-10 h-10 md:w-14 md:h-14 bg-[#3BB54A] group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
+            <a href="/jovenes" className="group bg-[#7A9E3B]/10 backdrop-blur-sm border-2 border-[#7A9E3B]/50 rounded-3xl p-6 md:p-10 hover:bg-[#7A9E3B] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-[#7A9E3B] group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
                 <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
-              <p className="text-[#3BB54A] group-hover:text-white/70 text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para jóvenes y profesionales</p>
+              <p className="text-[#7A9E3B] group-hover:text-white/70 text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para jóvenes y profesionales</p>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 md:mb-4 leading-tight">
                 Busco prácticas<br />o primer empleo
               </h2>
@@ -57,10 +57,10 @@ export default function Home() {
 
             {/* Card empresa */}
             <a href="/empresas" className="group bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-6 md:p-10 hover:bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col">
-              <div className="w-10 h-10 md:w-14 md:h-14 bg-white/10 group-hover:bg-[#3BB54A] rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-white/10 group-hover:bg-[#7A9E3B] rounded-2xl flex items-center justify-center mb-4 md:mb-6 transition-colors">
                 <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
               </div>
-              <p className="text-white/50 group-hover:text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para pymes y empresas</p>
+              <p className="text-white/50 group-hover:text-[#7A9E3B] text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para pymes y empresas</p>
               <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#000000] mb-2 md:mb-4 leading-tight transition-colors">
                 Quiero contratar<br />talento joven
               </h2>
@@ -88,7 +88,7 @@ export default function Home() {
               { valor: "75€", label: "sesión personalizada de orientación, CV y LinkedIn para jóvenes", fuente: "Job2Jump" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
-                <p className="text-3xl font-bold text-[#3BB54A] mb-1">{item.valor}</p>
+                <p className="text-3xl font-bold text-[#7A9E3B] mb-1">{item.valor}</p>
                 <p className="text-white/70 text-xs leading-snug mb-1">{item.label}</p>
                 <p className="text-white/30 text-xs">{item.fuente}</p>
               </div>
@@ -118,7 +118,7 @@ export default function Home() {
               ))}
             </div>
             <div className="order-1 md:order-2">
-              <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
+              <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
               <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
                 Talento joven en tu empresa.<br />Sin salario. Sin papeleo.
               </h2>
@@ -142,14 +142,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para talento junior</span>
+              <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para talento junior</span>
               <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
                 Tu primer empleo o prácticas.<br />Te lo buscamos nosotros.
               </h2>
               <p className="text-[#000000] mb-10 leading-relaxed">
                 Te preparamos, trabajamos tu <strong>CV y LinkedIn</strong>, y presentamos tu perfil a nuestra base de datos de <strong>más de 10.000 empresas</strong>. Tú solo tienes que prepararte para <strong>la entrevista</strong>.
               </p>
-              <a href="/practicas" className="inline-flex items-center gap-2 bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2ea03c] transition">
+              <a href="/practicas" className="inline-flex items-center gap-2 bg-[#7A9E3B] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2ea03c] transition">
                 Ver cómo te ayudamos
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </a>
@@ -162,8 +162,8 @@ export default function Home() {
                 { titulo: "Acompañamiento completo", desc: "Te guiamos en cada paso hasta cerrar tu siguiente oportunidad." },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100">
-                  <div className="w-8 h-8 bg-[#3BB54A]/10 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-4 h-4 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
+                  <div className="w-8 h-8 bg-[#7A9E3B]/10 rounded-lg flex items-center justify-center mb-3">
+                    <svg className="w-4 h-4 text-[#7A9E3B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
                   </div>
                   <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
                   <p className="text-xs text-[#000000] leading-relaxed">{item.desc}</p>
@@ -177,13 +177,13 @@ export default function Home() {
       {/* CTA FINAL */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#7A9E3B] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#7A9E3B] rounded-full blur-3xl"></div>
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">¿Listo para dar el salto?</h2>
           <p className="text-white/80 text-lg mb-10">Primera sesión gratuita de 15 min. Sin compromiso. Solo tú y nosotros.</p>
-          <a href="/sesion-gratuita" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg shadow-green-900/30">
+          <a href="/sesion-gratuita" className="inline-block bg-[#7A9E3B] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg shadow-green-900/30">
             Reservar sesión gratuita
           </a>
         </div>

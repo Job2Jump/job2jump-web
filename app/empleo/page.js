@@ -24,19 +24,19 @@ export default function Empleo() {
         {/* Texto encima */}
         <div className="relative z-10 max-w-7xl mx-auto px-8 py-32 w-full">
           <div className="max-w-3xl">
-            <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+            <span className="inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] border border-[#7A9E3B]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
               Busco mi primer empleo
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Tu primer empleo<br />
-              <span className="text-[#3BB54A]">empieza por estar preparado.</span><br />
+              <span className="text-[#7A9E3B]">empieza por estar preparado.</span><br />
               Nosotros te preparamos<br />y lo buscamos por ti.
             </h1>
             <p className="text-lg text-white/70 mb-8 leading-relaxed">
               Estás listo para dar el salto al mundo laboral y conseguir tu primer contrato. Te ayudamos con la preparación y la estrategia que necesitas para destacar frente a otros candidatos con tu mismo perfil.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg text-center">
+              <a href="mailto:hola@job2jump.es" className="inline-block bg-[#7A9E3B] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg text-center">
                 Quiero mi sesión gratuita
               </a>
               <a href="#planes" className="inline-block border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white transition text-center">
@@ -52,7 +52,7 @@ export default function Empleo() {
       <section className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-14">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Sabemos cómo te sientes</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Sabemos cómo te sientes</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">¿Te suena esto?</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -84,7 +84,7 @@ export default function Empleo() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Lo que hacemos por ti</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Lo que hacemos por ti</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Así te ayudamos a conseguirlo</h2>
             <p className="text-[#000000] mt-4 max-w-xl mx-auto">No somos una bolsa de empleo. Somos el apoyo que necesitas para que cuando llegues a una entrevista, seas el candidato que recuerdan.</p>
           </div>
@@ -108,7 +108,7 @@ export default function Empleo() {
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-6 p-8 bg-[#F0F4F8] rounded-2xl">
-                <div className="w-10 h-10 rounded-xl bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-[#7A9E3B] flex items-center justify-center flex-shrink-0">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -127,7 +127,7 @@ export default function Empleo() {
       <section id="planes" className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Planes</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Planes</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Elige cómo quieres empezar</h2>
             <p className="text-[#000000] mt-4">Todos incluyen sesión inicial gratuita de 15 min.</p>
           </div>
@@ -141,7 +141,7 @@ export default function Empleo() {
                 textP: "text-[#000000]",
                 textS: "text-[#000000]",
                 btn: "bg-[#000000] text-white hover:bg-[#222222]",
-                checkBg: "bg-[#3BB54A]",
+                checkBg: "bg-[#7A9E3B]",
                 badge: null,
                 items: [
                   "Vídeo: cómo hacer un CV que destaque",
@@ -156,8 +156,8 @@ export default function Empleo() {
                 bg: "bg-[#000000]",
                 textP: "text-white",
                 textS: "text-white/80",
-                btn: "bg-[#3BB54A] text-white hover:bg-[#2ea03c]",
-                checkBg: "bg-[#3BB54A]",
+                btn: "bg-[#7A9E3B] text-white hover:bg-[#2ea03c]",
+                checkBg: "bg-[#7A9E3B]",
                 badge: "Más popular",
                 items: [
                   "1 sesión de 60 min con orientadora",
@@ -170,7 +170,7 @@ export default function Empleo() {
                 nombre: "Pack Premium",
                 precio: "199€",
                 desc: "Resultados garantizados",
-                bg: "bg-[#3BB54A]",
+                bg: "bg-[#7A9E3B]",
                 textP: "text-white",
                 textS: "text-white/80",
                 btn: "bg-white text-[#000000] hover:bg-gray-100",
@@ -217,8 +217,8 @@ export default function Empleo() {
       {/* CTA FINAL */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#7A9E3B] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#7A9E3B] rounded-full blur-3xl"></div>
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -227,7 +227,7 @@ export default function Empleo() {
           <p className="text-white/80 text-lg mb-10">
             Empieza con una sesión gratuita de 15 minutos. Sin compromiso.
           </p>
-          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
+          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#7A9E3B] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             Quiero mi sesión gratuita
           </a>
         </div>

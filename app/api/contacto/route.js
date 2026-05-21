@@ -28,8 +28,8 @@ export async function POST(request) {
           <hr style="border:none;border-top:1px solid #eee;margin:20px 0"/>
           <table style="width:100%;font-size:14px;border-collapse:collapse">
             <tr><td style="padding:8px 0;color:#555;width:120px">Nombre</td><td style="padding:8px 0;font-weight:600;color:#000">${nombre}</td></tr>
-            <tr><td style="padding:8px 0;color:#555">Perfil</td><td style="padding:8px 0;font-weight:600;color:#3BB54A">${perfilTexto}</td></tr>
-            <tr><td style="padding:8px 0;color:#555">Email</td><td style="padding:8px 0"><a href="mailto:${email}" style="color:#3BB54A">${email}</a></td></tr>
+            <tr><td style="padding:8px 0;color:#555">Perfil</td><td style="padding:8px 0;font-weight:600;color:#7A9E3B">${perfilTexto}</td></tr>
+            <tr><td style="padding:8px 0;color:#555">Email</td><td style="padding:8px 0"><a href="mailto:${email}" style="color:#7A9E3B">${email}</a></td></tr>
             <tr><td style="padding:8px 0;color:#555">Teléfono</td><td style="padding:8px 0;font-weight:600;color:#000">${telefono}</td></tr>
           </table>
           <hr style="border:none;border-top:1px solid #eee;margin:20px 0"/>

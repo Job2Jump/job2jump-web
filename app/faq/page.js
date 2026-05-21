@@ -100,7 +100,7 @@ export default function FAQ() {
       {/* HERO */}
       <section className="pt-40 pb-16 bg-[#000000]">
         <div className="max-w-3xl mx-auto px-8 text-center">
-          <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+          <span className="inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] border border-[#7A9E3B]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
             Preguntas frecuentes
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -114,7 +114,7 @@ export default function FAQ() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               hola@job2jump.es
             </a>
-            <a href="tel:664740677" className="flex items-center justify-center gap-2 bg-[#3BB54A] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
+            <a href="tel:664740677" className="flex items-center justify-center gap-2 bg-[#7A9E3B] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#2ea03c] transition">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
               664 74 06 77
             </a>
@@ -129,7 +129,7 @@ export default function FAQ() {
           {/* Jóvenes */}
           <div className="mb-14">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#7A9E3B] flex items-center justify-center flex-shrink-0">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
@@ -160,7 +160,7 @@ export default function FAQ() {
         <div className="max-w-xl mx-auto px-8">
           <h2 className="text-3xl font-bold text-white mb-4">¿Tienes más preguntas?</h2>
           <p className="text-white/80 mb-8">Escríbenos y te respondemos en menos de 24 horas.</p>
-          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
+          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#7A9E3B] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             hola@job2jump.es
           </a>
         </div>

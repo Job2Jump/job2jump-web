@@ -28,18 +28,18 @@ export default function Empresas() {
 
           {/* Título */}
           <div className="text-center mb-16">
-            <span className="inline-block bg-[#3BB54A]/20 text-[#3BB54A] border border-[#3BB54A]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+            <span className="inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] border border-[#7A9E3B]/40 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
               Para pymes y startups · Perfiles FP y junior sin coste salarial
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Talento joven en tu empresa.<br />
-              <span className="text-[#3BB54A]">Sin salario. Sin papeleo. Sin complicaciones.</span>
+              <span className="text-[#7A9E3B]">Sin salario. Sin papeleo. Sin complicaciones.</span>
             </h1>
             <p className="text-lg text-white/70 mb-10 leading-relaxed max-w-2xl mx-auto">
               Conectamos tu pyme o startup con <strong className="text-white">alumnos de FP</strong> que necesitan hacer prácticas. <strong className="text-white">Sin coste salarial</strong>, sin trámites burocráticos — nosotros gestionamos todo. Tú solo recibes el perfil y decides.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
+              <a href="/contacto" className="inline-block bg-[#7A9E3B] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-[#2ea03c] transition shadow-lg">
                 Infórmate sin compromiso
               </a>
               <a href="#como-funciona" className="inline-block border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-base hover:border-white transition text-center">
@@ -58,7 +58,7 @@ export default function Empresas() {
               { valor: "Prácticas · Dual", label: "gestionamos ambas modalidades" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center gap-1">
-                <p className="text-xl font-bold text-[#3BB54A]">{item.valor}</p>
+                <p className="text-xl font-bold text-[#7A9E3B]">{item.valor}</p>
                 <p className="text-xs text-white/60 leading-snug">{item.label}</p>
               </div>
             ))}
@@ -73,7 +73,7 @@ export default function Empresas() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Incorpora talento joven.<br />Nosotros nos encargamos de todo.</h2>
             <p className="text-[#000000] mt-4 max-w-2xl mx-auto">
               Conectamos tu pyme o startup con alumnos de <strong>Formación Profesional</strong> que necesitan hacer prácticas. Tú recibes un perfil <strong>formado, motivado y listo para aprender</strong>. Nosotros gestionamos todo el papeleo.
@@ -83,12 +83,12 @@ export default function Empresas() {
           {/* Modalidad principal — Prácticas */}
           <div className="bg-[#000000] rounded-2xl p-10 mb-16 grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-2">Prácticas en empresa — Obligatorias para titular</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7A9E3B] mb-2">Prácticas en empresa — Obligatorias para titular</p>
               <h3 className="text-3xl font-bold text-white mb-4">Coste para la empresa: 0 €</h3>
               <p className="text-white/70 text-sm leading-relaxed mb-6">
                 El alumno ya ha terminado su formación teórica. Viene a tu empresa <strong className="text-white">entre 3 y 4 meses</strong> a aplicar lo aprendido. <strong className="text-white">Sin salario, sin contrato.</strong> Solo firmas un convenio de colaboración con el instituto — nosotros lo tramitamos todo.
               </p>
-              <a href="/contacto" className="inline-block bg-[#3BB54A] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
+              <a href="/contacto" className="inline-block bg-[#7A9E3B] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#2ea03c] transition">
                 Infórmate sin compromiso
               </a>
             </div>
@@ -171,7 +171,7 @@ export default function Empresas() {
       <section id="como-funciona" className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">La solución</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">La solución</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Lo que hacemos por ti</h2>
             <p className="text-[#000000] mt-4 max-w-xl mx-auto">Somos tu departamento de selección de talento joven externo. Tú te dedicas a tu negocio.</p>
           </div>
@@ -199,7 +199,7 @@ export default function Empresas() {
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-6 p-8 bg-white rounded-2xl shadow-sm">
-                <span className="text-5xl font-bold text-[#3BB54A]/20 leading-none flex-shrink-0">{item.num}</span>
+                <span className="text-5xl font-bold text-[#7A9E3B]/20 leading-none flex-shrink-0">{item.num}</span>
                 <div>
                   <h3 className="text-lg font-bold text-[#000000] mb-2">{item.titulo}</h3>
                   <p className="text-[#000000] text-sm leading-relaxed">{item.desc}</p>
@@ -214,7 +214,7 @@ export default function Empresas() {
       <section id="precios" className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center mb-8">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Precios</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Precios</span>
             <h2 className="text-3xl font-bold text-[#000000] mt-2">Claro, sencillo y sin sorpresas</h2>
             <p className="text-[#000000] text-sm mt-2">Trabajamos a éxito. Solo pagas si incorporas.</p>
           </div>
@@ -225,18 +225,18 @@ export default function Empresas() {
 
               {/* Retainer */}
               <div className="bg-[#000000] rounded-xl px-6 py-5 text-center flex-shrink-0 w-full md:w-52">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-1">Retainer inicial</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#7A9E3B] mb-1">Retainer inicial</p>
                 <p className="text-5xl font-bold text-white">100€</p>
                 <p className="text-white/60 text-xs mt-2">Al arrancar · se descuenta</p>
               </div>
 
               {/* Flecha */}
-              <svg className="w-6 h-6 text-[#3BB54A] rotate-0 md:rotate-[-90deg] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#7A9E3B] rotate-0 md:rotate-[-90deg] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
 
               {/* Camino A */}
-              <div className="bg-[#3BB54A] rounded-xl px-5 py-5 border-2 border-[#3BB54A] flex-1 w-full">
+              <div className="bg-[#7A9E3B] rounded-xl px-5 py-5 border-2 border-[#7A9E3B] flex-1 w-full">
                 <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-0.5">Camino A</p>
                 <p className="text-sm font-bold text-white mb-2">Prácticas, luego decides</p>
                 <p className="text-5xl font-bold text-white">250€</p>
@@ -245,7 +245,7 @@ export default function Empresas() {
 
               {/* Camino B */}
               <div className="bg-white rounded-xl px-5 py-5 border-2 border-[#000000] flex-1 w-full">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#3BB54A] mb-0.5">Camino B</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#7A9E3B] mb-0.5">Camino B</p>
                 <p className="text-sm font-bold text-[#000000] mb-2">Contrato junior directo</p>
                 <p className="text-5xl font-bold text-[#000000]">400€</p>
                 <p className="text-xs text-[#000000] font-medium mt-1">Retainer ya descontado</p>
@@ -261,7 +261,7 @@ export default function Empresas() {
                 "Proceso en 2-4 semanas",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-1.5 text-xs text-[#000000]">
-                  <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                  <div className="w-4 h-4 rounded-full bg-[#7A9E3B] flex items-center justify-center flex-shrink-0">
                     <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -278,7 +278,7 @@ export default function Empresas() {
       <section className="py-24 bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
-            <span className="text-[#3BB54A] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
+            <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Datos oficiales</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">El mercado de talento joven en España</h2>
             <p className="text-[#000000] mt-4 max-w-xl mx-auto">Cifras reales que explican por qué cada vez más pymes apuestan por este modelo.</p>
           </div>
@@ -318,7 +318,7 @@ export default function Empresas() {
           {/* Fila 2 — 2 bloques más amplios */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-[#000000] rounded-2xl p-8 text-white">
-              <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">El coste real de contratar</p>
+              <p className="text-[#7A9E3B] text-xs font-semibold uppercase tracking-widest mb-3">El coste real de contratar</p>
               <p className="text-3xl font-bold mb-2">1.200€ – 2.000€</p>
               <p className="text-white/80 text-sm leading-relaxed mb-2">
                 Es lo que cuesta de media un proceso de selección para una pyme cuando se externaliza con una consultora tradicional de RRHH.
@@ -326,7 +326,7 @@ export default function Empresas() {
               <p className="text-white/50 text-xs italic">SHRM / informes sectoriales RRHH España</p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-              <p className="text-[#3BB54A] text-xs font-semibold uppercase tracking-widest mb-3">FP: el perfil más empleable</p>
+              <p className="text-[#7A9E3B] text-xs font-semibold uppercase tracking-widest mb-3">FP: el perfil más empleable</p>
               <p className="text-3xl font-bold text-[#000000] mb-2">76% de empleabilidad</p>
               <p className="text-[#000000] text-sm leading-relaxed mb-2">
                 Los titulados de FP tienen una de las tasas de inserción laboral más altas de España, por encima de muchas titulaciones universitarias.
@@ -340,8 +340,8 @@ export default function Empresas() {
       {/* CTA FINAL */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#3BB54A] rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#7A9E3B] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#7A9E3B] rounded-full blur-3xl"></div>
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -350,7 +350,7 @@ export default function Empresas() {
           <p className="text-white/80 text-lg mb-10">
             Cuéntanos qué perfil necesitas. Te respondemos en menos de 24 horas.
           </p>
-          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#3BB54A] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
+          <a href="mailto:hola@job2jump.es" className="inline-block bg-[#7A9E3B] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#2ea03c] transition shadow-lg">
             Contactar ahora
           </a>
         </div>

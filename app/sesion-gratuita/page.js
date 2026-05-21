@@ -73,7 +73,7 @@ export default function SesionGratuita() {
           <a href="/">
             <Image src="/logo.png" alt="Job2Jump" width={150} height={38} priority />
           </a>
-          <a href="/practicas" className="text-[#000000] text-sm font-medium hover:text-[#3BB54A] transition">
+          <a href="/practicas" className="text-[#000000] text-sm font-medium hover:text-[#7A9E3B] transition">
             ← Volver
           </a>
         </div>
@@ -85,7 +85,7 @@ export default function SesionGratuita() {
           {/* PASO 0 — Presentación */}
           {paso === 0 && (
             <div className="bg-white rounded-3xl shadow-sm p-10 text-center">
-              <span className="inline-block bg-[#3BB54A]/10 text-[#3BB54A] border border-[#3BB54A]/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+              <span className="inline-block bg-[#7A9E3B]/10 text-[#7A9E3B] border border-[#7A9E3B]/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
                 Sesión gratuita · 15 minutos
               </span>
               <h1 className="text-3xl font-bold text-[#000000] mb-4 leading-tight">
@@ -105,7 +105,7 @@ export default function SesionGratuita() {
                 ].map((item, i) => (
                   <div key={i} className="bg-[#F0F4F8] rounded-xl p-4">
                     <div className="flex items-center gap-2 mb-1">
-                      <div className="w-4 h-4 rounded-full bg-[#3BB54A] flex items-center justify-center flex-shrink-0">
+                      <div className="w-4 h-4 rounded-full bg-[#7A9E3B] flex items-center justify-center flex-shrink-0">
                         <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -126,20 +126,20 @@ export default function SesionGratuita() {
                   placeholder="Tu nombre"
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#3BB54A] focus:ring-1 focus:ring-[#3BB54A]"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#7A9E3B] focus:ring-1 focus:ring-[#7A9E3B]"
                 />
                 <input
                   type="email"
                   placeholder="Tu email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#3BB54A] focus:ring-1 focus:ring-[#3BB54A]"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#7A9E3B] focus:ring-1 focus:ring-[#7A9E3B]"
                 />
               </div>
 
               <button
                 onClick={() => nombre && email && setPaso(1)}
-                className={`w-full py-4 rounded-full font-semibold text-base transition ${nombre && email ? "bg-[#3BB54A] text-white hover:bg-[#2ea03c]" : "bg-gray-200 text-[#000000] cursor-not-allowed"}`}
+                className={`w-full py-4 rounded-full font-semibold text-base transition ${nombre && email ? "bg-[#7A9E3B] text-white hover:bg-[#2ea03c]" : "bg-gray-200 text-[#000000] cursor-not-allowed"}`}
               >
                 Empezar el cuestionario
               </button>
@@ -152,7 +152,7 @@ export default function SesionGratuita() {
               {/* Barra de progreso */}
               <div className="flex gap-1.5 mb-8">
                 {preguntas.map((_, i) => (
-                  <div key={i} className={`h-1.5 flex-1 rounded-full transition-all ${i < paso ? "bg-[#3BB54A]" : "bg-gray-200"}`}></div>
+                  <div key={i} className={`h-1.5 flex-1 rounded-full transition-all ${i < paso ? "bg-[#7A9E3B]" : "bg-gray-200"}`}></div>
                 ))}
               </div>
 
@@ -164,7 +164,7 @@ export default function SesionGratuita() {
                   <input
                     type="text"
                     placeholder={preguntaActual.placeholder}
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#3BB54A] focus:ring-1 focus:ring-[#3BB54A] mb-4"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#7A9E3B] focus:ring-1 focus:ring-[#7A9E3B] mb-4"
                     onKeyDown={(e) => e.key === "Enter" && e.target.value && responder(e.target.value)}
                     id="respuesta-texto"
                   />
@@ -186,7 +186,7 @@ export default function SesionGratuita() {
                     <button
                       key={i}
                       onClick={() => responder(opcion)}
-                      className="text-left border border-gray-200 rounded-xl px-5 py-4 text-sm text-[#000000] hover:border-[#3BB54A] hover:bg-[#3BB54A]/5 hover:text-[#000000] transition font-medium"
+                      className="text-left border border-gray-200 rounded-xl px-5 py-4 text-sm text-[#000000] hover:border-[#7A9E3B] hover:bg-[#7A9E3B]/5 hover:text-[#000000] transition font-medium"
                     >
                       {opcion}
                     </button>
@@ -207,8 +207,8 @@ export default function SesionGratuita() {
             <div className="bg-white rounded-3xl shadow-sm p-10 text-center">
               {estaListoAhora() ? (
                 <>
-                  <div className="w-16 h-16 bg-[#3BB54A]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg className="w-8 h-8 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-[#7A9E3B]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-8 h-8 text-[#7A9E3B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -219,17 +219,17 @@ export default function SesionGratuita() {
                   <div className="bg-[#F0F4F8] rounded-2xl p-6 mb-6">
                     <p className="text-sm text-[#000000] mb-1">Lo que veremos en tu sesión:</p>
                     <ul className="text-sm text-[#000000] font-medium space-y-1 text-left">
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Diagnóstico de tu situación actual</li>
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Plan de acción concreto</li>
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Análisis de oportunidades que encajan contigo</li>
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Orientación sobre tu próximo paso</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Diagnóstico de tu situación actual</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Plan de acción concreto</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Análisis de oportunidades que encajan contigo</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Orientación sobre tu próximo paso</li>
                     </ul>
                   </div>
                   {/* Botón Calendly — desactivado hasta mañana */}
                   <div className="relative">
                     <button
                       disabled
-                      className="w-full bg-[#3BB54A] text-white py-4 rounded-full font-semibold text-base opacity-50 cursor-not-allowed"
+                      className="w-full bg-[#7A9E3B] text-white py-4 rounded-full font-semibold text-base opacity-50 cursor-not-allowed"
                     >
                       Reservar mi sesión gratuita
                     </button>
@@ -250,9 +250,9 @@ export default function SesionGratuita() {
                   <div className="bg-[#F0F4F8] rounded-2xl p-6 mb-6 text-left">
                     <p className="text-sm font-semibold text-[#000000] mb-2">Mientras tanto, te enviaremos:</p>
                     <ul className="text-sm text-[#000000] space-y-1">
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Consejos para preparar tu búsqueda</li>
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Recursos gratuitos para mejorar tu CV y LinkedIn</li>
-                      <li className="flex items-center gap-2"><span className="text-[#3BB54A]">✓</span> Información sobre empresas que buscan perfiles como el tuyo</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Consejos para preparar tu búsqueda</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Recursos gratuitos para mejorar tu CV y LinkedIn</li>
+                      <li className="flex items-center gap-2"><span className="text-[#7A9E3B]">✓</span> Información sobre empresas que buscan perfiles como el tuyo</li>
                     </ul>
                   </div>
                   <button

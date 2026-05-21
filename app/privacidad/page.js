@@ -23,7 +23,7 @@ export default function Privacidad() {
               <strong>Razón social:</strong> [NOMBRE DE LA SL] <br />
               <strong>CIF:</strong> [CIF] <br />
               <strong>Domicilio social:</strong> [DIRECCIÓN COMPLETA] <br />
-              <strong>Email de contacto:</strong> <a href="mailto:hola@job2jump.es" className="text-[#3BB54A] hover:underline">hola@job2jump.es</a> <br />
+              <strong>Email de contacto:</strong> <a href="mailto:hola@job2jump.es" className="text-[#7A9E3B] hover:underline">hola@job2jump.es</a> <br />
               <strong>Web:</strong> www.job2jump.es
             </p>
           </div>
@@ -81,10 +81,10 @@ export default function Privacidad() {
               <li><strong>Oposición:</strong> oponerte al tratamiento en determinados casos.</li>
             </ul>
             <p className="mt-3">
-              Para ejercer estos derechos, escríbenos a <a href="mailto:hola@job2jump.es" className="text-[#3BB54A] hover:underline">hola@job2jump.es</a> indicando tu nombre, derecho que deseas ejercer y, si lo tienes, documento acreditativo de identidad. Responderemos en el plazo máximo de un mes.
+              Para ejercer estos derechos, escríbenos a <a href="mailto:hola@job2jump.es" className="text-[#7A9E3B] hover:underline">hola@job2jump.es</a> indicando tu nombre, derecho que deseas ejercer y, si lo tienes, documento acreditativo de identidad. Responderemos en el plazo máximo de un mes.
             </p>
             <p className="mt-3">
-              Si consideras que el tratamiento de tus datos no es conforme a la normativa, puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" className="text-[#3BB54A] hover:underline">www.aepd.es</a>.
+              Si consideras que el tratamiento de tus datos no es conforme a la normativa, puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" className="text-[#7A9E3B] hover:underline">www.aepd.es</a>.
             </p>
           </div>
 

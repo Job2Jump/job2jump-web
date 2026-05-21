@@ -26,7 +26,7 @@ export default function AvisoLegal() {
               <strong>Razón social:</strong> [NOMBRE DE LA SL] <br />
               <strong>CIF:</strong> [CIF] <br />
               <strong>Domicilio social:</strong> [DIRECCIÓN COMPLETA] <br />
-              <strong>Email:</strong> <a href="mailto:hola@job2jump.es" className="text-[#3BB54A] hover:underline">hola@job2jump.es</a> <br />
+              <strong>Email:</strong> <a href="mailto:hola@job2jump.es" className="text-[#7A9E3B] hover:underline">hola@job2jump.es</a> <br />
               <strong>Sitio web:</strong> www.job2jump.es
             </p>
           </div>
@@ -88,7 +88,7 @@ export default function AvisoLegal() {
             <h2 className="text-lg font-bold text-[#000000] mb-3">8. Protección de datos</h2>
             <p>
               Para todo lo relativo al tratamiento de datos personales, consulta nuestra{" "}
-              <a href="/privacidad" className="text-[#3BB54A] hover:underline">Política de privacidad</a>.
+              <a href="/privacidad" className="text-[#7A9E3B] hover:underline">Política de privacidad</a>.
             </p>
           </div>
 

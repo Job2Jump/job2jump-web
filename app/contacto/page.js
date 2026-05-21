@@ -49,7 +49,7 @@ export default function Contacto() {
 
           {!enviado ? (
             <div className="bg-white rounded-3xl shadow-sm p-10">
-              <span className="inline-block bg-[#3BB54A]/10 text-[#3BB54A] border border-[#3BB54A]/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
+              <span className="inline-block bg-[#7A9E3B]/10 text-[#7A9E3B] border border-[#7A9E3B]/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">
                 Sin compromiso · Gratis
               </span>
               <h1 className="text-3xl font-bold text-[#000000] mb-2 leading-tight">
@@ -71,7 +71,7 @@ export default function Contacto() {
                     value={form.nombre}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#3BB54A] focus:ring-1 focus:ring-[#3BB54A]"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#7A9E3B] focus:ring-1 focus:ring-[#7A9E3B]"
                   />
                 </div>
 
@@ -90,7 +90,7 @@ export default function Contacto() {
                         onClick={() => setPerfil(op.valor)}
                         className={`text-left border rounded-xl px-4 py-3 transition ${
                           perfil === op.valor
-                            ? "border-[#3BB54A] bg-[#3BB54A]/5"
+                            ? "border-[#7A9E3B] bg-[#7A9E3B]/5"
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
@@ -111,7 +111,7 @@ export default function Contacto() {
                     value={form.email}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#3BB54A] focus:ring-1 focus:ring-[#3BB54A]"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#7A9E3B] focus:ring-1 focus:ring-[#7A9E3B]"
                   />
                 </div>
 
@@ -125,7 +125,7 @@ export default function Contacto() {
                     value={form.telefono}
                     onChange={handleChange}
                     required
-                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#3BB54A] focus:ring-1 focus:ring-[#3BB54A]"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#7A9E3B] focus:ring-1 focus:ring-[#7A9E3B]"
                   />
                 </div>
 
@@ -134,7 +134,7 @@ export default function Contacto() {
                   disabled={!valido || enviando}
                   className={`w-full py-4 rounded-full font-semibold text-base transition mt-2 ${
                     valido && !enviando
-                      ? "bg-[#3BB54A] text-white hover:bg-[#2ea03c]"
+                      ? "bg-[#7A9E3B] text-white hover:bg-[#2ea03c]"
                       : "bg-gray-200 text-[#000000] cursor-not-allowed"
                   }`}
                 >
@@ -157,15 +157,15 @@ export default function Contacto() {
 
           ) : (
             <div className="bg-white rounded-3xl shadow-sm p-10 text-center">
-              <div className="w-16 h-16 bg-[#3BB54A]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#3BB54A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-[#7A9E3B]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-[#7A9E3B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <h2 className="text-2xl font-bold text-[#000000] mb-3">¡Recibido, {form.nombre.split(" ")[0]}!</h2>
               <p className="text-[#000000] leading-relaxed mb-8">
                 Te llamamos en menos de 24 horas al número que nos has dejado. Si tienes cualquier urgencia, escríbenos a{" "}
-                <a href="mailto:hola@job2jump.es" className="text-[#3BB54A] hover:underline">hola@job2jump.es</a>.
+                <a href="mailto:hola@job2jump.es" className="text-[#7A9E3B] hover:underline">hola@job2jump.es</a>.
               </p>
               <a href="/" className="inline-block bg-[#000000] text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-[#222] transition">
                 Volver al inicio
