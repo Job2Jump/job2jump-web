@@ -16,7 +16,7 @@ export default function QuienesSomos() {
       {/* HERO */}
       <section className="pt-40 pb-24 bg-[#000000] relative overflow-hidden"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1920&q=80')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
