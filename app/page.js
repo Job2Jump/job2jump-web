@@ -62,13 +62,19 @@ export default function Home() {
               </div>
               <p className="text-white/50 group-hover:text-[#7A9E3B] text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3 transition-colors">Para pymes y empresas</p>
               <h2 className="text-2xl md:text-3xl font-bold text-white group-hover:text-[#000000] mb-2 md:mb-4 leading-tight transition-colors">
-                Quiero contratar<br />talento joven
+                Busco talento<br />para mi empresa
               </h2>
-              <p className="text-white/60 group-hover:text-[#000000] text-sm leading-relaxed mb-4 md:mb-8 flex-1 transition-colors">
-                Buscamos, filtramos y te presentamos a las personas adecuadas.
+              <p className="text-white/60 group-hover:text-[#000000] text-sm leading-relaxed mb-4 md:mb-6 flex-1 transition-colors">
+                Becario en prácticas sin coste salarial, o selección de junior/senior para incorporar desde el día 1. Tú eliges.
               </p>
+              <div className="flex flex-col gap-2 mb-4 md:mb-6">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs bg-white/10 group-hover:bg-[#000000]/5 text-white group-hover:text-[#000000] px-2 py-1 rounded-full transition-colors">🎓 Busco becario/a</span>
+                  <span className="text-xs bg-white/10 group-hover:bg-[#000000]/5 text-white group-hover:text-[#000000] px-2 py-1 rounded-full transition-colors">💼 Busco junior/senior</span>
+                </div>
+              </div>
               <span className="inline-flex items-center gap-2 text-white group-hover:text-[#000000] font-semibold text-sm md:text-base transition-colors">
-                Ver cómo funciona
+                Ver opciones para empresas
                 <svg className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
               </span>
             </a>
