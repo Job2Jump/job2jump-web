@@ -83,25 +83,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FRANJA DE DATOS — enfocada al joven */}
-      <section className="py-10 bg-[#000000] border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { valor: "0€", label: "coste salarial para pymes que acogen alumnos de FP en prácticas", fuente: "Job2Jump" },
-              { valor: "1 de 3", label: "alumnos en prácticas acaba contratado por la misma empresa", fuente: "Job2Jump" },
-              { valor: "80%", label: "de pymes tiene dificultades para cubrir vacantes con perfiles adecuados", fuente: "ManpowerGroup 2024" },
-              { valor: "75€", label: "sesión personalizada de orientación, CV y LinkedIn", fuente: "Job2Jump" },
-            ].map((item, i) => (
-              <div key={i} className="flex flex-col items-center">
-                <p className="text-3xl font-bold text-[#7A9E3B] mb-1">{item.valor}</p>
-                <p className="text-white/70 text-xs leading-snug mb-1">{item.label}</p>
-                <p className="text-white/30 text-xs">{item.fuente}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* PARA EMPRESAS */}
       <section className="py-24 bg-white">
