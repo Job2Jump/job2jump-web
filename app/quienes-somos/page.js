@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Quiénes somos | Job2Jump — Agencia de talento joven para pymes",
-  description: "Job2Jump es una agencia especializada en conectar talento joven con pymes y startups. Más de 10 años de experiencia en selección. +300 jóvenes y empresas conectados.",
-  keywords: "agencia empleo jóvenes, agencia selección pymes, headhunting junior, orientación laboral España, empleo jóvenes España, talento FP pymes",
+  title: "Quiénes somos | Job2Jump — Selección de talento para pymes",
+  description: "Job2Jump conecta empresas con el talento que necesitan: becarios en prácticas, perfiles junior y profesionales senior. +8 años de experiencia en headhunting internacional.",
+  keywords: "agencia selección talento, headhunting pymes, orientación laboral España, talento junior senior, empleo España, becarios FP pymes",
 };
 
 export default function QuienesSomos() {
@@ -29,11 +29,11 @@ export default function QuienesSomos() {
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               El puente entre<br />
-              <span className="text-[#7A9E3B]">el talento joven y las empresas</span><br />
+              <span className="text-[#7A9E3B]">el talento y las empresas</span><br />
               que lo necesitan.
             </h1>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-              Somos un equipo con más de 10 años de experiencia en selección de talento en consultoras internacionales de headhunting, grandes multinacionales y escuelas de negocio de referencia. Conocemos el mercado laboral por dentro — y decidimos ponerlo al servicio de las pymes y del talento joven que merece una oportunidad real.
+              Somos un equipo con más de 8 años de experiencia en selección de talento en consultoras internacionales de headhunting, grandes multinacionales y escuelas de negocio de referencia. Conocemos el mercado laboral por dentro — y decidimos ponerlo al servicio de las pymes, del talento joven que merece una oportunidad real y del profesional senior que busca su siguiente reto.
             </p>
 
             {/* Datos destacados */}
@@ -49,19 +49,20 @@ export default function QuienesSomos() {
                 <p className="text-white/50 text-xs mt-1">a éxito — no pagas si no incorporas</p>
               </div>
               <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                <p className="text-xs text-[#7A9E3B] font-semibold uppercase tracking-widest mb-2">Para talento joven</p>
-                <p className="text-4xl font-bold text-white">+300</p>
-                <p className="text-white/50 text-xs mt-1">jóvenes orientados y colocados en su primer empleo o prácticas</p>
+                <p className="text-xs text-[#7A9E3B] font-semibold uppercase tracking-widest mb-2">Para talento</p>
+                <p className="text-4xl font-bold text-white">+500</p>
+                <p className="text-white/50 text-xs mt-1">personas orientadas y colocadas: jóvenes, juniors y seniors</p>
               </div>
               <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                <p className="text-xs text-[#7A9E3B] font-semibold uppercase tracking-widest mb-2">Para talento joven</p>
-                <p className="text-4xl font-bold text-white">10+</p>
-                <p className="text-white/50 text-xs mt-1">años de experiencia en selección de alto nivel</p>
+                <p className="text-xs text-[#7A9E3B] font-semibold uppercase tracking-widest mb-2">Experiencia</p>
+                <p className="text-4xl font-bold text-white">8+</p>
+                <p className="text-white/50 text-xs mt-1">años en selección de talento a nivel nacional e internacional</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* POR QUÉ NACIMOS */}
       <section className="py-24 bg-[#F0F4F8]">
@@ -71,7 +72,7 @@ export default function QuienesSomos() {
             <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Nuestro propósito</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-4">Por qué nacimos</h2>
             <p className="text-xl font-semibold text-[#000000] max-w-xl mx-auto leading-snug">
-              Vimos que el sistema estaba roto para los dos lados.
+              Vimos que el sistema estaba roto para todos los lados.
             </p>
           </div>
 
@@ -79,18 +80,18 @@ export default function QuienesSomos() {
             {[
               {
                 num: "01",
-                titulo: "El problema del joven",
-                desc: "Tiene formación pero nadie le enseña las reglas del mercado laboral: cómo presentarse, cómo destacar, qué decir en una entrevista.",
+                titulo: "El problema del talento",
+                desc: "Tanto el joven que busca su primer empleo como el senior que quiere cambiar se enfrentan a un mercado opaco donde nadie les enseña las reglas: cómo presentarse, cómo destacar, cómo llegar a las oportunidades que no se publican.",
               },
               {
                 num: "02",
-                titulo: "El problema de la pyme y startup",
-                desc: "Necesitan talento pero no tienen RRHH, no tienen tiempo y no pueden pagar 2.000€ a una consultora por cada incorporación.",
+                titulo: "El problema de la pyme",
+                desc: "Necesitan talento pero no tienen RRHH, no tienen tiempo y no pueden pagar 2.000€ a una consultora por cada incorporación. Y lo peor: los buenos candidatos rara vez llegan solos.",
               },
               {
                 num: "03",
                 titulo: "Nuestra respuesta",
-                desc: "Conectar ambos lados con el conocimiento de las grandes firmas de headhunting, adaptado a su escala y a su bolsillo.",
+                desc: "Conectar ambos lados con el conocimiento de las grandes firmas de headhunting, adaptado a su escala y a su bolsillo. Servicio real, trato humano, sin algoritmos.",
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-7 border border-gray-100">
@@ -103,7 +104,7 @@ export default function QuienesSomos() {
 
           <div className="bg-[#000000] rounded-3xl px-10 py-12 text-center">
             <p className="text-xl md:text-2xl font-bold text-white leading-relaxed mb-4">
-              "Job2Jump nació para que ningún joven con talento se quede sin oportunidad y ninguna pyme se quede sin el perfil que necesita."
+              "Job2Jump nació para que nadie con talento se quede sin oportunidad y ninguna pyme se quede sin el perfil que necesita."
             </p>
             <div className="flex flex-wrap justify-center gap-6 mt-6">
               {["100% servicio humano", "Sin portales de empleo", "Sin algoritmos"].map((tag, i) => (
@@ -114,6 +115,7 @@ export default function QuienesSomos() {
 
         </div>
       </section>
+
 
       {/* PARA QUIÉN */}
       <section className="py-24 bg-white">
@@ -133,9 +135,10 @@ export default function QuienesSomos() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "Alumnos de FP en prácticas sin coste salarial",
+                  "Becarios de FP en prácticas sin coste salarial",
                   "Perfiles junior para contrato directo",
-                  "Proceso completo gestionado por nosotros",
+                  "Profesionales senior con experiencia contrastada",
+                  "Proceso completo gestionado de principio a fin",
                   "Garantía de sustitución incluida",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-white/80">
@@ -155,17 +158,18 @@ export default function QuienesSomos() {
 
             {/* Para talento */}
             <div className="bg-[#F0F4F8] rounded-2xl p-10">
-              <span className="inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">Para talento joven</span>
-              <h3 className="text-2xl font-bold text-[#000000] mb-4">Tu apoyo para el primer salto profesional</h3>
+              <span className="inline-block bg-[#7A9E3B]/20 text-[#7A9E3B] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">Para talento — joven y senior</span>
+              <h3 className="text-2xl font-bold text-[#000000] mb-4">Tu apoyo para el siguiente salto profesional</h3>
               <p className="text-[#000000] text-sm leading-relaxed mb-6">
-                Mandar CVs a ciegas no funciona. El mercado laboral tiene reglas que nadie te enseña: cómo presentarte, cómo destacar en LinkedIn, qué decir en una entrevista. Nosotros te preparamos y, si quieres, buscamos activamente por ti.
+                Tanto si estás buscando tus primeras prácticas como si llevas años en el mercado y quieres un cambio, el proceso es el mismo: el mercado tiene reglas que nadie te enseña. Nosotros te preparamos y, si quieres, buscamos activamente por ti.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Busco prácticas en empresa",
-                  "Busco mi primer empleo",
-                  "CV y LinkedIn que abren puertas",
-                  "Te buscamos las entrevistas tú decides",
+                  "Busco prácticas o mi primer empleo (FP y universitarios)",
+                  "Busco empleo como profesional junior",
+                  "Soy senior y quiero cambiar de empresa o sector",
+                  "CV y LinkedIn que abren puertas de verdad",
+                  "Te buscamos las entrevistas — tú decides",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-[#000000]">
                     <div className="w-5 h-5 rounded-full bg-[#7A9E3B] flex items-center justify-center flex-shrink-0">
@@ -178,13 +182,14 @@ export default function QuienesSomos() {
                 ))}
               </ul>
               <a href="/practicas" className="inline-block mt-8 bg-[#000000] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#222222] transition">
-                Soy talento joven →
+                Soy talento →
               </a>
             </div>
 
           </div>
         </div>
       </section>
+
 
       {/* EXPERIENCIA */}
       <section className="py-24 bg-[#F0F4F8]">
@@ -196,7 +201,7 @@ export default function QuienesSomos() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { num: "10+", label: "años en selección y headhunting de alto nivel" },
+              { num: "8+", label: "años en selección y headhunting nacional e internacional" },
               { num: "#1", label: "consultoras internacionales de RRHH donde hemos trabajado" },
               { num: "Top", label: "escuelas de negocio y multinacionales en nuestra trayectoria" },
               { num: "100%", label: "servicio humano, sin portales de empleo ni algoritmos" },
@@ -209,6 +214,7 @@ export default function QuienesSomos() {
           </div>
         </div>
       </section>
+
 
       {/* VALORES */}
       <section className="py-24 bg-white">
@@ -257,6 +263,7 @@ export default function QuienesSomos() {
           </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section className="py-24 bg-[#000000] text-center relative overflow-hidden">
