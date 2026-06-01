@@ -138,7 +138,8 @@ export default function QuienesSomos() {
                   "Becarios de FP en prácticas sin coste salarial",
                   "Perfiles junior para contrato directo",
                   "Profesionales senior con experiencia contrastada",
-                  "Proceso completo gestionado de principio a fin",
+                  "A éxito — solo pagas si incorporas",
+                  "Sin exclusividad — puedes buscar por tu cuenta también",
                   "Garantía de sustitución incluida",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-white/80">
