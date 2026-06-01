@@ -47,7 +47,7 @@ export default function Home() {
                 Busco talento<br />para mi empresa
               </h2>
               <p className="text-white/60 group-hover:text-[#000000] text-sm leading-relaxed mb-4 md:mb-6 flex-1 transition-colors">
-                Becario en prácticas sin coste salarial, o selección de junior/senior para incorporar desde el día 1. Tú eliges.
+                Becario en prácticas sin compromiso de contratación, o selección de junior/senior para incorporar desde el día 1. Tú eliges.
               </p>
               <div className="flex flex-col gap-2 mb-4 md:mb-6">
                 <div className="flex items-center gap-2">
