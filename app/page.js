@@ -30,7 +30,7 @@ export default function Home() {
               <span className="text-[#7A9E3B]">con las empresas que lo necesitan.</span>
             </h1>
             <p className="text-sm md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-0 md:mb-10 hidden md:block">
-              Si buscas <strong className="text-white">prácticas o tu primer empleo</strong>, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado <strong className="text-white">sin coste salarial ni papeleo</strong>.
+              Si buscas <strong className="text-white">prácticas o tu primer empleo</strong>, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado <strong className="text-white">y gestionamos todo</strong>.
             </p>
           </div>
 
