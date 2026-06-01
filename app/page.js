@@ -26,8 +26,8 @@ export default function Home() {
               Para talento junior · Para pymes y startups
             </span>
             <h1 className="text-3xl md:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight">
-              Conectamos talento joven<br />
-              <span className="text-[#7A9E3B]">con empresas que lo necesitan.</span>
+              Conectamos talento<br />
+              <span className="text-[#7A9E3B]">con las empresas que lo necesitan.</span>
             </h1>
             <p className="text-sm md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-0 md:mb-10 hidden md:block">
               Si buscas <strong className="text-white">prácticas o tu primer empleo</strong>, te preparamos y buscamos por ti. Si eres empresa, te traemos el perfil adecuado <strong className="text-white">sin coste salarial ni papeleo</strong>.
