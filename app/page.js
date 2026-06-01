@@ -129,7 +129,7 @@ export default function Home() {
                 El talento que tu empresa necesita.<br />Sin riesgo. Sin papeleo.
               </h2>
               <p className="text-[#000000] mb-8 leading-relaxed">
-                Tanto si buscas un <strong>becario de FP en prácticas</strong> sin coste salarial, como si necesitas un <strong>perfil junior o senior</strong> para incorporar desde el día 1 — nosotros gestionamos todo el proceso. Tú solo decides.
+                Tanto si buscas un <strong>becario de FP en prácticas</strong>, como si necesitas un <strong>perfil junior o senior</strong> para incorporar desde el día 1 — nosotros gestionamos todo el proceso. Tú solo decides.
               </p>
               <p className="text-[#000000] mb-10 leading-relaxed">
                 Trabajamos a éxito. <strong>Solo pagas si incorporas.</strong> Sin exclusividad. <strong>Sin riesgo.</strong>
