@@ -91,7 +91,7 @@ export default function Home() {
               { valor: "0€", label: "coste salarial para pymes que acogen alumnos de FP en prácticas", fuente: "Job2Jump" },
               { valor: "1 de 3", label: "alumnos en prácticas acaba contratado por la misma empresa", fuente: "Job2Jump" },
               { valor: "80%", label: "de pymes tiene dificultades para cubrir vacantes con perfiles adecuados", fuente: "ManpowerGroup 2024" },
-              { valor: "75€", label: "sesión personalizada de orientación, CV y LinkedIn para jóvenes", fuente: "Job2Jump" },
+              { valor: "75€", label: "sesión personalizada de orientación, CV y LinkedIn", fuente: "Job2Jump" },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
                 <p className="text-3xl font-bold text-[#7A9E3B] mb-1">{item.valor}</p>
@@ -103,80 +103,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PARA EMPRESAS — primera sección de contenido */}
+      {/* PARA EMPRESAS */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="grid grid-cols-2 gap-4 order-2 md:order-1">
-              {[
-                { titulo: "Sin coste salarial", desc: "Alumnos de FP en prácticas sin salario ni contrato. Tú solo firmas el convenio — nosotros lo tramitamos todo." },
-                { titulo: "Sin papeleos ni trámites", desc: "Convenios, alta en la Seguridad Social, documentación con el instituto. Lo gestionamos nosotros de principio a fin." },
-                { titulo: "Perfiles listos para trabajar", desc: "Informática, marketing, administración, comercial... Formados en lo que tu empresa necesita." },
-                { titulo: "Con garantía de sustitución", desc: "Si el alumno no encaja, buscamos otro sin coste adicional. Sin excusas." },
-              ].map((item, i) => (
-                <div key={i} className="bg-[#F0F4F8] rounded-2xl p-5 border border-gray-100">
-                  <div className="w-8 h-8 bg-[#000000]/5 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-4 h-4 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                  </div>
-                  <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
-                  <p className="text-xs text-[#000000] leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="order-1 md:order-2">
-              <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
-              <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
-                El talento que tu empresa necesita.<br />Sin riesgo. Sin papeleo.
-              </h2>
-              <p className="text-[#000000] mb-8 leading-relaxed">
-                Tanto si buscas un <strong>becario de FP en prácticas</strong>, como si necesitas un <strong>perfil junior o senior</strong> para incorporar desde el día 1 — nosotros gestionamos todo el proceso. Tú solo decides.
-              </p>
-              <p className="text-[#000000] mb-10 leading-relaxed">
-                Trabajamos a éxito. <strong>Solo pagas si incorporas.</strong> Sin exclusividad. <strong>Sin riesgo.</strong>
-              </p>
-              <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
-                Ver cómo funciona para empresas
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto px-8 text-center">
+          <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
+          <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
+            El talento que tu empresa necesita.<br />Sin riesgo. Sin papeleo.
+          </h2>
+          <p className="text-[#000000] mb-8 leading-relaxed">
+            Tanto si buscas un <strong>becario de FP en prácticas</strong>, como si necesitas un <strong>perfil junior o senior</strong> para incorporar desde el día 1 — nosotros gestionamos todo el proceso. Tú solo decides.
+          </p>
+          <p className="text-[#000000] mb-10 leading-relaxed">
+            Trabajamos a éxito. <strong>Solo pagas si incorporas.</strong> Sin exclusividad. <strong>Sin riesgo.</strong>
+          </p>
+          <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
+            Ver cómo funciona para empresas
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </section>
 
-      {/* PARA TALENTO JUNIOR */}
+      {/* PARA TALENTO */}
       <section className="py-24 bg-[#F0F4F8]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para talento junior</span>
-              <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
-                Tu primer empleo o prácticas.<br />Te lo buscamos nosotros.
-              </h2>
-              <p className="text-[#000000] mb-10 leading-relaxed">
-                Te preparamos, trabajamos tu <strong>CV y LinkedIn</strong>, y presentamos tu perfil a nuestra base de datos de <strong>más de 10.000 empresas</strong>. Tú solo tienes que prepararte para <strong>la entrevista</strong>.
-              </p>
-              <a href="/practicas" className="inline-flex items-center gap-2 bg-[#7A9E3B] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2ea03c] transition">
-                Ver cómo te ayudamos
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { titulo: "CV y LinkedIn optimizados", desc: "Los reclutadores tardan 6 segundos. Tu candidatura tiene que funcionar en ese tiempo." },
-                { titulo: "Preparación de entrevistas", desc: "Role plays reales para que llegues con seguridad, no improvisando." },
-                { titulo: "Acceso a +10.000 empresas", desc: "Presentamos tu perfil directamente. Sin que tengas que buscar tú." },
-                { titulo: "Acompañamiento completo", desc: "Te guiamos en cada paso hasta cerrar tu siguiente oportunidad." },
-              ].map((item, i) => (
-                <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100">
-                  <div className="w-8 h-8 bg-[#7A9E3B]/10 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-4 h-4 text-[#7A9E3B]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                  </div>
-                  <h3 className="text-sm font-bold text-[#000000] mb-1">{item.titulo}</h3>
-                  <p className="text-xs text-[#000000] leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto px-8 text-center">
+          <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para talento joven</span>
+          <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
+            Tu primer empleo o prácticas.<br />Te lo buscamos nosotros.
+          </h2>
+          <p className="text-[#000000] mb-10 leading-relaxed">
+            Te preparamos, trabajamos tu <strong>CV y LinkedIn</strong>, y presentamos tu perfil a nuestra base de datos de <strong>más de 10.000 empresas</strong>. Tú solo tienes que prepararte para <strong>la entrevista</strong>.
+          </p>
+          <a href="/practicas" className="inline-flex items-center gap-2 bg-[#7A9E3B] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2ea03c] transition">
+            Ver cómo te ayudamos
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </section>
 
