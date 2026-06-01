@@ -30,7 +30,7 @@ export default function Navbar() {
               </a>
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <a href="/empresas/becario" className="flex items-center gap-3 px-4 py-3 hover:bg-[#F0F4F8] transition">
-                  <span className="w-7 h-7 rounded-full bg-[#000000] flex items-center justify-center text-xs">🎓</span>
+                  <span className="w-7 h-7 rounded-full bg-[#7A9E3B] flex items-center justify-center text-xs">🎓</span>
                   <p className="text-xs font-bold text-[#000000]">Busco becario/a</p>
                 </a>
                 <div className="h-px bg-gray-100 mx-4"></div>
@@ -83,7 +83,7 @@ export default function Navbar() {
               {empresasOpen && (
                 <div className="mt-4 flex flex-col gap-3 pl-2">
                   <a href="/empresas/becario" onClick={() => setOpen(false)} className="flex items-center gap-3 py-2 hover:text-[#7A9E3B] transition">
-                    <span className="w-8 h-8 rounded-full bg-[#000000] flex items-center justify-center text-sm flex-shrink-0">🎓</span>
+                    <span className="w-8 h-8 rounded-full bg-[#7A9E3B] flex items-center justify-center text-sm flex-shrink-0">🎓</span>
                     <p className="text-base font-bold">Busco becario/a</p>
                   </a>
                   <a href="/empresas/talento" onClick={() => setOpen(false)} className="flex items-center gap-3 py-2 hover:text-[#7A9E3B] transition">
