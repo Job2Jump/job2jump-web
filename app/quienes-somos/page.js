@@ -33,7 +33,7 @@ export default function QuienesSomos() {
               que lo necesitan.
             </h1>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl">
-              Somos un equipo con más de 8 años de experiencia en selección de talento en consultoras internacionales de headhunting, grandes multinacionales y escuelas de negocio de referencia. Conocemos el mercado laboral por dentro — y decidimos ponerlo al servicio de las pymes, del talento joven que merece una oportunidad real y del profesional senior que busca su siguiente reto.
+              Somos un equipo con más de 8 años de experiencia en selección de talento en consultoras internacionales de headhunting, grandes multinacionales y escuelas de negocio de referencia. Conocemos el mercado laboral por dentro — y decidimos ponerlo al servicio de las pymes, del talento — joven y senior — que merece una oportunidad real.
             </p>
 
             {/* Datos destacados */}
