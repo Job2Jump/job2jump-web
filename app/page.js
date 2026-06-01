@@ -126,13 +126,13 @@ export default function Home() {
             <div className="order-1 md:order-2">
               <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Para pymes y startups</span>
               <h2 className="text-4xl font-bold text-[#000000] mt-3 mb-6 leading-tight">
-                Talento joven en tu empresa.<br />Sin salario. Sin papeleo.
+                El talento que tu empresa necesita.<br />Sin riesgo. Sin papeleo.
               </h2>
               <p className="text-[#000000] mb-8 leading-relaxed">
-                Conectamos tu empresa con <strong>alumnos de FP</strong> que necesitan hacer prácticas. <strong>Sin coste salarial</strong> para ti — nosotros gestionamos todo el proceso. Tú solo recibes el perfil y decides.
+                Tanto si buscas un <strong>becario de FP en prácticas</strong> sin coste salarial, como si necesitas un <strong>perfil junior o senior</strong> para incorporar desde el día 1 — nosotros gestionamos todo el proceso. Tú solo decides.
               </p>
               <p className="text-[#000000] mb-10 leading-relaxed">
-                Trabajamos a éxito. <strong>Solo pagas si incorporas</strong> al perfil. <strong>Sin riesgo.</strong>
+                Trabajamos a éxito. <strong>Solo pagas si incorporas.</strong> Sin exclusividad. <strong>Sin riesgo.</strong>
               </p>
               <a href="/empresas" className="inline-flex items-center gap-2 bg-[#000000] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#222222] transition">
                 Ver cómo funciona para empresas
