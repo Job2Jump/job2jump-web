@@ -207,30 +207,19 @@ export default function Becario() {
           <div className="text-center mb-12">
             <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Precios · A éxito, solo pagas si incorporas</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Trabajamos a éxito.</h2>
-            <p className="text-[#000000] text-sm mt-2">Solo pagas si incorporas. Sin resultados, solo pierdes el retainer.</p>
+            <p className="text-[#000000] text-sm mt-2">Solo pagas si incorporas.</p>
           </div>
           <div className="bg-[#7A9E3B] rounded-2xl p-10 text-white text-center mb-8">
             <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-1">Nuestro servicio</p>
             <p className="text-2xl font-bold mb-4">Alumno en prácticas</p>
             <p className="text-7xl font-bold mb-2">350€</p>
             <p className="text-white/80 text-sm mb-8">+ IVA · Solo pagas si incorporas</p>
-            <p className="text-white/70 text-sm mb-6">Incorpora talento joven mediante prácticas formativas. Nos encargamos de la selección, de la gestión del convenio con el centro educativo y de su incorporación.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm border-t border-white/20 pt-6">
-              <div className="flex-1 text-center">
-                <p className="text-2xl font-bold">100€</p>
-                <p className="text-white/70 text-xs mt-1">retainer para iniciar el proceso</p>
-              </div>
-              <div className="flex items-center justify-center text-white/40 font-bold text-xl">+</div>
-              <div className="flex-1 text-center">
-                <p className="text-2xl font-bold">250€</p>
-                <p className="text-white/70 text-xs mt-1">selección, gestión con el centro e incorporación</p>
-              </div>
-            </div>
+            <p className="text-white/70 text-sm">Incorpora talento joven mediante prácticas formativas. Nos encargamos de la selección, de la gestión del convenio con el centro educativo y de su incorporación.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { titulo: "Garantía de sustitución", desc: "Si el candidato no encaja, lo reemplazamos sin coste durante el primer mes." },
-              { titulo: "Solo pagas si incorporas", desc: "Trabajamos a éxito. El retainer se descuenta del total." },
+              { titulo: "Solo pagas si incorporas", desc: "Trabajamos a éxito. Sin incorporación, sin coste." },
               { titulo: "Gestión de documentación", desc: "Convenio, papeles y trámites, todo gestionado de principio a fin." },
               { titulo: "3-4 candidatos filtrados", desc: "Hacemos las entrevistas previas por ti y contigo." },
               { titulo: "Encontramos tu mirlo blanco", desc: "El candidato ideal en 2-4 semanas, no en meses." },

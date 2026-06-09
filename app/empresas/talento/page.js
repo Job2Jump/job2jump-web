@@ -246,30 +246,19 @@ export default function Talento() {
           <div className="text-center mb-12">
             <span className="text-[#7A9E3B] font-semibold uppercase tracking-widest text-xs">Precios · A éxito, solo pagas si incorporas</span>
             <h2 className="text-4xl font-bold text-[#000000] mt-3">Trabajamos a éxito.</h2>
-            <p className="text-[#000000] text-sm mt-2">Solo pagas si incorporas. Sin resultados, solo pierdes el retainer.</p>
+            <p className="text-[#000000] text-sm mt-2">Solo pagas si incorporas.</p>
           </div>
           <div className="bg-[#000000] rounded-2xl p-10 text-white text-center mb-8">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#7A9E3B] mb-1">Nuestro servicio</p>
             <p className="text-2xl font-bold mb-4">Selección de talento</p>
             <p className="text-7xl font-bold mb-2">450€</p>
             <p className="text-white/80 text-sm mb-8">+ IVA · Solo pagas si incorporas</p>
-            <p className="text-white/70 text-sm mb-6">Selección completa de profesionales para incorporación directa a tu plantilla. Búsqueda activa, presentación de finalistas, gestión de contraofertas y onboarding incluido.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center text-sm border-t border-white/20 pt-6">
-              <div className="flex-1 text-center">
-                <p className="text-2xl font-bold">100€</p>
-                <p className="text-white/70 text-xs mt-1">retainer para iniciar el proceso</p>
-              </div>
-              <div className="flex items-center justify-center text-white/40 font-bold text-xl">+</div>
-              <div className="flex-1 text-center">
-                <p className="text-2xl font-bold">350€</p>
-                <p className="text-white/70 text-xs mt-1">a éxito, solo si incorporas al candidato</p>
-              </div>
-            </div>
+            <p className="text-white/70 text-sm">Selección completa de profesionales para incorporación directa a tu plantilla. Búsqueda activa, presentación de finalistas, gestión de contraofertas y onboarding incluido.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { titulo: "Sin exclusividad", desc: "Puedes llevar el proceso en paralelo. Si encuentras tú al candidato antes, no nos pagas." },
-              { titulo: "Solo pagas si incorporas", desc: "Trabajamos a éxito. El retainer se descuenta del total." },
+              { titulo: "Solo pagas si incorporas", desc: "Trabajamos a éxito. Sin incorporación, sin coste." },
               { titulo: "Proceso end-to-end", desc: "Búsqueda, filtrado, entrevistas, negociación e incorporación." },
               { titulo: "Confidencialidad total", desc: "Ningún candidato sabrá de ti hasta que decidas dar el paso." },
               { titulo: "Garantía de 3 meses", desc: "Si el candidato no encaja, lo reemplazamos sin coste durante los primeros 3 meses." },

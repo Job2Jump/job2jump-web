@@ -34,7 +34,7 @@ const faqJovenes = [
 const faqEmpresas = [
   {
     pregunta: "¿Cuánto cuesta el proceso completo?",
-    respuesta: "El proceso empieza con un retainer de 100€ + IVA al arrancar. Si hay contratación, ese importe se descuenta del success fee: 250€ adicionales por becario/prácticas o 400€ adicionales por contrato junior. Total: 350€ o 500€ según el perfil. Para perfiles senior, el success fee total es de 850€.",
+    respuesta: "El proceso completo cuesta 350€ + IVA por becario en prácticas, y 450€ + IVA por perfil junior o senior. Solo pagas si incorporas al candidato. Sin incorporación, sin coste.",
   },
   {
     pregunta: "¿Qué pasa si el candidato no funciona?",
@@ -54,7 +54,7 @@ const faqEmpresas = [
   },
   {
     pregunta: "¿Tengo que pagar si al final no contrato a nadie?",
-    respuesta: "Solo pierdes el retainer inicial de 100€ si decides no continuar con el proceso o no contratas a ningún candidato. El success fee solo se paga al confirmar la incorporación.",
+    respuesta: "No. Solo pagas si incorporas al candidato. Si al final no contratas a nadie, no hay ningún coste.",
   },
   {
     pregunta: "¿Gestionáis también los convenios de prácticas?",
